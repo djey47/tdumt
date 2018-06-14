@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using DjeFramework1.Common.Support.Meta;
 using DjeFramework1.Common.Types;
 using DjeFramework1.Common.Types.Collections;
@@ -29,12 +28,7 @@ namespace TDUModdingLibrary.fileformats.binaries
         /// <summary>
         /// Size of header
         /// </summary>
-        private const int _HEADER_SIZE = 0x20;
-        
-        /// <summary>
-        /// Size of one camera view
-        /// </summary>
-        internal const long CAMERA_VIEW_SIZE = 0x278L;
+        private const int HeaderSize = 0x20;
         #endregion
 
         #region Enums
@@ -111,30 +105,35 @@ namespace TDUModdingLibrary.fileformats.binaries
         /// </summary>
         public List<CamEntry> Entries
         {
-            get { return _Entries; }
+            get { return _entries; }
         }
-        private readonly List<CamEntry> _Entries = new List<CamEntry>();
+        private readonly List<CamEntry> _entries = new List<CamEntry>();
 
         /// <summary>
         /// Index by camera id : view count. Do not modify this or the game will crash !
         /// </summary>
         public Dictionary<ushort, ushort> Index
         {
-            get { return _Index; }
+            get { return _index; }
         }
-        private readonly Dictionary<ushort, ushort> _Index = new Dictionary<ushort, ushort>();
+        private readonly Dictionary<ushort, ushort> _index = new Dictionary<ushort, ushort>();
+
+        private int _ZeroZoneSize
+        {
+            get { return 12 + (_index.Count - 3) * 16; }
+        }
         #endregion
 
         #region Members
         /// <summary>
         /// Cameras data header
         /// </summary>
-        byte[] _Header;
+        private byte[] _header;
 
         /// <summary>
         /// (TODO) What's that ?
         /// </summary>
-        private uint _Unknown1;
+        private uint _unknown1;
         #endregion
 
         /// <summary>
@@ -154,12 +153,12 @@ namespace TDUModdingLibrary.fileformats.binaries
         }
 
         #region TduFile implementation
-        protected override sealed void _ReadData()
+        protected sealed override void _ReadData()
         {
             using (BinaryReader reader = new BinaryReader(new FileStream(_FileName, FileMode.Open, FileAccess.Read)))
             {
                 // Header (TODO)
-                _Header = reader.ReadBytes(_HEADER_SIZE);
+                _header = reader.ReadBytes(HeaderSize);
 
                 // Index size (2 bytes)
                 ushort indexSize = reader.ReadUInt16();
@@ -168,10 +167,10 @@ namespace TDUModdingLibrary.fileformats.binaries
                 reader.ReadBytes(2);
 
                 // Unknown1 ... (4 bytes) ... always=40
-                _Unknown1 = reader.ReadUInt32();
+                _unknown1 = reader.ReadUInt32();
 
                 // Cam index
-                _Index.Clear();
+                _index.Clear();
 
                 for (int i = 0; i < indexSize; i++ )
                 {
@@ -187,19 +186,11 @@ namespace TDUModdingLibrary.fileformats.binaries
                     // Zeroes (6 bytes)
                     reader.ReadBytes(6);
 
-                    _Index.Add(camId, viewCount);
+                    _index.Add(camId, viewCount);
                 }
 
-                // Zero zone ( blocks of 12 bytes)
-                // BUG : if 150 entries = 197 blocks, if 144 entries = 189 blocks
-                int blockCount = 197;
-
-                if (indexSize == 144)
-                {
-                    blockCount = 189;
-                }
-
-                reader.ReadBytes(blockCount * 12);
+                // Zero zone
+                reader.ReadBytes(_ZeroZoneSize);
 
                 // Beginning of interesting zone
                 CamEntry currentEntry = new CamEntry();
@@ -227,7 +218,7 @@ namespace TDUModdingLibrary.fileformats.binaries
                         if (processedIds.Count > 0)
                         {
                             currentEntry.isValid = true;
-                            _Entries.Add(currentEntry);
+                            _entries.Add(currentEntry);
                         }
 
                         // Creating new entry
@@ -275,10 +266,10 @@ namespace TDUModdingLibrary.fileformats.binaries
 
                 // Finalization
                 currentEntry.isValid = true;
-                _Entries.Add(currentEntry);
+                _entries.Add(currentEntry);
 
                 // EVO_65: Properties
-                Property.ComputeValueDelegate camCountDelegate = () => _Entries.Count.ToString();
+                Property.ComputeValueDelegate camCountDelegate = () => _entries.Count.ToString();
 
                 Properties.Add(new Property("Camera sets count", "CAM-BIN", camCountDelegate));
             }
@@ -290,7 +281,10 @@ namespace TDUModdingLibrary.fileformats.binaries
         public override void Save()
         {
             // Removing read-only attribute
-            File2.RemoveAttribute(_FileName, FileAttributes.ReadOnly);
+            if (File.Exists(_FileName))
+            {
+                File2.RemoveAttribute(_FileName, FileAttributes.ReadOnly);
+            }
 
             using (BinaryWriter writer = new BinaryWriter(new FileStream(_FileName, FileMode.Create, FileAccess.Write)))
             {
@@ -301,7 +295,7 @@ namespace TDUModdingLibrary.fileformats.binaries
                 _WriteIndex(writer);
 
                 // Browsing camera sets
-                foreach (CamEntry anotherEntry in _Entries)
+                foreach (CamEntry anotherEntry in _entries)
                 {
                     if (anotherEntry.isValid)
                     {
@@ -358,7 +352,7 @@ namespace TDUModdingLibrary.fileformats.binaries
             {
                 ushort id = ushort.Parse(camId);
 
-                foreach (CamEntry anotherCamEntry in _Entries)
+                foreach (CamEntry anotherCamEntry in _entries)
                 {
                     if (anotherCamEntry.isValid && anotherCamEntry.id == id)
                     {
@@ -556,54 +550,6 @@ namespace TDUModdingLibrary.fileformats.binaries
         }
 
         /// <summary>
-        /// Creates a copy of specified camera entry.
-        /// </summary>
-        /*private static CamEntry _CloneEntry(CamEntry originalEntry, ushort newEntryId)
-        {
-            CamEntry returnedEntry = new CamEntry();
-
-            if (originalEntry.isValid)
-            {
-                returnedEntry.views = new List<View>();
-                returnedEntry.id = newEntryId;
-                returnedEntry.isValid = true;
-
-                foreach(View currentView in originalEntry.views)
-                {
-                    View newView = _CloneView(currentView);
-
-                    newView.cameraId = returnedEntry.id;
-                    returnedEntry.views.Add(newView);
-                }
-            }
-
-            return returnedEntry;
-        }*/
-
-        /// <summary>
-        /// Creates a copy of specified camera view
-        /// </summary>
-        /*private static View _CloneView(View originalView)
-        {
-            View returnedView = new View
-                                    {
-                                        cameraId = originalView.cameraId,
-                                        name = originalView.name,
-                                        tag = originalView.tag,
-                                        unknown1 = originalView.unknown1,
-                                        unknown2 = originalView.unknown2,
-                                        type = originalView.type,
-                                        isValid = originalView.isValid,
-                                        parentCameraId = originalView.parentCameraId,
-                                        parentType = originalView.parentType
-                                    };
-
-            //returnedView.viewOffset = originalView.viewOffset;
-
-            return returnedView;
-        }*/
-
-        /// <summary>
         /// Handles writing of header
         /// </summary>
         /// <param name="writer"></param>
@@ -612,16 +558,16 @@ namespace TDUModdingLibrary.fileformats.binaries
             if (writer != null)
             {
                 // Head data (32 bytes)
-                writer.Write(_Header);
+                writer.Write(_header);
 
                 // Index size (2 bytes)
-                writer.Write((ushort) _Index.Count);
+                writer.Write((ushort) _index.Count);
 
                 // zero1 (2 bytes)
                 writer.Write((ushort)0x0);
 
                 // unknown1 (4 bytes)
-                writer.Write(_Unknown1);
+                writer.Write(_unknown1);
             }
         }
 
@@ -633,7 +579,7 @@ namespace TDUModdingLibrary.fileformats.binaries
         {
             if (writer != null)
             {
-                foreach(ushort camId in _Index.Keys)
+                foreach(ushort camId in _index.Keys)
                 {
                     // camId (2 bytes)
                     writer.Write(camId);
@@ -642,14 +588,14 @@ namespace TDUModdingLibrary.fileformats.binaries
                     writer.Write((ushort)0x0);
 
                     // viewCount (2 bytes)
-                    writer.Write(_Index[camId]);
+                    writer.Write(_index[camId]);
                     
                     // zeroes (6 bytes)
                     writer.Write(new byte[6]);
                 }
 
-                // Remaining space (150 to 346) : 197 blocks of 12 bytes
-                byte[] finalZeroes = new byte[197*12];
+                // Remaining space: blocks of 12 bytes
+                byte[] finalZeroes = new byte[_ZeroZoneSize];
 
                 writer.Write(finalZeroes);
             }

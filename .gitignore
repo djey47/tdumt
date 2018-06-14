@@ -1,8 +1,7 @@
 # IDE-specific
 .idea*/
 *.userprefs
-*.csproj.user
-*.DotSettings.user
+*.user
 *.sln.iml
 tests.log
 *.suo

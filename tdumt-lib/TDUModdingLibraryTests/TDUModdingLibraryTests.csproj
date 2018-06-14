@@ -53,7 +53,12 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="DjeFramework1, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\assemblies\DjeFramework1.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+      <HintPath>..\packages\NUnit.3.4.1\lib\net40\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -63,24 +68,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\FileTesting.cs" />
+    <Compile Include="fileformats\banks\BNKTest.cs" />
+    <Compile Include="fileformats\banks\BnkFocusOnXenonTest.cs" />
+    <Compile Include="fileformats\binaries\CamerasTest.cs" />
     <Compile Include="fileformats\database\DBResourceTest.cs" />
     <Compile Include="fileformats\database\DBTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="ToolsTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AuthoringTests.txt" />
+    <Content Include="packages.config" />
+    <EmbeddedResource Include="Resources\banks\pc\CLK_55.bnk" />
+    <EmbeddedResource Include="Resources\banks\xenon\246_GT.bnk" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\framework\djeframework1\trunk\DjeFramework1.csproj">
-      <Project>{19F933FC-8314-4FB6-82B5-6B557A45D74E}</Project>
-      <Name>DjeFramework1</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TDUModdingLibrary.csproj">
       <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
       <Name>TDUModdingLibrary</Name>
@@ -112,14 +114,16 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <Folder Include="Common" />
+    <Folder Include="fileformats\binaries" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\cameras" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\TDU_Achievements.db" />
-    <None Include="Resources\TDU_Achievements.fr" />
+    <EmbeddedResource Include="Resources\TDU_Achievements.db" />
+    <EmbeddedResource Include="Resources\TDU_Achievements.fr" />
+    <EmbeddedResource Include="Resources\cameras\Cameras-1.66A-MP.bin" />
+    <EmbeddedResource Include="Resources\cameras\Cameras-2.00A.bin" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

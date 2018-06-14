@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -54,16 +54,15 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <WarningLevel>4</WarningLevel>
-    <Optimize>false</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <PlatformTarget>x86</PlatformTarget>
     <OutputPath>bin\x86\Release\</OutputPath>
-    <WarningLevel>4</WarningLevel>
-    <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DjeFramework1, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>assemblies\DjeFramework1.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
@@ -204,9 +203,6 @@
     <Compile Include="support\patcher\vars\TduPathV.cs" />
     <Compile Include="support\patcher\vars\TempPathV.cs" />
     <Compile Include="support\Tools.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="design\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="installer\common\" />

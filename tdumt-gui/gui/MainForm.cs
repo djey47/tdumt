@@ -21,7 +21,7 @@ using TDUModdingTools.gui.sound;
 using TDUModdingTools.gui.wizards.patcheditor;
 using TDUModdingTools.gui.wizards.trackpack;
 using TDUModdingTools.gui.wizards.vehiclemanager;
-using TDUModdingTools.Properties;
+//using TDUModdingTools.Properties;
 
 namespace TDUModdingTools.gui
 {

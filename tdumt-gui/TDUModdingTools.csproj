@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{AA74E383-9973-4825-8C18-15C2EB656F87}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -68,6 +68,8 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
@@ -85,6 +87,7 @@
     <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -92,6 +95,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="DjeFramework1">
+      <HintPath>..\tdumt-lib\assemblies\DjeFramework1.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="common\AppConstants.cs" />
@@ -2535,19 +2541,9 @@
   <ItemGroup>
     <Folder Include="ref\cameras\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\framework\djeframework1\trunk\DjeFramework1.csproj">
-      <Project>{19F933FC-8314-4FB6-82B5-6B557A45D74E}</Project>
-      <Name>DjeFramework1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\tdumodlib\trunk\TDUModdingLibrary.csproj">
-      <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
-      <Name>TDUModdingLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\mt.exe" -manifest "$(ProjectDir)\Resources\manifest\$(TargetName).exe.manifest"  –outputresource:"$(TargetDir)$(TargetFileName)";#1</PostBuildEvent>
+    <!--<PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\mt.exe" -manifest "$(ProjectDir)\Resources\manifest\$(TargetName).exe.manifest"  –outputresource:"$(TargetDir)$(TargetFileName)";#1</PostBuildEvent>-->
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -2556,4 +2552,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\tdumt-lib\TDUModdingLibrary.csproj">
+      <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
+      <Name>TDUModdingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

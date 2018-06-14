@@ -1,32 +1,41 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TDUModdingLibrary.fileformats;
+﻿using TDUModdingLibrary.fileformats;
 using System.IO;
-using TDUModdingLibraryTests.Properties;
+using System.Reflection;
+using NUnit.Framework;
 using TDUModdingLibrary.fileformats.database;
+using TDUModdingLibraryTests.Common;
 
 namespace TDUModdingLibraryTests.fileformats.database
 {
-    [TestClass]
+    [TestFixture]
     public class DbTest
     {
-        private const string CONTENTS_FILE = @"\TDU_Achievements_testing.db";
+        private const string ContentsFile = "TDU_Achievements_testing.db";
 
-        [ClassCleanup()]
-        public static void MyClassCleanup()
+        private static string _tempPath;
+
+        [OneTimeSetUp]
+        public static void SetUp()
         {
-            File.Delete(Path.GetTempPath() + CONTENTS_FILE);
+            _tempPath = FileTesting.CreateTempDirectory();
         }
 
-        [TestMethod]
+        [OneTimeTearDown]
+        public static void MyClassCleanup()
+        {
+            File.Delete(Path.Combine(_tempPath, ContentsFile));
+        }
+
+        [Test]
         public void Save_ShouldMakeFileWithSizeMultipleOf8()
         {
             //Given
-            string fileName = Path.GetTempPath() + CONTENTS_FILE;
-            File.WriteAllBytes(fileName, Resources.TDU_Achievements_contents);
+            string fileName = FileTesting.CreateFileFromResource(
+                "TDUModdingLibraryTests.Resources.TDU_Achievements.db", Path.Combine(_tempPath, ContentsFile));
             DB db = TduFile.GetFile(fileName) as DB;
 
             //When
+            Assert.NotNull(db);
             db.Save();
 
             //Then

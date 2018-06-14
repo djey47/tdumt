@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // Les informations générales relatives à un assembly dépendent de 
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
-[assembly: AssemblyTitle("TDUModdingLibrary")]
+[assembly: AssemblyTitle("tdumt-lib")]
 [assembly: AssemblyDescription("API for modding over TDU")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Djey")]
-[assembly: AssemblyProduct("TDUModdingLibrary")]
-[assembly: AssemblyCopyright("Copyright © Djey 2009")]
+[assembly: AssemblyProduct("tdumt-lib")]
+[assembly: AssemblyCopyright("Copyright © Djey 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,6 +32,6 @@ using System.Runtime.InteropServices;
 // Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut 
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.16.3")]
-[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("TDUModdingLibraryTests")]
-[assembly: AssemblyFileVersionAttribute("1.16.3")]
+[assembly: AssemblyVersion("2.0.1")]
+[assembly: InternalsVisibleTo("TDUModdingLibraryTests")]
+[assembly: AssemblyFileVersionAttribute("2.0.1")]

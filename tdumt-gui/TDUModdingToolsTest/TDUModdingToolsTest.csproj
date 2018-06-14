@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A44B6E1C-8C52-44F0-A520-CD6965036918}</ProjectGuid>
     <OutputType>Exe</OutputType>
@@ -69,13 +69,12 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="DjeFramework1">
+      <HintPath>..\..\tdumt-lib\assemblies\DjeFramework1.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\framework\djeframework1\trunk\DjeFramework1.csproj">
-      <Project>{19F933FC-8314-4FB6-82B5-6B557A45D74E}</Project>
-      <Name>DjeFramework1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\tdumodlib\trunk\TDUModdingLibrary.csproj">
+    <ProjectReference Include="..\..\tdumt-lib\TDUModdingLibrary.csproj">
       <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
       <Name>TDUModdingLibrary</Name>
     </ProjectReference>

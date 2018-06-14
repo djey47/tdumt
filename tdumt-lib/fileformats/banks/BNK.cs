@@ -381,7 +381,7 @@ namespace TDUModdingLibrary.fileformats.banks
                 string newFileName = path;
 
                 if (toFolder)
-                    newFileName += (@"\" + aFile.fileName);
+                    newFileName = Path.Combine(path, aFile.fileName);
 
                 // Same name management
                 Tools.RenameIfNecessary(newFileName, LibraryConstants.SUFFIX_OLD_FILE);

@@ -1,0 +1,21 @@
+Format 2DB :
+144 -> A8R8G8B8
+
+
+
+Problème potentiel : nom interne de la texture, basé sur le nom de fichier; si le fichier porte un nom différent.
+
+Header :
+* dw_type positionné à 29 (1D000000) sur la texture d'origine
+valeurs : 29 (majoritairement des ts et ws) - 55 - 51
+
+
+*dw_flags positionné à 8192 (00200000) sur la texture d'origine
+valeurs : 8192 - 2048 - 1024 - 
+
+
+dw_unk6 positionné à 972 (CC030000)
+dw_unk7 positionné à 28392704 (003DB101)
+
+
+
