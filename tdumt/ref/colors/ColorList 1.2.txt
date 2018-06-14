@@ -1,0 +1,328 @@
+﻿// TDU_CarColors.us                                                
+// version: 1,2 // on line 166 is my // test subjevt the Mustang GTR  
+// categories: 4  // {MustangGTR_01} 53966127 this row has special and additional information to understand better  
+// Database entrie // What color it is // Colorname ingame  
+{ERROR} 909787  not a color ignore it  
+{??} 53356127  not a color ignore it  
+xx {B_01} 54356127 Blau Thriump Neon Blue | Nissan 350Z Daytonablue | Pagani Zonda Blue | Wiesmann Blue | Maserati Blu Sebring | TVR Blue | Catherham Blue  
+{B_02} 55356127 Ligth Blue ??? can anyone decode blue please?  
+xx {B_03} 56356127 Middle Blue VW Shadow Blue  
+xx {B_04} 57356127 Dark Blue Pagani Dark Blue | Wiesmann Dark Blue | Farbond Dark Blue | TVR Dark Blue  
+{B_05} 58356127 Strong Dark Blue  can anyone decode blue please?  
+xx {B_06} 59356127 sea ligth blue Mercedes Transanite Blue Metallic  
+{B_07} 60356127 strong blue  can anyone decode blue please?  
+{B_08} 61356127 soft blue  can anyone decode blue please?  
+{B_09} 62356127 mild darkblue  can anyone decode blue please?  
+{B_10} 53456127 iceblue  can anyone decode blue please?  
+{B_F01} 54456127 gentel dark blue  can anyone decode blue please?  
+{B_F02} 55456127 gentel blue  can anyone decode blue please?  
+{B_F03} 56456127  can anyone decode blue please?  
+{B_F04} 57456127  can anyone decode blue please?  
+xx {BM_01} 58456127 Strong Blue Maserati 90th Anniversary Blue  
+{BM_02} 59456127  can anyone decode blue please?  
+{BM_03} 60456127  can anyone decode blue please?  
+{BM_04} 61456127  can anyone decode blue please?  
+{BM_05} 62456127  can anyone decode blue please?  
+{BM_06} 53556127  can anyone decode blue please?  
+{BM_07} 54556127  can anyone decode blue please?  
+{BM_08} 55556127  can anyone decode blue please?  
+{BM_09} 56556127  can anyone decode blue please?  
+{BM_10} 57556127  can anyone decode blue please?  
+{BM_11} 58556127  can anyone decode blue please?  
+{BM_12} 59556127  can anyone decode blue please?  
+{BM_13} 60556127  can anyone decode blue please?  
+{BM_14} 61556127  can anyone decode blue please?  
+{BM_15} 62556127  can anyone decode blue please?  
+{BM_16} 53656127  can anyone decode blue please?  
+xx {BM_17} 54656127 Blue Maserati Blue  
+{BM_18} 55656127  can anyone decode blue please?  
+{BM_19} 56656127  can anyone decode blue please?  
+xx {BM_20} 57656127 Blue Maserati Blue  
+{BM_21} 58656127  can anyone decode blue please?  
+{BM_22} 59656127  can anyone decode blue please?  
+{BM_23} 60656127  can anyone decode blue please?  
+xx {Brutale_01} 61656127 Silver / Red (MV Agusta Brutale) Metallic Silver  
+xx {Brutale_02} 62656127 Black / Black Black Gloss  
+xx {Brutale_03} 53756127 Red / Red Red not used  
+xx {Brutale_04} 54756127 Black / Red ??? not used  
+xx {Brutale_05} 55756127 Red / White ??? not used  
+xx {Camaro_01} 56756127 Yellow / Black ??? not used  
+xx {Camaro_02} 57756127 Cream Yellow / Black Camaro Butternut Yellow  
+xx {Camaro_03} 58756127 Cream Yellow / Black Camaro Capri Cream  
+xx {Camaro_04} 59756127 Red / Black ??? not used  
+xx {Camaro_05} 60756127 Darkred / White ??? not used  
+xx {Camaro_06} 61756127 Black / White Camaro Tuxedo Black  
+xx {Camaro_07} 62756127 White / Black Camaro Ermine White  
+xx {Camaro_08} 53856127 Unclean Blue  / White Camaro Nantucket Blue  
+xx {Camaro_09} 54856127 Darkblue / White Camaro Deepwater Blue  
+xx {Camaro_10} 55856127 Blue / White Camaro Marina Blue  
+xx {Camaro_11} 56856127 Darkgold / Black Camaro Granada Gold  
+xx {Camaro_12} 57856127 Softgreen / Black Camaro Mountain Green  
+xx {Camaro_13} 58856127 Seagreen / Black Camaro Emerald Turquoise  
+xx {Camaro_14} 59856127 Seagreen / White Camaro Tahoe Turquoise  
+xx {Camaro_15} 60856127 Purple / White Camaro Royal Plum  
+xx {Camaro_16} 61856127 Brown / White Camaro Madeira Maroon  
+xx {Camaro_17} 62856127 Red / White Camaro Bolero Red  
+xx {Camaro_18} 53956127 Gold / Black Camaro Sierra Fawn  
+xx {Cobra_01} 54956127 Silver white stripes Shelby Cobra Concept  
+xx {EX_01} 55956127 Shelby GR1 Chrom effect again ??? not used  
+xx {EX_02} 56956127 Gold ??? not used  
+xx {F360_01} 57956127 Red / White Ferrari 360 CS  
+xx {F360_02} 58956127 Red / Red (No Stripes) Ferrari 360 CS  
+xx {F360_03} 59956127 Silver / White Ferrari 360 CS  
+xx {F360_04} 60956127 Silver / Silver (No Stripes) Ferrari 360 CS  
+xx {F360_05} 61956127 Black / White Ferrari 360 CS  
+xx {F360_06} 62956127 Black / Black (No Stripes) Ferrari 360 CS  
+xx {F360_07} 54056127 Yellow / White Ferrari 360 CS  
+xx {F360_08} 55056127 Yellow / Yellow (No Stripes) Ferrari 360 CS  
+xx {F360_09} 56056127 Blue / White Ferrari 360 CS  
+xx {F360_10} 57056127 Blue / Blue (No Stripes) Ferrari 360 CS  
+xx {FordGT_01} 58056127 Red / White ??? all fordgt (old and new onces are used by the Ford GT in some way)  
+xx {FordGT_02} 59056127 Silver / Black ???  
+xx {FordGT_03} 60056127 Yellow / Black (Shop) Speed Yellow Main Parts Colored, except one Grill on rear top  
+xx {FordGT_04} 61056127 Black / White Mark II Black  
+xx {FordGT_05} 62056127 Darkblue / White (Shop) Midnight Blue  
+xx {FordGT_06} 63056127 White / Blue (Shop) Centennial White  
+xx {FordGT_07} 54156127 Red / Red (No Stripes) (Shop) Mark IV Red - No Stripes  
+xx {FordGT_08} 55156127 Silver / Silver (No Stripes) (Shop) Tungsten Grey - No Stripes  
+xx {FordGT_09} 56156127 Yellow / Yellow (No Stripes) (Shop) Speed Yellow - No Stripes  
+xx {FordGT_10} 57156127 Black / Black (No Stripes) (Shop) Mark II Black - No Stripes  
+xx {FordGT_11} 58156127 Dark Blue / Dark Blue (No Stripes) (Shop) Midnight Blue - No Stripes  
+xx {FordGT_12} 59156127 White / White (No Stripes) (Shop) Centennial White - No stripes  
+xx {FordGT_01_N} 60156127 Red / White (Shop) Mark IV Red  
+xx {FordGT_02_N} 61156127 Silver ??? note some colors here are only used on the rear vents of the ford gt  
+xx {FordGT_03_N} 62156127 White (Grill) Speed Yellow - No Stripes  
+xx {FordGT_04_N} 63156127 Yellow ??? I don't know why eden made it so that just this vents can have a diffrent color  
+xx {FordGT_05_N} 54256127 Dark Blue ??? messs around with those to figure out what is used where and how  
+xx {FordGT_06_N} 55256127 White ???  
+xx {FordGT_07_N} 56256127 Red (Grill) Mark IV Red - No Stripes  
+xx {FordGT_08_N} 57256127 Silver (Grill) Tungsten Grey - No Stripes  
+xx {FordGT_09_N} 58256127 Yellow ???  
+xx {FordGT_10_N} 59256127 Dark Blue (Grill) Midnight Blue - No Stripes  
+xx {FordGT_11_N} 60256127 White (Grill) Centennial White - No stripes  
+xx {FordGT_12_N} 61256127 Black ???  
+xx {FordGT_13_N} 62256127 White / No Alt info ???  
+xx {FordGT_14_N} 63256127 Black ???  
+xx {FordGT_15_N} 53366127 White ???  
+xx {FordGT_16_N} 54366127 Dark Blue ???  
+xx {G_01} 55366127 Darker Silvergrey ??? not used  
+xx {G_02} 56366127 Silvergrey ??? not used  
+xx {GR1_01} 57366127 Silver (Not used) Shelby GR1 Concept not used  
+xx {GR1_02} 58366127 Polished Aluminium Shelby GR1 Concept  
+xx {GR1_03} 59366127 Silver used as Color1 Shelby GR1 Concept  
+xx {GM_01} 60366127 Silver Alfa Lipari | Mercedes Designo Graphite | Audi Lava Gray Pear Effect | Lamborghini Grigio Proteus | Ascari Cosmic Black | Lotus Gunmetal mtallic | Jaguar Slate  
+xx {GM_02} 61366127 Silver Maserati Grigio Alfieri / Blu Sebring | Lamborghini Grigio Proteus | Chrysler Silver Steel Metallic (Me 4 12) | Saleen Grey Metallic | Aston Martin Oyster Silver / Cairngrom Grey | Caterham Titanium Silver | Pontiac Cyclone Gray  
+xx {GM_03} 62366127 Silver Alfa Grigio Gonzaga | Nissan Chrom Silver (stock 350z) | Audi Avus Silver Pear Effect | McLaren Grey Metallic | Ascari Volcano Grey | Nobel Titanium Silver  
+xx {GM_04} 53466127 Silver Alfa Grigio Stromboli | Mercedes Iridium Silver | Ford Satin Silver | Saturn Silver Pearl | Chevrolet Machine Silver / Ricochet Silver Metallic Lamborghini Grigio Altair | Chrysler Bright Silver Metallic | Saleen Silver | Pagani Silver | McLaren Silver | Farbound Silver | Nobel Larch Silver | Spyker Silver | Cadillac Light Platinum | Aston Martin Solent Silver | Lotus Arctic Silver | TVR Silver | Chatherham Platinium Silver | Jaguar Platinium | Pontiac Quicksilver  
+xx {GM_05} 54466127 Silver Ascari Silver | Lotus Silver Metallic  
+xx {GM_06} 55466127 Silver Nissan Silverstone | Mercedes SLR Silver | Koengisegg Pearl | Jaguar Quartz  
+xx {GM_07} 56466127 Silver Mercedes SLR Grey Metallic | Audi Silver metallic / Ligth Silver Metallic | Lambirghini Grigio Avion | Lotus Graphit Grey  
+xx {GM_08} 57466127 Silver Maserati Grigio Nuvolari | Audi Dolphin gray Metallic | Ford Mineral Grey | Lotus Strom Titanium | Jaguar Winter Gold  
+xx {GM_09} 58466127 Silver Lamborghini Grigio Antares | Aston Martin Solway Grey  
+xx {GM_10} 59466127 Silver Maserati Argento Luna | Mercedes Diamond Silver  
+xx {GM_11} 60466127 Silver ??? maybe used for mega pack cars……  
+xx {GM_12} 61466127 silver Nissan 350Z Nisma ChromeSilver Sparking silver | Mercedes Pewter (CLK DTM)  
+xx {GM_13} 62466127 Silver VW Golf Reflex Silver  
+xx {GM_14} 53566127 silver ??? maybe used for mega pack cars……  
+xx {GM_15} 54566127 silver ??? maybe used for mega pack cars……  
+xx {GM_F01} 55566127 Silvergrey Merces 65 AMG  Cubanite Silver Metallic | Ferrari F430 Grigio Ingrid | McLaren F1 Platinum Grey  
+xx {GM_F02} 56566127 Silver Ferrari F430 Argento Nürburgring | Kawasaki Metallic Flat Raw Titanium  
+xx {GM_F03} 57566127 Dark Silver Lamborghini Nero pegaso | Aston Martin BowlandBlack | Lotus Elise GraphiteGrey  
+xx {GM_F04} 58566127 Grey VW Steelgrey | Pagani Dark Grey | Koenigsegg DarkSilver  
+xx {GM_F05} 59566127 Silver Ferrari F430 Grigio Alloy | Audi Atlas Grey Metallic  
+xx {J_01} 60566127 Yellow Maserati Giallo Grandturismo | Nissan Ultra Yellow | Audi Imola Yellow | Ford Screaming Yellow | Chevrolet Velocity Yellow / Slingshot Yellow | Lamborghini Giallo Evros | Saleen Yellow | Dodge Race Yellow | Pagani Yellow | Wiesmann Yellow | McLaren Yellow | Farbound Yellow | Ducati Yellow | Koenigsegg Yellow | Lotus Solar Yellow / Lotus Sport Yellow / Lightning Yellow Pearlescent | TVR Yellow | Catherham Yellow  
+xx {J_02} 61566127 Yellow Lamborghini Giallo Halys | Nobel Jasmine Yellow | Aston Martin Yellow  
+xx {J_03} 62566127 Gold Yellow Thriump Scorched Yellow  
+{J_04} 53666127 Yellow ??? maybe used for mega pack cars……  
+{J_05} 54666127 Cream Yellow ??? maybe used for mega pack cars……  
+{J_06} 55666127 Cream / Sand Yellow ??? maybe used for mega pack cars……  
+xx {J_F01} 56666127 Yellow Ferrari Giallo Modena | Audi Toucan Yellow | Lamborghni Giallo Midas | Lotus Autumn Gold  
+xx {JM_01} 57666127 Metallic Yellow VW W12 Coupe Yellow | Lamborghini Giallo Orion  
+xx {JM_02} 58666127 Gold Metallic Yellow Nissan Silica Breath  
+{JM_03} 59666127 Gold Metallic Yellow ??? maybe used for mega pack cars……  
+{JM_04} 60666127 Snow Metallic Yellow ??? maybe used for mega pack cars……  
+{JM_05} 61666127 Gold Metallic Yellow ??? maybe used for mega pack cars……  
+{JM_06} 62666127 Metallic Yellow ??? maybe used for mega pack cars……  
+{JM_07} 53766127 Metallic Yellow ??? maybe used for mega pack cars……  
+xx {JM_08} 54766127 Metallic Yellow Koengisegg Orange Yellow  
+xx {Kawa_01} 55766127 Green / Black (Kawa) Lemon Green  
+xx {Kawa_02} 56766127 Green / White (Kawa) Lemon Green  
+xx {Kawa_03} 57766127 Black / White (Kawa) Metallic Spark Black  
+{Kawa_04} 58766127 Black / White ??? not used  
+xx {Kawa_05} 59766127 Silver / Black (Kawa) Metallic Flat Raw Titanium  
+{Kawa_06} 60766127 Silver / White ??? not used  
+{M_01} 61766127 Ligth Brown ??? maybe used for mega pack cars……  
+{M_02} 62766127 Brown ??? maybe used for mega pack cars……  
+{M_03} 53866127 Choclet Brown ??? maybe used for mega pack cars……  
+{M_04} 54866127 Silver Grey Maron ??? maybe used for mega pack cars……  
+{MM_01} 55866127 Caramell Brown ??? maybe used for mega pack cars……  
+{MM_02} 56866127 Brown Metallic ??? maybe used for mega pack cars……  
+{MM_03} 57866127 Honey Color ??? maybe used for mega pack cars……  
+xx {MM_04} 58866127 Silver Maron Metallic Lamborghini Girgio Iris  
+{MM_05} 59866127 Cream Maron Metallic ??? maybe used for mega pack cars……  
+{MM_06} 60866127 Grey Maron ??? maybe used for mega pack cars……  
+xx {Monster_01} 61866127 Red / Black Stripe Red / Black (Ducati Monster)  
+xx {Monster_02} 62866127 Red / White Stripe Red / White (Ducati Monster)  
+xx {MustangGTR_01} 53966127 Orange Ford Mustang GTR  
+xx {N_01} 54966127 Black Nissan Superblack / black Peral | Mercedes Black | Audi Brilliant Black / Phantom Black / Phantom Black Peral | Ford Black | Chevrolet Black | Saturn Onyx Black | VW Golf Black | Lamborghini Nero Aldebaran Black / Nero Noctis | Chrysler Brillian Black Crystal | Saleen Black | Dodge Viper Black | Pagani Black | Wiesmann Black | McLaren Black | Askari Black | Farboud Black | Nobel Didamond Black | Kongisegg Black | Skyper Black | Caddilac Black | Triumph Jet Black | Aston Martin Black | Lotus Starligthblack | lotus sportblack | Lotus Black | TVR Black | Catherham Black | Jaguar EBony Black | Pontiac Phantom Black | Kawasaki Black 
+xx {N_02} 55966127 Metallic Black Mercedes SLR  
+xx {N_03} 56966127 Black Nero Daytona Ferrari  
+xx {N_04} 57966127 Black Green Mercedes SL65AMG  
+xx {N_05} 58966127 Black Maserati Nero Carbonio  
+xx {N_06} 59966127 Black Mercedes Black Opal  
+xx {N_07} 60966127 Black Mercedes Obsidian Black  
+{N_08} 61966127 Black ?????? maybe used for mega pack cars……  
+xx {N_09} 62966127 Black Unpolished Pagani Zonda unpolished Black  
+xx {N_F01} 54066127 Black Nero Ferrari  
+xx {N_F02} 55066127 Black Nuovo Nero Dayton Ferrari  
+xx {O_01} 56066127 Orange Saleen Beryilium | Pagani Orange | Wiesmann Orange | Ascari Fire Opal | Farbound Orange | TVR Orange | Lamborghini Arancio Borealis  
+xx {O_02} 57066127 Orange Lamborghini Arancio Ymir | Lotus Chrome Orange  
+xx {O_03} 58066127 Orange Dodge Copperhead Orange | Koenigsegg orange | Caterham Orange  
+xx {OM_01} 59066127 Orange Maserati Rame Ghibli | Lamborghini Arancio Atlas  
+xx {OM_02} 60066127 Orange Aston Martin Sutherland Red  
+xx {OM_03} 61066127 Orange Nissan Le Mans Sunset | Pontiac Brazen orange  
+{OM_04} 62066127 Orange ??? maybe used for mega pack cars……  
+{OM_05} 63066127 Orange ??? maybe used for mega pack cars……  
+xx {OM_06} 54166127 Orange Chevrolet Daytona Sunset Orange | McLaren Orange Metallic | Lotus Lava orange Pearlescent  
+{OM_07} 55166127 Orange ??? maybe used for mega pack cars……  
+{P_01} 56166127 Orange ??? maybe used for mega pack cars……  
+{P_02} 57166127 Purble Lotus Aubergine Purble  
+{P_03} 58166127 Purble ??? maybe used for mega pack cars……  
+{P_04} 59166127 Purble ??? maybe used for mega pack cars……  
+{P_05} 60166127 Purble Königsegg Purple | Jaguar XJ220 Amaranth Metallic  
+{P_06} 61166127 Purble ??? maybe used for mega pack cars……  
+{P_F01} 62166127 Purble ??? maybe used for mega pack cars……  
+{R_01} 63166127 Red Maserati Rosso Mondiale | Mercedes Fire Opal | Audi Brilliant Red | Ford Torch Red | Chevrolet Victory Red | Pagani Red | Ascari Ronda Red | Farbound Red | Nobel Monza Red | Ducati Red | MV Agusta Carbone / Red | Koenigsegg Red | Aston Martin Red | Lotus Ardent Red | Lotus Calypso Red | TVR Chameleon Orange | Jaguar Salsa | Ponitac Torrid Red  
+{R_02} 54266127 Red Nissan Redline | Ford Red Fire | Saturn Chili Pepper Red  
+{R_03} 55266127 Red Chevrolet Redline Red (SSR) | Dodge Red | Aston Martin Rathlin Red | Caterham Red  
+{R_04} 56266127 Red Lamborghini Rosso Andromeda  
+{R_05} 57266127 Red Audi Misano Red / Brilliant Red (S4) / Misano Red Metallic | Ferrari 288 GTO Red | McLaren GTR Red  
+{R_06} 58266127 Red Mercedes Mars Red  
+{R_F01} 59266127 Red Alfa (8C) Rosso Alfa | Ferrari Rosso Corsa  
+{R_F02} 60266127 Red Ferrari Rossso Fiorano | Audi Canyon Red Pearl Effect | VW Tornado Red  
+{R_F03} 61266127 Wine Red ??? maybe used for mega pack cars……  
+{RM_01} 62266127 likly wine Metallic Red ??? maybe used for mega pack cars……  
+{RM_02} 63266127 Metallic Red Nissan Redline (350Z) | Saturn Chili Pepper Red  
+{RM_03} 53376127 Metallic Red Mercedes Firemist red | Ford Red Fire | Aston martin Berwick Bronze  
+{RM_04} 54376127 Metallic Red Lamborghini Arancio Borealis  
+{RM_05} 55376127 Metallic Red Lamborghini Viola Ophelia | Cadillac Infrared  
+{RM_06} 56376127 Metallic Red Maserati Rosso Bologna | Mercedes Storm Red / Thulite Red Metallic | Chevrolet Monterey Red  
+{RM_07} 57376127 Metallic Red McLaren F1 Red | Ascari Campione Red | Pontiac Spices Red  
+{RM_08} 58376127 Metallic Red Audi Red Pearlscent | VW W12 Red | Pagani Dark Red | Wiesmann Dark Red | Farbound Dark Red | Lotus Canyon Red / Ruby Red Metallic | TVR Red Glow  
+{RM_09} 59376127 Wood Metallic Red ??? maybe used for mega pack cars……  
+{RM_10} 60376127 Metallic Red Mercedes Barolo Red  
+{RM_12} 61376127 Metallic Red Mercedes Amber Red Mettalic | Saleen Red | Lotus Chilli Red  
+{RM_13} 62376127 Magenta Metallic Red ??? maybe used for mega pack cars……  
+{RM_14} 53476127 Metallic Red Alfa Romeo Rosso Siena  
+{Shelby_01} 54476127 White Shelby Daytona Coupe / Maserati MC12  
+{Shelby_02} 55476127 Blue Shelby Daytona Coupe  
+{TR_01} 56476127 Bege Silver traffic  
+{TR_02} 57476127 Blue traffic  
+{TR_03} 58476127 Silver Blue traffic  
+{TR_04} 59476127 Silver traffic  
+{TR_05} 60476127 Middle dark Red traffic  
+{TR_06} 61476127 Teal traffic  
+{TR_07} 62476127 Dark Teal traffic  
+{TR_08} 53576127 Red traffic  
+{TR_09} 54576127 Dark Silver traffic  
+{TR_10} 55576127 black with a lot of shine traffic  
+{TR_11} 56576127 black with a lot of shine traffic  
+{Trans_01} 57576127 White / Ligth Blue Cameo White  
+{Trans_01_N} 58576127 No Color info clones color  
+{Trans_02} 59576127 Red / Redwhite Buccaneer Red  
+{Trans_02_N} 60576127 No Color info clones color  
+{Trans_03} 61576127 Dark Green / Green White Brewster Green  
+{Trans_03_N} 62576127 No Color info clones color  
+{TVR_01} 53676127 Red Metallic Red Metallic  
+{TVR_02} 54676127 Brown / Blue Effect Cascade Violet  
+{TVR_03} 55676127 Dark Blue / Purble Effect Cascade Indigo  
+{TVR_04} 56676127 Black / Red Effect Dark Fantasy (Pagani too)  
+{TVR_05} 57676127 Blue / Silver Effect Alloy Peral  
+{TVR_06} 58676127 Silver / Gold Effect Dark Gold  
+{TVR_07} 59676127 White / Blue Effect White Peral  
+{V_01} 60676127 Ligth Green Wiesmann Green  
+{V_02} 61676127 Green ??? maybe used for mega pack cars……  
+{V_03} 62676127 Green Alfa Romeo Gringo Lipari | Aston Martin British Racing Green  
+{V_04} 53776127 Green Willow green (Jaguar Type E)  
+{V_05} 54776127 Dark Green Dark Green (Pagani Zonda)  
+{V_06} 55776127 Lemon Green Krypton Green (Lotus Elise)  
+{V_07} 56776127 Light Green (?) maybe used for mega pack cars……  
+{V_08} 57776127 Turquoise (?) maybe used for mega pack cars……  
+{V_09} 58776127 Pale / Ligth Green (?) maybe used for mega pack cars……  
+{VM_01} 59776127 Green Green (Farboud)  
+{VM_02} 60776127 Green Verde Ithaca (Lambohini Gallardo / Murcielago)  
+{VM_03} 61776127 Ligth / Apple Green (?) maybe used for mega pack cars……  
+{VM_04} 62776127 Green Chameleon Green (TVR) | Aqua Blur Metallic (Chevy SSR) | Green (Pagani Zonda)  
+{VM_05} 53876127 Green Verde Hydra (Lambo Murcielago) | Rio Verde (Lambo Miura)  
+{VM_06} 54876127 Turquoise Metallic Turquoise Metallic (?)  
+{VM_07} 55876127 Green Metallic Dervent Green (Aston DB9, Vantage) | Rorest Green (Saturn Sky) | Verde Zeltweg (Ferrari F430, Maranello, Enzo) | Opalescent Dark Green (Jaguar Type E)  
+{VM_08} 56876127 Green Metallic Verde Faunus (Lambo Gallardo) | Racing Green (Lotus Elise) | Caterham Green (Caterham) | British Racing Green (Aston DB9, Volante, Jaguar XK coupé) | Racing Green (Jaguar XKR coupé) | Deep Green Pearl Effect (Audi A3 quattro, Audi RS4) | Fathom Green (Corvette Stingray)  
+{VM_09} 57876127 Aqua Green Mallory Green (Noble M12, M14) | ?Aqua Metallic (Lotus Esprit)? | Lichen Green (Aston DB9, Volante) | British Racing Green (Aston DB9, Volante) | Jaguar Racing Green (Jaguar XK coupé, Jaguar XK Convertible)  
+{VM_10} 58876127 Green Metallic (?) maybe used for mega pack cars……  
+{VM_11} 59876127 Pale Grey Green (?) maybe used for mega pack cars……  
+{VM_12} 60876127 Light Green with Black (?) maybe used for mega pack cars……  
+{VM_13} 61876127 Light Forrest Green (?) maybe used for mega pack cars……  
+{VM_14} 62876127 Pale Green (?) maybe used for mega pack cars……  
+{VM_15} 53976127 Grey (very grey) Green (?) maybe used for mega pack cars……  
+{VM_16} 54976127 Metallic Turquoise Green (?) maybe used for mega pack cars……  
+{VM_17} 55976127 Dark Green Verde Goodwood (Maseratti Spyder Cambiocorsa) | Everest Green (Mercedes CLS 55, Mercedes SLR McLaren)  
+{VM_18} 56976127 Very Light Pale Green (?) maybe used for mega pack cars……  
+{VM_19} 57976127 Dark Grey Green (?) maybe used for mega pack cars……  
+{VM_20} 58976127 Apple Light Green (?) maybe used for mega pack cars……  
+{VM_21} 59976127 Dark Metallic Turquoise Green (?) maybe used for mega pack cars……  
+{Viper_01} 60976127 Dark Blue / White Dodge Viper SRT10 Coupe  
+{Viper_02} 61976127 Red / White Dodge Viper SRT10 Coupe  
+{Viper_03} 62976127 White / Black Dodge Viper SRT10 Coupe  
+{Viper_04} 54076127 Silver / Blue Dodge Viper SRT10 Coupe  
+{Viper_05} 55076127 Red / White Dodge Viper SRT10 Coupe  
+{Viper_06} 56076127 Black / Silver Dodge Viper SRT10 Coupe  
+{Viper_07} 57076127 Silver ? Dodge Viper SRT10 Coupe  
+{Viper_08} 58076127 Firered / Black Dodge Viper SRT10 Coupe  
+{Viper_09} 59076127 Yellow / White Dodge Viper SRT10 Coupe  
+{W_01} 60076127 White Maserati Bianco Eldorado | Nissan Pikes Peak White / White | Mercedes Alabaster White | Audi Arctic White | Ford Peromance White | Chevrolet Arctic White | Saturn Polar White | Pagani White | Lamborghini Bianco Isis | Wiesmann White | Ascari Le Mans White | Thriumph Fusion White | Aston Martin Malham White | Lotus Aspen White | TVR White | Jaguar White Onyx  
+{W_02} 61076127 Snowwhite Lamborghini Ballon White  
+{W_03} 62076127 Darker white Maserati Bianco Fuji | Lamborghini Bianco Cygnus  
+{W_F01} 63076127 White Ferrari Bianco Avus  
+{??} 53361317 No functional color  not a color ignore it  
+ 
+INTERIOR  
+{C_B_01} 54364643 Dark Blue  
+{C_B_02} 55364643 Blue  
+{C_B_03} 56364643 Dark Blue  
+{C_B_04} 57364643 Soft Ligth Blue  
+{C_B_05} 58364643 Blue  
+{C_G_01} 59364643 Ligth Grey  
+{C_G_02} 60364643 Grey  
+{C_G_03} 61364643 Dark Grey  
+{C_G_04} 62364643 Snow White Chrysler Me 4 12 Buttons  
+{C_G_05} 53464643 Snow White Chrysler Me 4 12 Buttons  
+{C_G_06} 54464643 Snow White  
+{C_J_01} 62564643 Strong Yellow  
+{C_J_02} 56464643 OrangeYellow  
+{C_J_03} 57464643 Strong Yellow  
+{C_J_04} 58464643 Yellow (Lambo?) Saleen Yellow  
+{C_J_05} 59464643 Very Strong Yellow  
+{C_M_01} 60464643 Wood Brown  
+{C_M_02} 61464643 Dark Wood Brown  
+{C_M_03} 62464643 Sand Color  
+{C_M_04} 53564643 Choclet Brown  
+{C_M_05} 54564643 Mild Brown  
+{C_M_07} 55564643 85% Black  
+{C_N_01} 56564643 85% Black  
+{C_N_02} 57564643 85% Black  
+{C_N_03} 58564643 85% Black  
+{C_O_01} 59564643 Ligth Brown Orange  
+{C_O_02} 60564643 Bege Soft Sand  
+{C_O_03} 61564643 Orange  
+{C_R_01} 55464643 Dark Red Lamborghini / Saleen Red  
+{C_R_02} 53664643 Brigth Wine Red McLaren Red  
+{C_R_03} 54664643 Dark Wine Red  
+{C_R_04} 55664643 Very Dark WineRed  
+{C_R_05} 56664643 Very Dark Red Jaguar Xj220  
+{C_R_06} 57664643 Brigth Red Audi Red  
+{C_V_01} 58664643 White Green  
+{C_V_02} 59664643 Ice Green  
+{C_V_03} 60664643 Teal Blue/Green  
+{C_V_04} 61664643 Brigth Green Gallardo SE  
+{C_W_01} 62664643 Full White  
+{C_W_02} 53764643 Sand Cream Color Chrysler Me 4 12  

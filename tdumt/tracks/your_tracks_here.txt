@@ -1,0 +1,15 @@
+﻿*please put dowloaded custom tracks into this folder*
+
+And, don't even try to run this TDU TrackPack Client from here ...
+
+... because TDU TrackPack Client.exe does not work as standalone.
+
+You have to export a track collection first.
+Go to TrackPack feature to do this.
+
+I think you're just looking for TDU Modding Tools, so please leave that folder!
+
+Greetings
+
+
+Djey.

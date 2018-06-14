@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TDUModdingLibrary</RootNamespace>
+    <AssemblyName>TDUModdingLibrary</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="converters\GraphicsConverters.cs" />
+    <Compile Include="converters\SoundConverters.cs" />
+    <Compile Include="fileformats\banks\BNK.cs" />
+    <Compile Include="fileformats\banks\BNK.FileSystem.cs" />
+    <Compile Include="fileformats\banks\BNK.Sections.cs" />
+    <Compile Include="fileformats\binaries\Cameras.cs" />
+    <Compile Include="fileformats\database\helper\DatabaseFixer.cs" />
+    <Compile Include="fileformats\physics\BTRQ.cs" />
+    <Compile Include="fileformats\database\DB.cs" />
+    <Compile Include="fileformats\database\DBResource.cs" />
+    <Compile Include="fileformats\database\helper\ColorsHelper.cs" />
+    <Compile Include="fileformats\database\util\DatabaseConstants.cs" />
+    <Compile Include="fileformats\database\helper\DatabaseHelper.cs" />
+    <Compile Include="fileformats\database\util\ResourceIdentifier.cs" />
+    <Compile Include="fileformats\database\helper\VehicleSlotsHelper.cs" />
+    <Compile Include="fileformats\graphics\DDS.cs" />
+    <Compile Include="fileformats\interfaces\ITextureFile.cs" />
+    <Compile Include="fileformats\banks\MAP.cs" />
+    <Compile Include="fileformats\specific\PCH.cs" />
+    <Compile Include="fileformats\specific\Regular.cs" />
+    <Compile Include="fileformats\TduFile.cs" />
+    <Compile Include="fileformats\sound\XMB.cs" />
+    <Compile Include="fileformats\sound\XMB_WAV.cs" />
+    <Compile Include="fileformats\graphics\_2DB.cs" />
+    <Compile Include="fileformats\world\DFE.cs" />
+    <Compile Include="fileformats\world\helper\TracksHelper.cs" />
+    <Compile Include="fileformats\world\IGE.cs" />
+    <Compile Include="fileformats\xml\AIConfig.cs" />
+    <Compile Include="installer\InstallHelper.cs" />
+    <Compile Include="installer\steps\FinalizationTask.cs" />
+    <Compile Include="installer\steps\PatchTask.cs" />
+    <Compile Include="installer\steps\PreparatoryTask.cs" />
+    <Compile Include="LibraryProperties.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="fileformats\database\helper\NamesHelper.cs" />
+    <Compile Include="support\constants\LibraryConstants.cs" />
+    <Compile Include="support\editing\EditHelper.cs" />
+    <Compile Include="support\encryption\XTEAEncryption.cs" />
+    <Compile Include="support\patcher\exceptions\MissingParameterException.cs" />
+    <Compile Include="support\patcher\instructions\AbstractViewCustomizerI.cs" />
+    <Compile Include="support\patcher\instructions\BackupFileI.cs" />
+    <Compile Include="support\patcher\instructions\BnkRemapI.cs" />
+    <Compile Include="support\patcher\instructions\ChangeCameraSetI.cs" />
+    <Compile Include="support\patcher\instructions\ChangeCockpitViewI.cs" />
+    <Compile Include="support\patcher\instructions\ChangeRimNameI.cs" />
+    <Compile Include="support\patcher\instructions\ChangeIKSetI.cs" />
+    <Compile Include="support\patcher\instructions\CheckPatchI.cs" />
+    <Compile Include="support\patcher\instructions\BnkUnmapI.cs" />
+    <Compile Include="support\patcher\instructions\CustomizeViewsUnlimitedI.cs" />
+    <Compile Include="support\patcher\instructions\CustomizeViewsI.cs" />
+    <Compile Include="support\patcher\instructions\SetTrafficDistributionI.cs" />
+    <Compile Include="support\patcher\instructions\SetTrafficPerKilometerI.cs" />
+    <Compile Include="support\patcher\instructions\UninstallPackedFileI.cs" />
+    <Compile Include="support\patcher\instructions\UninstallFileI.cs" />
+    <Compile Include="support\patcher\instructions\NothingI.cs" />
+    <Compile Include="support\patcher\instructions\CopyFileI.cs" />
+    <Compile Include="support\patcher\instructions\DeleteRadialI.cs" />
+    <Compile Include="support\patcher\instructions\InstallFileI.cs" />
+    <Compile Include="support\patcher\instructions\PatchBytesI.cs" />
+    <Compile Include="support\patcher\instructions\RemoveAllLinesFromDatabaseI.cs" />
+    <Compile Include="support\patcher\instructions\RemoveVehicleFromSpotsI.cs" />
+    <Compile Include="support\patcher\instructions\InstallPackedFileI.cs" />
+    <Compile Include="support\patcher\instructions\RestoreFileI.cs" />
+    <Compile Include="support\patcher\instructions\SetVehicleOnSpotsI.cs" />
+    <Compile Include="support\patcher\instructions\UpdateDatabaseI.cs" />
+    <Compile Include="support\patcher\instructions\UpdateResourceI.cs" />
+    <Compile Include="support\patcher\parameters\AbstractNewViewIP.cs" />
+    <Compile Include="support\patcher\parameters\BnkRemapFolderNameIP.cs" />
+    <Compile Include="support\patcher\parameters\CameraIKIdentifierIP.cs" />
+    <Compile Include="support\patcher\parameters\AbstractCockpitPositionIP.cs" />
+    <Compile Include="support\patcher\parameters\providers\CockpitPositionVP.cs" />
+    <Compile Include="support\patcher\parameters\ViewTargetIP.cs" />
+    <Compile Include="support\patcher\parameters\DistributionValuesIP.cs" />
+    <Compile Include="support\patcher\parameters\FileTypeIP.cs" />
+    <Compile Include="support\patcher\parameters\LockCodeIP.cs" />
+    <Compile Include="support\patcher\parameters\MappedFileNameIP.cs" />
+    <Compile Include="support\patcher\parameters\NewCockpitBackView.cs" />
+    <Compile Include="support\patcher\parameters\NewCockpitView.cs" />
+    <Compile Include="support\patcher\parameters\NewHoodBackViewIP.cs" />
+    <Compile Include="support\patcher\parameters\NewHoodViewIP.cs" />
+    <Compile Include="support\patcher\parameters\PatchDirectoryIP.cs" />
+    <Compile Include="support\patcher\parameters\providers\BnkRemapFolderNamesVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\BooleanVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\CameraIKVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\CameraViewsIKVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\FileTypeVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\IValuesProvider.cs" />
+    <Compile Include="support\patcher\parameters\providers\LengthVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\LockCodeVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\MappableFilesVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\MapZonesVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\ResourceFileNameVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\SlotNamesVP.cs" />
+    <Compile Include="support\patcher\parameters\providers\VehiclesVP.cs" />
+    <Compile Include="support\patcher\parameters\ResourceFileNameIP.cs" />
+    <Compile Include="support\patcher\parameters\ResourceValuesIP.cs" />
+    <Compile Include="support\patcher\parameters\SlotFullNameIP.cs" />
+    <Compile Include="support\patcher\parameters\TrafficVehicleIdIP.cs" />
+    <Compile Include="support\patcher\parameters\util\ParameterInfo.cs" />
+    <Compile Include="support\patcher\parameters\DatabaseIdIP.cs" />
+    <Compile Include="support\patcher\parameters\RimNameIP.cs" />
+    <Compile Include="support\patcher\parameters\ValueAddressIP.cs" />
+    <Compile Include="support\patcher\parameters\BnkFileIP.cs" />
+    <Compile Include="support\patcher\parameters\CreateFolderIP.cs" />
+    <Compile Include="support\patcher\parameters\DestinationIP.cs" />
+    <Compile Include="support\patcher\parameters\FileNameIP.cs" />
+    <Compile Include="support\patcher\parameters\MakeBackupIP.cs" />
+    <Compile Include="support\patcher\parameters\NewFileIP.cs" />
+    <Compile Include="support\patcher\parameters\PatchInstructionParameter.cs" />
+    <Compile Include="support\patcher\parameters\ValueIP.cs" />
+    <Compile Include="support\patcher\parameters\ValueLengthIP.cs" />
+    <Compile Include="support\patcher\parameters\VehicleDatabaseIdIP.cs" />
+    <Compile Include="support\patcher\parameters\ViewSourceIP.cs" />
+    <Compile Include="support\patcher\PatchHelper.cs" />
+    <Compile Include="support\patcher\instructions\PatchInstruction.cs" />
+    <Compile Include="support\patcher\vars\BnkAvatarClothesPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkFrontEndAllResPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkFrontEndHiResPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkFXPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkGaugesLowPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkGaugesHighPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkSoundVehiclePathV.cs" />
+    <Compile Include="support\patcher\vars\BnkVehiclePathV.cs" />
+    <Compile Include="support\patcher\vars\BnkVehicleRimPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkLevelHawaiPathV.cs" />
+    <Compile Include="support\patcher\vars\BnkVehicleTrafficPathV.cs" />
+    <Compile Include="support\patcher\vars\PatchPathV.cs" />
+    <Compile Include="support\patcher\vars\DbPathV.cs" />
+    <Compile Include="support\patcher\vars\DesktopPathV.cs" />
+    <Compile Include="support\patcher\vars\PatchVariable.cs" />
+    <Compile Include="support\patcher\vars\TduPathV.cs" />
+    <Compile Include="support\patcher\vars\TempPathV.cs" />
+    <Compile Include="support\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="design\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="installer\common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

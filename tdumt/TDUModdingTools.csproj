@@ -1,0 +1,2559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA74E383-9973-4825-8C18-15C2EB656F87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TDUModdingTools</RootNamespace>
+    <AssemblyName>TDU Modding Tools</AssemblyName>
+    <StartupObject>TDUModdingTools.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\appli.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\TDU Modding Tools.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\TDU Modding Tools.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="common\AppConstants.cs" />
+    <Compile Include="common\handlers\BNKHandler.cs" />
+    <Compile Include="common\handlers\database\DBHandler.cs" />
+    <Compile Include="common\handlers\database\DBResourceHandler.cs" />
+    <Compile Include="common\handlers\DDSHandler.cs" />
+    <Compile Include="common\handlers\FileHandler.cs" />
+    <Compile Include="common\handlers\MAPHandler.cs" />
+    <Compile Include="common\handlers\specific\PCHHandler.cs" />
+    <Compile Include="common\handlers\specific\RegularHandler.cs" />
+    <Compile Include="common\handlers\TrackHandler.cs" />
+    <Compile Include="common\handlers\XMBHandler.cs" />
+    <Compile Include="common\handlers\XMB_WAVHandler.cs" />
+    <Compile Include="common\handlers\_2DBHandler.cs" />
+    <Compile Include="gui\dbeditor\DbEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\dbeditor\DbEditorForm.Designer.cs">
+      <DependentUpon>DbEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\dbeditor\DbResourcesEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\dbeditor\DbResourcesEditorForm.Designer.cs">
+      <DependentUpon>DbResourcesEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\dbeditor\db\DbCheckDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\dbeditor\db\DbCheckDialog.Designer.cs">
+      <DependentUpon>DbCheckDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\dbeditor\db\DbExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\dbeditor\db\DbExportDialog.Designer.cs">
+      <DependentUpon>DbExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\dbeditor\db\MiniResourceEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\dbeditor\db\MiniResourceEditorDialog.Designer.cs">
+      <DependentUpon>MiniResourceEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\filebrowser\common\FileBrowserContextMenuFactory.cs" />
+    <Compile Include="gui\filebrowser\FileBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\filebrowser\FileBrowserForm.Designer.cs">
+      <DependentUpon>FileBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\filebrowser\editing\EditTasksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\filebrowser\editing\EditTasksForm.Designer.cs">
+      <DependentUpon>EditTasksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\filebrowser\properties\PropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\filebrowser\properties\PropertiesDialog.Designer.cs">
+      <DependentUpon>PropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\launcher\LaunchContextMenuFactory.cs" />
+    <Compile Include="common\settings\LaunchConfiguration.cs" />
+    <Compile Include="common\settings\LaunchConfigurationConverter.cs" />
+    <Compile Include="gui\settings\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\settings\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="common\settings\TduModdingToolsSettings.cs" />
+    <Compile Include="gui\sound\XMBEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\sound\XMBEditorForm.Designer.cs">
+      <DependentUpon>XMBEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\PatchInstructionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\PatchInstructionsDialog.Designer.cs">
+      <DependentUpon>PatchInstructionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\trackpack\EditorTracksDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\trackpack\EditorTracksDialog.Designer.cs">
+      <DependentUpon>EditorTracksDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\trackpack\OriginalTracksDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\trackpack\OriginalTracksDialog.Designer.cs">
+      <DependentUpon>OriginalTracksDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\trackpack\TrackPackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\trackpack\TrackPackForm.Designer.cs">
+      <DependentUpon>TrackPackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\common\SharedConstants.cs" />
+    <Compile Include="gui\common\TableBrowsingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\common\TableBrowsingDialog.Designer.cs">
+      <DependentUpon>TableBrowsingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Datasheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Dealers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Install.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.CameraIK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Designer.cs">
+      <DependentUpon>VehicleManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\parametervalue\ParameterKnownValuesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\parametervalue\ParameterKnownValuesDialog.Designer.cs">
+      <DependentUpon>ParameterKnownValuesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\parametervalue\ParameterValueDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\parametervalue\ParameterValueDialog.Designer.cs">
+      <DependentUpon>ParameterValueDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\PatchEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\PatchEditorForm.Designer.cs">
+      <DependentUpon>PatchEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\PatchPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\PatchPropertiesDialog.Designer.cs">
+      <DependentUpon>PatchPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\converters\_2d\_2DBToDDSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\converters\_2d\_2DBToDDSForm.Designer.cs">
+      <DependentUpon>_2DBToDDSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\converters\_2d\DDSTo2DBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\converters\_2d\DDSTo2DBForm.Designer.cs">
+      <DependentUpon>DDSTo2DBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="common\GuiConstants.cs" />
+    <Compile Include="gui\wizards\patcheditor\VariableContextMenuFactory.cs" />
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Tuner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="gui\dbeditor\DbEditorForm.resx">
+      <DependentUpon>DbEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\dbeditor\DbResourcesEditorForm.resx">
+      <DependentUpon>DbResourcesEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\dbeditor\db\DbCheckDialog.resx">
+      <DependentUpon>DbCheckDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\dbeditor\db\MiniResourceEditorDialog.resx">
+      <DependentUpon>MiniResourceEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\filebrowser\FileBrowserForm.resx">
+      <DependentUpon>FileBrowserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\filebrowser\editing\EditTasksForm.resx">
+      <DependentUpon>EditTasksForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\filebrowser\properties\PropertiesDialog.resx">
+      <DependentUpon>PropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\settings\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\common\TableBrowsingDialog.resx">
+      <DependentUpon>TableBrowsingDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\patcheditor\InstructionHelpDialog.resx">
+      <DependentUpon>InstructionHelpDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\patcheditor\PatchInstructionsDialog.resx">
+      <DependentUpon>PatchInstructionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\trackpack\EditorTracksDialog.resx">
+      <DependentUpon>EditorTracksDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\trackpack\OriginalTracksDialog.resx">
+      <DependentUpon>OriginalTracksDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\trackpack\TrackPackForm.resx">
+      <DependentUpon>TrackPackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\vehiclemanager\cameraIK\CamSelectorDialog.resx">
+      <DependentUpon>CamSelectorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\vehiclemanager\colors\InteriorSetDialog.resx">
+      <DependentUpon>InteriorSetDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\vehiclemanager\physics\GearRatiosDialog.resx">
+      <DependentUpon>GearRatiosDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\vehiclemanager\VehicleManagerForm.resx">
+      <DependentUpon>VehicleManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\converters\_2d\_2DBToDDSForm.resx">
+      <DependentUpon>_2DBToDDSForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\converters\_2d\DDSTo2DBForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DDSTo2DBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\sound\XMBEditorForm.resx">
+      <DependentUpon>XMBEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\patcheditor\parametervalue\ParameterKnownValuesDialog.resx">
+      <DependentUpon>ParameterKnownValuesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\patcheditor\parametervalue\ParameterValueDialog.resx">
+      <DependentUpon>ParameterValueDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\patcheditor\PatchEditorForm.resx">
+      <DependentUpon>PatchEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\wizards\patcheditor\PatchPropertiesDialog.resx">
+      <DependentUpon>PatchPropertiesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="design\ClassDiagram1.cd" />
+    <Compile Include="gui\filebrowser\FileBrowserForm.BnkManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\filebrowser\FileBrowserForm.Resources.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\filebrowser\FileBrowserForm.Resources.Designer.cs">
+      <DependentUpon>FileBrowserForm.Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\InstructionHelpDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\patcheditor\InstructionHelpDialog.Designer.cs">
+      <DependentUpon>InstructionHelpDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\cameraIK\CamSelectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\cameraIK\CamSelectorDialog.Designer.cs">
+      <DependentUpon>CamSelectorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\colors\InteriorSetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\colors\InteriorSetDialog.Designer.cs">
+      <DependentUpon>InteriorSetDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\physics\GearRatiosDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\physics\GearRatiosDialog.Designer.cs">
+      <DependentUpon>GearRatiosDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Colors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\wizards\vehiclemanager\VehicleManagerForm.Physics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Include="ref\scripts\ModdingTools deploy-BLACK-7.cmd" />
+    <None Include="ref\scripts\ModdingTools deploy-BLACK-7_DEBUG.cmd" />
+    <None Include="ref\scripts\ModdingTools deploy-BLACK-7_RELEASE.cmd" />
+    <None Include="ref\scripts\ModdingTools deploy-BLUE-7.cmd" />
+    <None Include="ref\scripts\ModdingTools deploy-BLUE-7_DEBUG.cmd" />
+    <None Include="ref\scripts\ModdingTools deploy-BLUE-7_RELEASE.cmd" />
+    <None Include="ref\scripts\ModdingTools deploy.cmd" />
+    <None Include="Resources\manifest\TDU Modding Tools.exe.manifest" />
+    <None Include="ref\patchs\schemas\patch1.xsd" />
+    <None Include="Resources\appli.ico" />
+    <None Include="img\skull20.png" />
+    <Content Include="logos\100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\101.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\102.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\103.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\104.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\105.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\106.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\107.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\108.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\109.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\110.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\111.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\112.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\113.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\1137632324.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\114.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\115.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\116.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\117.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\118.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\119.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\120.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\121.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\12121982.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\122.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\1220916237.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\123.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\124.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\125.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\126.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\127.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\12778906.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\128.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\129.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\130.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\131.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\132.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\133.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\134.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\135.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\136.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\137.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\138.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\139.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\140.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\141.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\142.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\143.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\144.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\145.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\146.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\147.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\148.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\149.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\150.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\151.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\152.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\153.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\154.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\155.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\156.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\157.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\158.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\159.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\160.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\161.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\162.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\163.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\164.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\72595.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\727727.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\72825.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\735.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\738.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\739.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\740.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\741.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\742.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\743.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\74340517.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\744.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\74425.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\745.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\746.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\747.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\748.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\749.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\74920.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\750.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\751.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\752.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\753.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\754.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\755.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\756.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\757.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\758.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\759.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\760.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\761.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\763.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\764.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\765.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\766.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\767.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\768.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\768658.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\769.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\770.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\77060.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\771.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\772.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\773.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\773468.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\774.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\775.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\776.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\777.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\778.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\779.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\780.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\781.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\782.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\7824.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\783.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\7836.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\784.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\785.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\7853.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\786.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\788.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\789.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\790.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\791.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\792.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\793.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\7932.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\794.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\795.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\796.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\797.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\798.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\799.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\800.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\801.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\802.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\803.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\804.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\805.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\806.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\807.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\80715.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\808.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\80863204.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\809.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\810.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\811.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\812.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\813.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\814.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\815.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\8152830.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\816.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\817.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\818.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\819.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\81940960.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\820.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\821.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\822.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\823.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\824.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\825.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\826.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\827.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\828.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\829.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\830.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\831.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\832.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\833.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\834.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\835.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\836.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\837.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\838.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\839.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\840.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\841.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\842.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\843.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\844.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\845.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\846.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\847.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\84783.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\848.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\849.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\850.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\851.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\852.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\853.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\854.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\8542108.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\855.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\856.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\8567333.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\857.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\85765.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\85793347.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\858.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\859.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\860.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\861.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\862.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\863.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\864.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\864426.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\8649.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\865.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\865967.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\866.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\867.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\86740.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\868.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\868295.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\869.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\870.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\871.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\8714133.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\872.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\873.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\874.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\875.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\876.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\877.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\878.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\879.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\880.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\880567803.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\881.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\882.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\883.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\884.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\885.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\886.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\887.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\888.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\889.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\890.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\891.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\892.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\893.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\894.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\895.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\896.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\897.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\898.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\898027.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\898117.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\899.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\900.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\901.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\902.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\903.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\904.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\905.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\906.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\907.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\908.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\909.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\910.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\911.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\912.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\912618.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\913.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\914.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\9144.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\915.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\916.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\917.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\918.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\919.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\920.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\921.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\922.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\923.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\924.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\924266.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\924566.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\925.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\926.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\92670.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\927.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\927987.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\928.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\929.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\930.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\931.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\932.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\933.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\934.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\935.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\936.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\937.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\938.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\939.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\940.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\941.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\942.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\943.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\944.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\945.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\946.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\947.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\948.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\949.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\950.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\951.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\952.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\953.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\954.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\955.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\956.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\957.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\958.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\959.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\960.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\961.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\962.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\964.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\9643703.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\965.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\966.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\967.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\968.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\969.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\970.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\971.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\972.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\973.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\974.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\975.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\976.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\977.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\978.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\979.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\980.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\981.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\982.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\983.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\983687.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\984.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\985.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\986.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\987.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\988.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\989.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\990.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\991.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\992.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\993.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\9933.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\994.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\995.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\996.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\997.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\998.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\999.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ref\ai\DCRPT_AIConfig.xml" />
+    <Content Include="ref\colors\archive\ColorList.txt" />
+    <Content Include="ref\colors\ColorList 1.2.txt" />
+    <None Include="ref\patchs\patch1.pch" />
+    <Content Include="ref\dredgy\AC 289_Instruction.xml" />
+    <Content Include="ref\readmes\archive\readme 1.10.txt" />
+    <Content Include="ref\readmes\archive\readme 1.11.txt" />
+    <Content Include="ref\readmes\archive\readme 1.14.txt" />
+    <Content Include="ref\readmes\readme.txt" />
+    <Content Include="ref\readmes\archive\readme 1.13.txt" />
+    <Content Include="ref\readmes\archive\readme 1.12.txt" />
+    <Content Include="ref\readmes\archive\readme 1.9.txt" />
+    <Content Include="ref\readmes\archive\readme 1.8.txt" />
+    <Content Include="ref\readmes\archive\readme 1.6.txt" />
+    <Content Include="ref\readmes\archive\readme 1.6b.txt" />
+    <Content Include="ref\readmes\archive\readme 1.5.txt" />
+    <Content Include="ref\readmes\archive\readme 1.5b.txt" />
+    <Content Include="ref\readmes\archive\readme 1.4.txt" />
+    <Content Include="ref\readmes\archive\readme 1.3.txt" />
+    <Content Include="ref\readmes\archive\readme 1.7.txt" />
+    <Content Include="ref\readmes\archive\readme 1.7.1.txt" />
+    <Content Include="ref\readmes\archive\readme 1.7b.txt" />
+    <Content Include="ref\readmes\archive\readme 1.8b.txt" />
+    <Content Include="ref\readmes\do_not_run_me!.txt" />
+    <Content Include="ref\textures\2DB - oleg.txt" />
+    <None Include="Resources\arrow-down_16.png" />
+    <None Include="Resources\arrow-down_24.png" />
+    <None Include="Resources\add_16.png" />
+    <None Include="Resources\trash_16.png" />
+    <None Include="Resources\save_16.png" />
+    <None Include="Resources\arrow-forward_16.png" />
+    <None Include="Resources\arrow-up_16.png" />
+    <None Include="Resources\applications_16.png" />
+    <None Include="Resources\copy_16.png" />
+    <Content Include="ref\textures\2DB notes.txt" />
+    <None Include="Resources\arrow-back_16.png" />
+    <None Include="Resources\Zonda.gif" />
+    <None Include="Resources\tdumt.png" />
+    <None Include="Resources\icons_car_2cv.png" />
+    <None Include="Resources\icon_son.png" />
+    <None Include="Resources\icon_tire.png" />
+    <None Include="Resources\icon_extra.png" />
+    <None Include="Resources\icon_cockpit.png" />
+    <None Include="Resources\icon_HUD.png" />
+    <None Include="Resources\icon_HUD_low.png" />
+    <None Include="Resources\icon_car.png" />
+    <None Include="Resources\icon_extra.bmp" />
+    <None Include="Resources\icon_paint.png" />
+    <None Include="Resources\icon_IKoffset.png" />
+    <None Include="Resources\icon_cardealer.png" />
+    <None Include="Resources\RWD.png" />
+    <None Include="Resources\RWD1.png" />
+    <None Include="Resources\AWD.png" />
+    <None Include="Resources\RWD2.png" />
+    <None Include="Resources\FWD.png" />
+    <None Include="Resources\4WD.png" />
+    <None Include="Resources\delete_16.png" />
+    <None Include="Resources\icon_camera.png" />
+    <Content Include="logos\000.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\736.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logos\737.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\aboutlogo.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\shield_16x16.png" />
+    <None Include="Resources\EditInformationHS.png" />
+    <None Include="Resources\edit_16.png" />
+    <None Include="Resources\nopic.png" />
+    <None Include="Resources\paste_16.png" />
+    <Content Include="tracks\your_tracks_here.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xml\Colors.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="xml\default\cameras.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_007b5f05432888e39dbecac66c42b80c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_00d31d3c41bbcc12dc11eed1ac05fc07">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_01a9c012c151979c7de6694bcd8267f5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_01eb3a61c030e85365a20616d5d69948">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0226f2fbc2cec3055e58a55eaefc93e8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_03d09e6d457b2f5f96a950a0274afe92">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_041e5a9044a7e9c660dd13e51031b9ab">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_04b36436447b5be4e98501199821054f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_051a8f3ac472a618a1fcdd7fb140d60d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_076d53e4c4a5fcd663289a8bd374acf5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_086b05d14903fbdf8492a9e8543eaade">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_09ce24414b7695536d04c3341dc0c54e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0a8a6e66ca4d9f7456c3f5a9c9670f7f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0ad56c91439d3c5ba92f9efc56a3966e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0bffed494657bf9faa25e1bc7f81c872">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0c1ecc9bcc717dc5681cabe498e02db6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0ce87adc4c2029ea88ae538158f259d7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_0fb0fd954ee8adc3aa7acfa63b9edd7c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_107dbf16d2b5aaa07c3904bfcd85dac9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_11917df8505e8e2eb5ecd44f8488de0d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_11e65689d04f831b6dbd3926bd0133b0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_12ff9c3ad2463a7c96b45781c6910953">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_14a46ff2d71c3e3073724055e0ee4eeb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_14c5414d54729027d100be8a609ca074">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1593ebf854fb988af185477fa1e148c9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1734521fd66c41f12bfe1fdad89af104">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_17a828e1eac03b17b256d50ce3ba0be2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_182b243adb73fb787c1dce9dac71cb53">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1a8fb9bcdc2668be80d18199d17d98ab">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1c1fff23dca74ef13b5d14ecc8f11e2a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1d8b51035f23034989b1e56e39edf214">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1edfc0186167b14eb570dead4214e093">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_1f9260255f4b9517c3f943fe53954528">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_201586b76322d6c104c8a8e0bc6ca5d2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_214b19f4d003c80a3f75a62fed51b8fd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_239ae7a662a2c2d4c74c34f3966832b9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_23cc715463051866b78b058b64d7082d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_24add093e445a241837a7b04eb16727a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_25d696f4e53e864a49cc302179a837f7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_26051c14d9bd53aa854f4589d2d3431f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_26a0f45be14804198aa2a6beda5edb4c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_27e3e3e2e75b0234b3252a59e38932eb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_298df08368abe7f1a4358ddc739997b2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_29b881136400b7fdd5f2cdb46556e006">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_29c8547ee6602b04bdd201e5edf6fb23">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2a50851f6bb8d649df24f86a6f88e614">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2a59add66da1f8e0061feadfd9734899">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2d074ba26b8ff6ecd9c118cb893d26b5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2d1cfef3eaa46d81b1d597dae4519de8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2d39151d6dd10a2b9684bc746420ba0a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2e4797d071ef8706d259ddeda575b6db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2eea9e9e71b2ce24cc2804c57a9cfd93">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_2fbe0a21ee165ff793e04512e35daf20">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_30094de870a19cdadc47c6b16db3ae13">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_309f53f1f3e7fc8757d5eaaa8731ecf8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3321b805f30e6e9bef78217eff5c1f0c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3346ac1366ae97fdcf3ff9d87c9b07ea">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_33d673e9723e20df7f943eb4710850ea">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_341904247551bb1ea1c7e1cd7033eb3f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_34bc757ae9054488d35b62afe0b7557d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_35a8bfc2f5e2cc1058680a0589ccfcdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3616942ffb7fa49dcce9ff62fa4df550">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_36e23c0bf75a6c79d2c999940225a302">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_38696ce179b69c33d424c6526580cffc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_399f6428faa49496995abe83e5b1c571">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3aada34efd246600b95a4ca706de3651">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3b7c1468f844c93ecca6af05ff5ab893">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3bc37fd97a78aeeb1f9f650cef0b5ef6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3be9e62afa01971854973df5a7f34723">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3c51d9e17cce0ef7d83c24ac89803ee2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_3f23bf3c86db8852da68f27193f4d837">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_410c3ae38165ebb59d37918e8ddb9bd8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_412a5f537a324c39defdb21c75187c4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4323931282cb82e0e7f8b80177acb217">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4395d5b1823c8583df917c7c8f4d748e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_440aa253046292e1e9c73cca18134358">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4534d46c85fcc94621f9ff2b8eadf895">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_46415e5186ee8f23d21fad0685a3bf58">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_466ed3a6860622982a2c2175fbb032bf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_46c3b70e06f5e7c0a29f1e67f2cb17b1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_47b3fa23fcd8aae5a24ae08813eedb5a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_48a01a8c8a582b22a6e20541948efb87">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_48e67a8607ae2ad48c38c4fbfcdcddb9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4a1730e58bbc8753e6528dbc960e9712">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4a6fcd8d93878283a61194ee76b5b2b4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4b1020868a78b7b427ef6dd9f74b678f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4b1640a08a4e7a32d7b99c17835da9a9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4b1ff8e088d728a62f5d2685ff2119fb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4b41ad02865bdeaceb05bccf7c89ce09">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4bda26078d623551e710636097ad8532">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4c0a3c5b0d126941d9c1976608fd995c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_4d73b50a0d5be458bec5023f0ea1140d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_510d60f78eaf900525b9ee50945507e6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_51270a92918f3440f57d8db5a4b9a46b">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5192ae75934ade8fb5d484ae85f88e90">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_51cf47a30ed76df9b28fab5a05ab9c88">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_51e339a8907b08bab53de21585c9d8a7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_535e399e939608c8ef036f359c8758e7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_55257b8595b2ab47f1f801609e9c1ab2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_56519ac096a86936fa1c435faa7839cd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5732e36314ea13adb37f25b4031b3c66">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_57528b0425853b7a7b181c97c8bc2a5d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_58a098b11b288fc3b7f94ae6e7753fa8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_59c36b4a98fb5238b5812811a5e50247">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_59dade259b2fad17f5818b80a43c7df2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5aea48ab1a825871c6f7820c1993afc2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5b3295d9189a804b07f76a66338b30d0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5b9d34af1d754db97fe66798ce4b9daa">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5d9e9f9b1d36aec9c844ecac16e8fe82">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_5f3673849dee9cba3358da79a3fccd6f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_60698d20ff5d5ef6c3af2aabf4332e39">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_611b0622a0535590fddd3bb58d61252b">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6127702420dce27efd52c3992c771143">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_62000e1622b83dc4be1270a32fce6d11">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_67c0ac64a728dd1ac31d473b92794d69">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_691829a829605b42855a756713b78ad1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6a656890ab329f8247a3723d979c886f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6b249a2d363d8927caea6b0a3f0e3954">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6d250340aa9dd38ef10956ef9e6d5c55">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6de05393ac5e02d989cce4feb910f284">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6de898272d70f2918902248cb9a6232e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6f8e7bbe2f66448c0bcdee131b91d4a1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_6f9af312ad62e2c023dc8a07b3b092f5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_70df35c1332764330f03a2123c9794cc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_71074933b0ef20791559fddea5cdf004">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_71bacdffb1529c85dde33ac0a58f2c16">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_72dd5486b3f1f274d7870823a62b0191">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_731224aaaf8adbd80ff4cef1bf58cba7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7396f9b9b28e2acf09db601ab7bf5aa0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_742e844f35b17539d83cd7004740a572">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_75f2421c329a124e2131ebd151e5e303">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7bf49f573a5c8e8127bae0e2392eb82c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7c1db07ebff5010c1b672329c8c31177">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7c31b5ab4128c6f5237ee856505a14d0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7cfb4eb43f101e46f0a6043d4032ed8f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7da446e53a4f97dfe1e05ca2319c67ec">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7defc8ebba171ff936a12586c9c52f14">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7e6f14e5bf07ed1f1b91c730a835bde2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_7ed2f6d4c1b1258ada471fa1aaab15d7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_824ae3e642195230e78f78d537f0821f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_83a7140c408fe562dffdcb594c46b50f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_83b04bb6c22855641fb19f4bcf15a4b9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_84458a7ec48d59ac301f77b3e19b6961">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_854473f542bc3c27060e175839520c0a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_854d513a459aa0402104fa3f31f8f00d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_854d53cacae5229ce974057f9118f2b1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_854f82bfc2a6cccd6134fe1a0f00e3a8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_8610f94446782a26aa520c0138ee1a73">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_86b44fb3b51d9819268eb6febaa2a8b4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_881959e3c8b68a352c272054fcc33a0e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_8b42b737cb955e215f0344c2d1674e3c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_8b7f719fcb06c72d2f3c2570bcb01686">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_8bda4b84cd20fb722676e151f7d2ea9f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_8e2865d5d16016eb2ad2378efa36c6dc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_8f18c5e7cff197393346591ae32a66fc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9030fbf051d8fabee46ba0df300fca15">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9031a04651d9f014f46bba0d441fc143">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_91d39c79d04bd48bfdadbec2cd19c56c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_931faf0ad0f7d8d03743fab7c72708cd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_93a814fb50d36be9b766d106e782bbf4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_940a1335d5c21ca7384f4b68c8eb6c02">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9410868957fb77d7f3691e7a20452780">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9453bebb54bbb071b929991249c46040">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_954c0e12d4f4bf5c6e856579e1596feb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_95ccad17d4815c2523f33582d1a74c10">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_967e333b579662e53a01c04e60a5d238">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_96b23382d71ae30c2a71c553dae5ce85">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9c0e7b7c5f6649b23b48e5c16894d997">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9ce419ac5c8ccafec8bc800bf65b7ad5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9d2f5184da15215a3953ef79c947f16f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9dbf38a75af4e995f87aa070498699a6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9dea2f19da025a2b3ea9714af1328a14">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9e86c6a8dfbeb7fa0349991fd56c67a9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9eb200a7de6a15952514b478d2a0e5ae">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9ed41190df4c40c6389d9e8deaf9b17b">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9f927184defba17a42650217f381112d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_9fddd1375eb401613a06235c8bea320e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a08007eb603875dd34ee53806770a6f2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a1040b906bacd46e3fcab245757eb89b">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a164f348decc005e3a221d37ca965045">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a19d6eb060fa87823ce71aff6c4b5789">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a1f6283be2fedd49154f7b6ce5288d22">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a215516962cd47bbfee7aac46f827796">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a369987be0b1c9453703e224e667f966">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a3f424ad609c1bdffcb6ce662f52cbd0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a44c6d9467143f46cb899023f8658f6d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a4b0e81fe7ea1bcd93983de040b44b16">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a515a5fc63fc70d2c1563e990eb240c7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a5e9928364c1c1cdc113dba871f7f1ba">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a6ae3925e606687ffd718e9ecb559870">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a76e21016807d0471f758a686b11805e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a7daf4e1667f29d70b99070c7b4d19e2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a8195fe4e871e85a94e31261e440b8ef">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_a99dc8f066f5ffc60a6bd1e55dc7effb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_aac8bc786bd0130e314668e55efa637b">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ab5aec436be2be9134ace0f26730cf58">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ad18cdfa6c30bce049c1670199256cff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_adfd09d36ae5d881113fc76a611baad8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ae19c8046fa1585a123325a182e7284f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ae4195436f282aedf387f0b0601bfa4a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b0250009709db7d7d46c9eb425c8a702">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b04029f1f1287a3f959fdf9a04fbcac8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b0b17749f0011b9b37732134e92f2446">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b11cd56deebaa623852328d6d5c73664">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b16a60ac6f0237220d777d1f5a9087a5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b27ac9b873dd78ee17b22607460e28b5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b2a9e4f87441fb3610db9d556177cbe3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b2d2f62c72751d7ad6008a9726a48d25">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b2d5f53775a3bce1160d944086e18c32">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b2e309eff70bb8219399f244fe4de816">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b2ee05abf347b37947b1b89cf62dc2d2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b2fecf7df536de87963834a867842e7a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b3ce897af226bfa48c94e1cbfff8ef8d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b3ef950670f78c3c17806ac3873c3c09">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b4e765f1779f308b132dc2a460c9c0ce">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b6f2b4c7f70501b563b7df1ef2db51ac">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b74c85a87764969e5bfbaf3f8a57e6ad">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b8513107f9096175429f4a98f42b4c2e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b8c51762f87d6bb454f3899702967469">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_b9dccdfd7987782f1d11598e4aad6878">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_bcf0a9e8fcc8d9da4034039df1d809cf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_bd4ce290fae4c042597b8e3f09d79789">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_bda07c747e59d15a1a0a393b69962149">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_bddb91ba7ab261d4591007f169fcf0a3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_bf353340fcc10276626f846d33f3925b">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c0377fad037cd37b7cf204180c1602a6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c13e6db602d79dc89d64c35f0df0cde9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c2cfa6330376777d5ef2598e0fa64738">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c4d5348b871cebd530ae89f480a29b86">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c527d528028fc6fe59fb741f0957762d">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c6956181096d517722df3f3ad2bb0168">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c767ad4185db624ff84df86a88a91258">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c83170df849926092813f4248d8f15f6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_c890437f883983896452962a94ceac74">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_caf12c7f0bd8dca56f3aba88fe2ecd76">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_cbd056c4044905da1cdbafb9ef3fb5cf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ccd1b2f18f8863873bae526a885a53d8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_cd07060b8d6fe74971e6b92c8242b702">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ce8219418e5a486ffdc1823aad247848">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_cf4b28480a185936768e7f554b638963">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_cf53612c8e7b90ee2b10668b7b458055">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_cf7faf8709c679352c36472e009a489c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_d219104d129127036edb3de61e637774">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_d40b7a0e9490a9383021cb458fd5d937">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_d7f1bf939668692103da535a30a65968">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_d88bde9d19e3ce533751840e273d839c">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_d8b95b791bf68bab3764bdc40490bbb6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_da1e709d1d64424f36da1fa80876119a">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_da339eaf1bda4fd5766444f046183fa6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_db9a0bc01530543276d66e6f4fa264d9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_dbea71f8a00382d277a4244d873052f7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_dc25b38e299dda984070117730ec0a81">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_dd9bc3da25338ac4815760e129e35ad3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_dee559139a928a21823d134cb2c11a02">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_df1b9e869f330bd43bdde1fbaa613b89">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_dfff54b01f9705467b45ee932ad1f5b9">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e06741ad20df727f4c49a81e1bada0a8">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e0ff03cf1f97d00d8c06ae505caaa0c6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e12fe9509f87bc4275f196fda5558c3f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e18c096d217758437db17eee4da56f94">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e1c0b621a008e573fd9acbe629f6d538">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e2d4a4ef22acb9d94e1ed83c1ec209e6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e58a309c1f12e1aa83cd8bcb18619191">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e834f744a09cdb967cf12231ac6d2443">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e91fce3828771eea85e024c532c42f57">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_e9a7125eab7fee0c64ef44f3b58b3f21">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ebfe61bca896f1e267241b01b730c0b7">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ec6dbb33aa346fe551aa4d04a18e580e">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ed1098122c7b4f30c9d16c97990bffe5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ed3259522d78080059f61e3f29aa3865">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_eeb9310eb1077c384afaabdbba668c35">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ef915b552e492b4792db1160425ffa22">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ef9c03532f16b2a1cbd8d8b27a64dc58">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_efa7aaf7074f5b154be55138fa794bce">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f04d64f8337ab5aecc04919d9d9885f3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f123ffabafcbcd955555a876a5799ea0">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f2e86e39b381a1ef5e13bb10acb7d146">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f52207eab4ca10b499786ac7a9146011">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f57f10b032b747c2a1206e7d2fdc778f">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f5c94fc535611a9791f7fd784183eaca">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f6f96a5336a699c16534c3e232d8c958">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f7689dfeb440ae1058ad4fb3ab717ef5">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_f9bcfb083b672a52dff6904d2d9a9a07">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_fb8a5dbb3ad32d1d9f41cffc2fbdbcb6">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_fdde17783af6446aa16061b171007463">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_fe225c013e9a8df79b80b69a4be4bd18">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_fe2640adbf9952e35a2b7454888ca1aa">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_fe80a86f3ee878d99ade520a6d1a4974">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\default\challenges\data_dfe_ffbc8ab5be04db679a5af940cbb601a2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="xml\schemas\CarColorInfo.xsd" />
+    <None Include="xml\schemas\DatabaseRef.xsd" />
+    <None Include="xml\schemas\map-key.xsd" />
+    <None Include="xml\schemas\settings.xsd" />
+    <None Include="xml\schemas\TduNames.xsd" />
+    <None Include="xml\schemas\VehicleSlots.xsd" />
+    <Content Include="xml\settings.xml" />
+    <Content Include="xml\VehicleSlots.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ref\cameras\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\framework\djeframework1\trunk\DjeFramework1.csproj">
+      <Project>{19F933FC-8314-4FB6-82B5-6B557A45D74E}</Project>
+      <Name>DjeFramework1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\tdumodlib\trunk\TDUModdingLibrary.csproj">
+      <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
+      <Name>TDUModdingLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\mt.exe" -manifest "$(ProjectDir)\Resources\manifest\$(TargetName).exe.manifest"  –outputresource:"$(TargetDir)$(TargetFileName)";#1</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

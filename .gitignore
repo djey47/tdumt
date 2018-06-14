@@ -1,0 +1,10 @@
+# IDE-specific
+*.userprefs
+*.csproj.user
+tests.log
+
+# Win Garbage
+thumbs.db
+
+# Game contents
+data_dfe_*

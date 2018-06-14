@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<patcher>
+  <properties name="Test Mod" version="1.0" author="Djey" date="30/12/2008" ref="632098801" />
+  <instructions>
+    <instruction type="patchBytes" failOnError="True" enabled="False">
+      <parameter name="fileName" value="test" />
+      <parameter name="value" value=",ddkd" />
+      <parameter name="address" value="lklk" />
+    </instruction>
+    <instruction type="deleteRadial" failOnError="False" enabled="False" />
+    <instruction type="magicMap" failOnError="True" enabled="True" />
+    <instruction type="copyFile" failOnError="True" enabled="True" />
+    <instruction type="copyFile" failOnError="True" enabled="True" />
+    <instruction type="backupFile" failOnError="True" enabled="True" />
+    <instruction type="replaceFileInBNK" failOnError="True" enabled="True" />
+    <instruction type="deleteRadial" failOnError="True" enabled="True" />
+    <instruction type="copyFile" failOnError="True" enabled="True">
+      <parameter name="fileName" value="1" />
+      <parameter name="destination" value="3" />
+      <parameter name="createFolder" value="5" />
+      <parameter name="makeBackup" value="7" />
+    </instruction>
+    <instruction type="backupFile" failOnError="True" enabled="True" />
+  </instructions>
+</patcher>

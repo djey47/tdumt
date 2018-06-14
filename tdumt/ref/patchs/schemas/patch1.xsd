@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="patcher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="properties">
+          <xs:complexType>
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="version" type="xs:decimal" use="required" />
+            <xs:attribute name="author" type="xs:string" use="required" />
+            <xs:attribute name="date" type="xs:string" use="required" />
+            <xs:attribute name="ref" type="xs:unsignedInt" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="instructions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="instruction">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element maxOccurs="unbounded" name="parameter">
+                      <xs:complexType>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="value" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                  <xs:attribute name="failOnError" type="xs:string" use="required" />
+                  <xs:attribute name="enabled" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

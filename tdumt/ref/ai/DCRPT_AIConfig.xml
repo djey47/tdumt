@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<AICONFIG version="7">
+<VEHICLE_REPARTITION nb_zones="6">
+<ZONE nb_traffic_per_lane_kilometer="0.00">
+<VEHICLE database_id="2028" frequency="0.000"/>
+<VEHICLE database_id="2029" frequency="0.500"/>
+<VEHICLE database_id="2030" frequency="0.500"/>
+<VEHICLE database_id="2001" frequency="0.500"/>
+<VEHICLE database_id="2002" frequency="0.500"/>
+<VEHICLE database_id="2003" frequency="0.500"/>
+<VEHICLE database_id="2008" frequency="0.500"/>
+<VEHICLE database_id="2009" frequency="0.500"/>
+<VEHICLE database_id="2004" frequency="0.500"/>
+<VEHICLE database_id="2005" frequency="0.500"/>
+<VEHICLE database_id="2006" frequency="0.500"/>
+<VEHICLE database_id="2007" frequency="0.500"/>
+<VEHICLE database_id="2033" frequency="0.500"/>
+<VEHICLE database_id="2014" frequency="0.500"/>
+<VEHICLE database_id="2015" frequency="0.500"/>
+<VEHICLE database_id="2017" frequency="0.500"/>
+<VEHICLE database_id="2018" frequency="0.500"/>
+<VEHICLE database_id="2019" frequency="0.500"/>
+<VEHICLE database_id="2032" frequency="0.000"/>
+<VEHICLE database_id="2016" frequency="0.000"/>
+<VEHICLE database_id="2011" frequency="0.500"/>
+<VEHICLE database_id="2012" frequency="0.500"/>
+<VEHICLE database_id="2013" frequency="0.000"/>
+<VEHICLE database_id="2010" frequency="0.500"/>
+<VEHICLE database_id="2034" frequency="0.500"/>
+<VEHICLE database_id="2024" frequency="0.500"/>
+<VEHICLE database_id="2031" frequency="0.900"/>
+<VEHICLE database_id="2023" frequency="0.000"/>
+<VEHICLE database_id="2025" frequency="0.000"/>
+<VEHICLE database_id="2021" frequency="0.500"/>
+<VEHICLE database_id="2022" frequency="0.500"/>
+<VEHICLE database_id="2020" frequency="0.500"/>
+<VEHICLE database_id="2026" frequency="0.500"/>
+<VEHICLE database_id="2027" frequency="0.000"/>
+</ZONE>
+<ZONE nb_traffic_per_lane_kilometer="4.00">
+<VEHICLE database_id="2028" frequency="0.000"/>
+<VEHICLE database_id="2029" frequency="0.500"/>
+<VEHICLE database_id="2030" frequency="0.500"/>
+<VEHICLE database_id="2001" frequency="0.500"/>
+<VEHICLE database_id="2002" frequency="0.500"/>
+<VEHICLE database_id="2003" frequency="0.500"/>
+<VEHICLE database_id="2008" frequency="0.500"/>
+<VEHICLE database_id="2009" frequency="0.500"/>
+<VEHICLE database_id="2004" frequency="0.500"/>
+<VEHICLE database_id="2005" frequency="0.500"/>
+<VEHICLE database_id="2006" frequency="0.500"/>
+<VEHICLE database_id="2007" frequency="0.500"/>
+<VEHICLE database_id="2033" frequency="0.500"/>
+<VEHICLE database_id="2014" frequency="0.500"/>
+<VEHICLE database_id="2015" frequency="0.500"/>
+<VEHICLE database_id="2017" frequency="0.500"/>
+<VEHICLE database_id="2018" frequency="0.500"/>
+<VEHICLE database_id="2019" frequency="0.500"/>
+<VEHICLE database_id="2032" frequency="0.000"/>
+<VEHICLE database_id="2016" frequency="0.000"/>
+<VEHICLE database_id="2011" frequency="0.500"/>
+<VEHICLE database_id="2012" frequency="0.500"/>
+<VEHICLE database_id="2013" frequency="0.000"/>
+<VEHICLE database_id="2010" frequency="0.500"/>
+<VEHICLE database_id="2034" frequency="0.500"/>
+<VEHICLE database_id="2024" frequency="0.500"/>
+<VEHICLE database_id="2031" frequency="0.900"/>
+<VEHICLE database_id="2023" frequency="0.000"/>
+<VEHICLE database_id="2025" frequency="0.000"/>
+<VEHICLE database_id="2021" frequency="0.500"/>
+<VEHICLE database_id="2022" frequency="0.500"/>
+<VEHICLE database_id="2020" frequency="0.500"/>
+<VEHICLE database_id="2026" frequency="0.500"/>
+<VEHICLE database_id="2027" frequency="0.000"/>
+</ZONE>
+<ZONE nb_traffic_per_lane_kilometer="4.00">
+<VEHICLE database_id="2028" frequency="0.300"/>
+<VEHICLE database_id="2029" frequency="0.500"/>
+<VEHICLE database_id="2030" frequency="0.500"/>
+<VEHICLE database_id="2001" frequency="0.800"/>
+<VEHICLE database_id="2002" frequency="0.800"/>
+<VEHICLE database_id="2003" frequency="0.800"/>
+<VEHICLE database_id="2008" frequency="0.800"/>
+<VEHICLE database_id="2009" frequency="0.800"/>
+<VEHICLE database_id="2004" frequency="0.700"/>
+<VEHICLE database_id="2005" frequency="0.700"/>
+<VEHICLE database_id="2006" frequency="0.700"/>
+<VEHICLE database_id="2007" frequency="0.700"/>
+<VEHICLE database_id="2033" frequency="0.450"/>
+<VEHICLE database_id="2014" frequency="0.600"/>
+<VEHICLE database_id="2015" frequency="0.600"/>
+<VEHICLE database_id="2017" frequency="0.200"/>
+<VEHICLE database_id="2018" frequency="0.200"/>
+<VEHICLE database_id="2019" frequency="0.200"/>
+<VEHICLE database_id="2032" frequency="0.000"/>
+<VEHICLE database_id="2016" frequency="0.100"/>
+<VEHICLE database_id="2011" frequency="0.300"/>
+<VEHICLE database_id="2012" frequency="0.300"/>
+<VEHICLE database_id="2013" frequency="0.000"/>
+<VEHICLE database_id="2010" frequency="0.300"/>
+<VEHICLE database_id="2034" frequency="0.300"/>
+<VEHICLE database_id="2024" frequency="0.300"/>
+<VEHICLE database_id="2031" frequency="0.900"/>
+<VEHICLE database_id="2023" frequency="0.000"/>
+<VEHICLE database_id="2025" frequency="0.000"/>
+<VEHICLE database_id="2021" frequency="0.100"/>
+<VEHICLE database_id="2022" frequency="0.100"/>
+<VEHICLE database_id="2020" frequency="0.100"/>
+<VEHICLE database_id="2026" frequency="0.100"/>
+<VEHICLE database_id="2027" frequency="0.000"/>
+</ZONE>
+<ZONE nb_traffic_per_lane_kilometer="4.00">
+<VEHICLE database_id="2028" frequency="0.000"/>
+<VEHICLE database_id="2029" frequency="0.000"/>
+<VEHICLE database_id="2030" frequency="0.000"/>
+<VEHICLE database_id="2001" frequency="0.300"/>
+<VEHICLE database_id="2002" frequency="0.300"/>
+<VEHICLE database_id="2003" frequency="0.300"/>
+<VEHICLE database_id="2008" frequency="0.300"/>
+<VEHICLE database_id="2009" frequency="0.300"/>
+<VEHICLE database_id="2004" frequency="0.300"/>
+<VEHICLE database_id="2005" frequency="0.300"/>
+<VEHICLE database_id="2006" frequency="0.300"/>
+<VEHICLE database_id="2007" frequency="0.300"/>
+<VEHICLE database_id="2033" frequency="0.000"/>
+<VEHICLE database_id="2014" frequency="0.200"/>
+<VEHICLE database_id="2015" frequency="0.200"/>
+<VEHICLE database_id="2017" frequency="0.400"/>
+<VEHICLE database_id="2018" frequency="0.400"/>
+<VEHICLE database_id="2019" frequency="0.400"/>
+<VEHICLE database_id="2032" frequency="0.000"/>
+<VEHICLE database_id="2016" frequency="0.350"/>
+<VEHICLE database_id="2011" frequency="0.500"/>
+<VEHICLE database_id="2012" frequency="0.500"/>
+<VEHICLE database_id="2013" frequency="0.000"/>
+<VEHICLE database_id="2010" frequency="0.500"/>
+<VEHICLE database_id="2034" frequency="0.500"/>
+<VEHICLE database_id="2024" frequency="0.500"/>
+<VEHICLE database_id="2031" frequency="0.900"/>
+<VEHICLE database_id="2023" frequency="0.000"/>
+<VEHICLE database_id="2025" frequency="0.000"/>
+<VEHICLE database_id="2021" frequency="0.600"/>
+<VEHICLE database_id="2022" frequency="0.600"/>
+<VEHICLE database_id="2020" frequency="0.600"/>
+<VEHICLE database_id="2026" frequency="0.600"/>
+<VEHICLE database_id="2027" frequency="0.000"/>
+</ZONE>
+<ZONE nb_traffic_per_lane_kilometer="3.00">
+<VEHICLE database_id="2028" frequency="0.000"/>
+<VEHICLE database_id="2029" frequency="0.000"/>
+<VEHICLE database_id="2030" frequency="0.000"/>
+<VEHICLE database_id="2001" frequency="0.200"/>
+<VEHICLE database_id="2002" frequency="0.200"/>
+<VEHICLE database_id="2003" frequency="0.200"/>
+<VEHICLE database_id="2008" frequency="0.200"/>
+<VEHICLE database_id="2009" frequency="0.200"/>
+<VEHICLE database_id="2004" frequency="0.400"/>
+<VEHICLE database_id="2005" frequency="0.400"/>
+<VEHICLE database_id="2006" frequency="0.400"/>
+<VEHICLE database_id="2007" frequency="0.400"/>
+<VEHICLE database_id="2033" frequency="0.000"/>
+<VEHICLE database_id="2014" frequency="0.000"/>
+<VEHICLE database_id="2015" frequency="0.000"/>
+<VEHICLE database_id="2017" frequency="0.600"/>
+<VEHICLE database_id="2018" frequency="0.600"/>
+<VEHICLE database_id="2019" frequency="0.600"/>
+<VEHICLE database_id="2032" frequency="0.000"/>
+<VEHICLE database_id="2016" frequency="0.000"/>
+<VEHICLE database_id="2011" frequency="0.800"/>
+<VEHICLE database_id="2012" frequency="0.800"/>
+<VEHICLE database_id="2013" frequency="0.000"/>
+<VEHICLE database_id="2010" frequency="0.800"/>
+<VEHICLE database_id="2034" frequency="0.800"/>
+<VEHICLE database_id="2024" frequency="0.800"/>
+<VEHICLE database_id="2031" frequency="0.900"/>
+<VEHICLE database_id="2023" frequency="0.000"/>
+<VEHICLE database_id="2025" frequency="0.000"/>
+<VEHICLE database_id="2021" frequency="0.000"/>
+<VEHICLE database_id="2022" frequency="0.000"/>
+<VEHICLE database_id="2020" frequency="0.000"/>
+<VEHICLE database_id="2026" frequency="0.000"/>
+<VEHICLE database_id="2027" frequency="0.000"/>
+</ZONE>
+<ZONE nb_traffic_per_lane_kilometer="4.00">
+<VEHICLE database_id="2028" frequency="0.000"/>
+<VEHICLE database_id="2029" frequency="0.000"/>
+<VEHICLE database_id="2030" frequency="0.000"/>
+<VEHICLE database_id="2001" frequency="0.500"/>
+<VEHICLE database_id="2002" frequency="0.500"/>
+<VEHICLE database_id="2003" frequency="0.500"/>
+<VEHICLE database_id="2008" frequency="0.500"/>
+<VEHICLE database_id="2009" frequency="0.500"/>
+<VEHICLE database_id="2004" frequency="0.600"/>
+<VEHICLE database_id="2005" frequency="0.600"/>
+<VEHICLE database_id="2006" frequency="0.600"/>
+<VEHICLE database_id="2007" frequency="0.600"/>
+<VEHICLE database_id="2033" frequency="0.000"/>
+<VEHICLE database_id="2014" frequency="0.200"/>
+<VEHICLE database_id="2015" frequency="0.200"/>
+<VEHICLE database_id="2017" frequency="0.700"/>
+<VEHICLE database_id="2018" frequency="0.700"/>
+<VEHICLE database_id="2019" frequency="0.700"/>
+<VEHICLE database_id="2032" frequency="0.000"/>
+<VEHICLE database_id="2016" frequency="0.000"/>
+<VEHICLE database_id="2011" frequency="0.800"/>
+<VEHICLE database_id="2012" frequency="0.800"/>
+<VEHICLE database_id="2013" frequency="0.000"/>
+<VEHICLE database_id="2010" frequency="0.800"/>
+<VEHICLE database_id="2034" frequency="0.800"/>
+<VEHICLE database_id="2024" frequency="0.800"/>
+<VEHICLE database_id="2031" frequency="0.900"/>
+<VEHICLE database_id="2023" frequency="0.000"/>
+<VEHICLE database_id="2025" frequency="0.000"/>
+<VEHICLE database_id="2021" frequency="0.300"/>
+<VEHICLE database_id="2022" frequency="0.300"/>
+<VEHICLE database_id="2020" frequency="0.300"/>
+<VEHICLE database_id="2026" frequency="0.300"/>
+<VEHICLE database_id="2027" frequency="0.000"/>
+</ZONE>
+</VEHICLE_REPARTITION>
+<VEHICLE_PHYSICS>
+<VEHICLE database_id="1" braking_dist_c1="0.235" braking_dist_c2="0.027" turning_speed_c1="3.823" turning_speed_c2="0.013" handling_mark="72.729"/>
+<VEHICLE database_id="107" braking_dist_c1="0.169" braking_dist_c2="0.033" turning_speed_c1="3.554" turning_speed_c2="0.019" handling_mark="57.778"/>
+<VEHICLE database_id="103" braking_dist_c1="0.160" braking_dist_c2="0.026" turning_speed_c1="3.695" turning_speed_c2="-0.003" handling_mark="56.376"/>
+<VEHICLE database_id="112" braking_dist_c1="0.189" braking_dist_c2="0.027" turning_speed_c1="3.753" turning_speed_c2="0.015" handling_mark="68.751"/>
+<VEHICLE database_id="218" braking_dist_c1="0.171" braking_dist_c2="0.035" turning_speed_c1="3.234" turning_speed_c2="0.018" handling_mark="40.498"/>
+<VEHICLE database_id="114" braking_dist_c1="0.237" braking_dist_c2="0.022" turning_speed_c1="4.043" turning_speed_c2="0.017" handling_mark="92.526"/>
+<VEHICLE database_id="1009" braking_dist_c1="0.030" braking_dist_c2="0.035" turning_speed_c1="3.988" turning_speed_c2="0.015" handling_mark="86.856"/>
+<VEHICLE database_id="1011" braking_dist_c1="0.217" braking_dist_c2="0.026" turning_speed_c1="3.795" turning_speed_c2="0.060" handling_mark="95.191"/>
+<VEHICLE database_id="1012" braking_dist_c1="0.211" braking_dist_c2="0.026" turning_speed_c1="4.058" turning_speed_c2="0.013" handling_mark="71.443"/>
+<VEHICLE database_id="1019" braking_dist_c1="0.189" braking_dist_c2="0.032" turning_speed_c1="3.787" turning_speed_c2="0.024" handling_mark="59.108"/>
+<VEHICLE database_id="1030" braking_dist_c1="0.258" braking_dist_c2="0.021" turning_speed_c1="3.952" turning_speed_c2="0.020" handling_mark="86.694"/>
+<VEHICLE database_id="118" braking_dist_c1="0.235" braking_dist_c2="0.026" turning_speed_c1="3.339" turning_speed_c2="0.020" handling_mark="46.435"/>
+<VEHICLE database_id="217" braking_dist_c1="0.281" braking_dist_c2="0.025" turning_speed_c1="4.102" turning_speed_c2="0.009" handling_mark="93.325"/>
+<VEHICLE database_id="1044" braking_dist_c1="0.385" braking_dist_c2="0.021" turning_speed_c1="4.094" turning_speed_c2="0.014" handling_mark="95.247"/>
+<VEHICLE database_id="204" braking_dist_c1="0.214" braking_dist_c2="0.021" turning_speed_c1="3.778" turning_speed_c2="0.010" handling_mark="68.224"/>
+<VEHICLE database_id="205" braking_dist_c1="0.205" braking_dist_c2="0.022" turning_speed_c1="3.967" turning_speed_c2="0.016" handling_mark="85.680"/>
+<VEHICLE database_id="1042" braking_dist_c1="0.179" braking_dist_c2="0.022" turning_speed_c1="3.454" turning_speed_c2="0.025" handling_mark="54.651"/>
+<VEHICLE database_id="1039" braking_dist_c1="0.140" braking_dist_c2="0.024" turning_speed_c1="3.504" turning_speed_c2="0.012" handling_mark="52.056"/>
+<VEHICLE database_id="1041" braking_dist_c1="0.251" braking_dist_c2="0.021" turning_speed_c1="4.008" turning_speed_c2="0.018" handling_mark="89.940"/>
+<VEHICLE database_id="115" braking_dist_c1="0.338" braking_dist_c2="0.024" turning_speed_c1="4.066" turning_speed_c2="0.019" handling_mark="95.780"/>
+<VEHICLE database_id="210" braking_dist_c1="0.271" braking_dist_c2="0.022" turning_speed_c1="4.317" turning_speed_c2="-0.027" handling_mark="100.000"/>
+<VEHICLE database_id="116" braking_dist_c1="0.375" braking_dist_c2="0.021" turning_speed_c1="4.076" turning_speed_c2="0.010" handling_mark="91.393"/>
+<VEHICLE database_id="216" braking_dist_c1="0.286" braking_dist_c2="0.029" turning_speed_c1="3.804" turning_speed_c2="0.030" handling_mark="80.130"/>
+<VEHICLE database_id="1501" braking_dist_c1="0.473" braking_dist_c2="0.012" turning_speed_c1="3.533" turning_speed_c2="-0.003" handling_mark="47.321"/>
+<VEHICLE database_id="2001" braking_dist_c1="0.309" braking_dist_c2="0.034" turning_speed_c1="3.158" turning_speed_c2="0.038" handling_mark="100.000"/>
+<VEHICLE database_id="2003" braking_dist_c1="0.284" braking_dist_c2="0.040" turning_speed_c1="3.396" turning_speed_c2="0.012" handling_mark="100.000"/>
+<VEHICLE database_id="2004" braking_dist_c1="0.216" braking_dist_c2="0.043" turning_speed_c1="3.418" turning_speed_c2="0.014" handling_mark="100.000"/>
+<VEHICLE database_id="2011" braking_dist_c1="0.183" braking_dist_c2="0.042" turning_speed_c1="3.756" turning_speed_c2="-0.036" handling_mark="100.000"/>
+<VEHICLE database_id="2012" braking_dist_c1="0.235" braking_dist_c2="0.042" turning_speed_c1="3.130" turning_speed_c2="0.042" handling_mark="100.000"/>
+<VEHICLE database_id="2013" braking_dist_c1="0.231" braking_dist_c2="0.042" turning_speed_c1="3.301" turning_speed_c2="0.027" handling_mark="100.000"/>
+<VEHICLE database_id="2019" braking_dist_c1="0.300" braking_dist_c2="0.033" turning_speed_c1="2.525" turning_speed_c2="0.000" handling_mark="100.000"/>
+<VEHICLE database_id="2021" log_max_speed="30.6" braking_dist_c1="0.520" braking_dist_c2="0.041" turning_speed_c1="2.815" turning_speed_c2="0.075" handling_mark="100.000"/>
+<VEHICLE database_id="2022" log_max_speed="30.6" braking_dist_c1="0.300" braking_dist_c2="0.033" turning_speed_c1="2.490" turning_speed_c2="0.000" handling_mark="100.000"/>
+<VEHICLE database_id="2028" log_max_speed="24.2" braking_dist_c1="0.464" braking_dist_c2="0.109" turning_speed_c1="1.584" turning_speed_c2="0.024" handling_mark="100.000"/>
+<VEHICLE database_id="105" braking_dist_c1="0.194" braking_dist_c2="0.025" turning_speed_c1="3.900" turning_speed_c2="0.015" handling_mark="79.723"/>
+<VEHICLE database_id="110" braking_dist_c1="0.219" braking_dist_c2="0.028" turning_speed_c1="3.783" turning_speed_c2="0.016" handling_mark="71.584"/>
+<VEHICLE database_id="1045" braking_dist_c1="0.155" braking_dist_c2="0.030" turning_speed_c1="3.249" turning_speed_c2="0.027" handling_mark="44.591"/>
+<VEHICLE database_id="220" braking_dist_c1="0.240" braking_dist_c2="0.022" turning_speed_c1="4.160" turning_speed_c2="0.011" handling_mark="77.671"/>
+<VEHICLE database_id="213" braking_dist_c1="0.189" braking_dist_c2="0.023" turning_speed_c1="3.858" turning_speed_c2="0.022" handling_mark="80.054"/>
+<VEHICLE database_id="201" braking_dist_c1="0.300" braking_dist_c2="0.033" turning_speed_c1="3.831" turning_speed_c2="0.000" handling_mark="100.000"/>
+<VEHICLE database_id="219" braking_dist_c1="0.131" braking_dist_c2="0.030" turning_speed_c1="3.330" turning_speed_c2="0.018" handling_mark="45.050"/>
+<VEHICLE database_id="229" braking_dist_c1="0.258" braking_dist_c2="0.027" turning_speed_c1="3.861" turning_speed_c2="0.026" handling_mark="82.347"/>
+<VEHICLE database_id="228" braking_dist_c1="0.442" braking_dist_c2="0.022" turning_speed_c1="4.106" turning_speed_c2="0.013" handling_mark="74.744"/>
+<VEHICLE database_id="206" braking_dist_c1="0.173" braking_dist_c2="0.033" turning_speed_c1="3.063" turning_speed_c2="0.035" handling_mark="38.868"/>
+<VEHICLE database_id="1040" braking_dist_c1="0.162" braking_dist_c2="0.029" turning_speed_c1="3.718" turning_speed_c2="0.012" handling_mark="50.747"/>
+<VEHICLE database_id="209" braking_dist_c1="0.196" braking_dist_c2="0.035" turning_speed_c1="3.436" turning_speed_c2="0.018" handling_mark="50.795"/>
+<VEHICLE database_id="202" braking_dist_c1="0.312" braking_dist_c2="0.025" turning_speed_c1="4.099" turning_speed_c2="0.017" handling_mark="76.058"/>
+<VEHICLE database_id="223" braking_dist_c1="0.144" braking_dist_c2="0.029" turning_speed_c1="3.373" turning_speed_c2="0.019" handling_mark="47.529"/>
+<VEHICLE database_id="221" braking_dist_c1="0.193" braking_dist_c2="0.037" turning_speed_c1="3.404" turning_speed_c2="0.024" handling_mark="51.262"/>
+<VEHICLE database_id="214" braking_dist_c1="0.346" braking_dist_c2="0.024" turning_speed_c1="3.903" turning_speed_c2="0.028" handling_mark="86.753"/>
+<VEHICLE database_id="215" braking_dist_c1="0.243" braking_dist_c2="0.026" turning_speed_c1="3.933" turning_speed_c2="0.023" handling_mark="86.768"/>
+<VEHICLE database_id="2032" braking_dist_c1="0.399" braking_dist_c2="0.017" turning_speed_c1="3.503" turning_speed_c2="0.055" handling_mark="100.000"/>
+<VEHICLE database_id="102" braking_dist_c1="0.471" braking_dist_c2="0.030" turning_speed_c1="3.958" turning_speed_c2="0.016" handling_mark="66.184"/>
+<VEHICLE database_id="111" braking_dist_c1="0.191" braking_dist_c2="0.027" turning_speed_c1="3.801" turning_speed_c2="0.017" handling_mark="73.052"/>
+<VEHICLE database_id="71" braking_dist_c1="0.371" braking_dist_c2="0.015" turning_speed_c1="4.004" turning_speed_c2="0.032" handling_mark="97.713"/>
+<VEHICLE database_id="237" braking_dist_c1="0.189" braking_dist_c2="0.027" turning_speed_c1="3.194" turning_speed_c2="0.037" handling_mark="45.666"/>
+<VEHICLE database_id="231" braking_dist_c1="0.171" braking_dist_c2="0.026" turning_speed_c1="3.374" turning_speed_c2="0.019" handling_mark="47.894"/>
+<VEHICLE database_id="235" braking_dist_c1="0.199" braking_dist_c2="0.026" turning_speed_c1="3.618" turning_speed_c2="0.023" handling_mark="63.423"/>
+<VEHICLE database_id="117" braking_dist_c1="0.201" braking_dist_c2="0.022" turning_speed_c1="3.875" turning_speed_c2="0.021" handling_mark="81.085"/>
+<VEHICLE database_id="232" braking_dist_c1="0.204" braking_dist_c2="0.023" turning_speed_c1="3.852" turning_speed_c2="0.022" handling_mark="79.742"/>
+<VEHICLE database_id="230" braking_dist_c1="0.109" braking_dist_c2="0.024" turning_speed_c1="3.724" turning_speed_c2="-0.056" handling_mark="100.000"/>
+<VEHICLE database_id="224" braking_dist_c1="0.384" braking_dist_c2="0.024" turning_speed_c1="4.001" turning_speed_c2="0.025" handling_mark="93.133"/>
+<VEHICLE database_id="234" braking_dist_c1="0.146" braking_dist_c2="0.022" turning_speed_c1="3.496" turning_speed_c2="0.017" handling_mark="53.511"/>
+<VEHICLE database_id="226" braking_dist_c1="0.228" braking_dist_c2="0.023" turning_speed_c1="3.855" turning_speed_c2="0.024" handling_mark="80.860"/>
+<VEHICLE database_id="227" braking_dist_c1="0.312" braking_dist_c2="0.020" turning_speed_c1="3.944" turning_speed_c2="0.021" handling_mark="67.403"/>
+<VEHICLE database_id="2023" log_max_speed="30.6" braking_dist_c1="0.407" braking_dist_c2="0.036" turning_speed_c1="2.573" turning_speed_c2="0.080" handling_mark="100.000"/>
+<VEHICLE database_id="2024" braking_dist_c1="0.172" braking_dist_c2="0.041" turning_speed_c1="3.853" turning_speed_c2="-0.098" handling_mark="100.000"/>
+<VEHICLE database_id="2025" log_max_speed="30.6" braking_dist_c1="0.428" braking_dist_c2="0.035" turning_speed_c1="2.489" turning_speed_c2="0.093" handling_mark="100.000"/>
+<VEHICLE database_id="2033" log_max_speed="30.6" braking_dist_c1="0.215" braking_dist_c2="0.039" turning_speed_c1="2.553" turning_speed_c2="0.085" handling_mark="100.000"/>
+<VEHICLE database_id="236" braking_dist_c1="0.137" braking_dist_c2="0.026" turning_speed_c1="3.411" turning_speed_c2="0.010" handling_mark="46.167"/>
+<VEHICLE database_id="225" braking_dist_c1="0.209" braking_dist_c2="0.022" turning_speed_c1="3.684" turning_speed_c2="0.015" handling_mark="64.145"/>
+<VEHICLE database_id="2017" braking_dist_c1="0.237" braking_dist_c2="0.042" turning_speed_c1="2.980" turning_speed_c2="0.056" handling_mark="100.000"/>
+<VEHICLE database_id="2031" braking_dist_c1="0.076" braking_dist_c2="0.021" turning_speed_c1="2.136" turning_speed_c2="-0.044" handling_mark="50.000"/>
+<VEHICLE database_id="2034" braking_dist_c1="0.285" braking_dist_c2="0.040" turning_speed_c1="3.066" turning_speed_c2="0.046" handling_mark="100.000"/>
+<VEHICLE database_id="101" braking_dist_c1="0.196" braking_dist_c2="0.032" turning_speed_c1="3.700" turning_speed_c2="0.013" handling_mark="64.342"/>
+<VEHICLE database_id="106" braking_dist_c1="0.220" braking_dist_c2="0.022" turning_speed_c1="4.114" turning_speed_c2="0.016" handling_mark="98.494"/>
+<VEHICLE database_id="211" braking_dist_c1="0.131" braking_dist_c2="0.027" turning_speed_c1="3.513" turning_speed_c2="0.008" handling_mark="50.598"/>
+<VEHICLE database_id="212" braking_dist_c1="0.150" braking_dist_c2="0.027" turning_speed_c1="3.568" turning_speed_c2="0.018" handling_mark="58.093"/>
+<VEHICLE database_id="240" braking_dist_c1="0.207" braking_dist_c2="0.024" turning_speed_c1="3.720" turning_speed_c2="0.021" handling_mark="69.281"/>
+<VEHICLE database_id="242" braking_dist_c1="0.254" braking_dist_c2="0.038" turning_speed_c1="3.311" turning_speed_c2="0.014" handling_mark="33.241"/>
+<VEHICLE database_id="243" braking_dist_c1="0.191" braking_dist_c2="0.022" turning_speed_c1="4.000" turning_speed_c2="0.012" handling_mark="86.303"/>
+<VEHICLE database_id="70" braking_dist_c1="0.156" braking_dist_c2="0.024" turning_speed_c1="3.393" turning_speed_c2="0.059" handling_mark="65.379"/>
+<VEHICLE database_id="1021" braking_dist_c1="0.237" braking_dist_c2="0.027" turning_speed_c1="4.020" turning_speed_c2="0.016" handling_mark="89.842"/>
+<VEHICLE database_id="1028" braking_dist_c1="0.200" braking_dist_c2="0.027" turning_speed_c1="3.482" turning_speed_c2="0.109" handling_mark="95.459"/>
+<VEHICLE database_id="244" braking_dist_c1="0.166" braking_dist_c2="0.021" turning_speed_c1="3.996" turning_speed_c2="0.020" handling_mark="90.184"/>
+<VEHICLE database_id="245" braking_dist_c1="0.158" braking_dist_c2="0.021" turning_speed_c1="3.980" turning_speed_c2="0.022" handling_mark="90.085"/>
+<VEHICLE database_id="1034" braking_dist_c1="0.153" braking_dist_c2="0.024" turning_speed_c1="3.732" turning_speed_c2="0.014" handling_mark="66.872"/>
+<VEHICLE database_id="246" braking_dist_c1="0.167" braking_dist_c2="0.023" turning_speed_c1="3.777" turning_speed_c2="0.016" handling_mark="70.913"/>
+<VEHICLE database_id="248" braking_dist_c1="0.155" braking_dist_c2="0.026" turning_speed_c1="3.689" turning_speed_c2="-0.052" handling_mark="100.000"/>
+<VEHICLE database_id="241" braking_dist_c1="0.441" braking_dist_c2="0.019" turning_speed_c1="3.966" turning_speed_c2="0.020" handling_mark="68.392"/>
+<VEHICLE database_id="249" braking_dist_c1="0.138" braking_dist_c2="0.023" turning_speed_c1="3.634" turning_speed_c2="0.022" handling_mark="64.123"/>
+<VEHICLE database_id="250" braking_dist_c1="0.147" braking_dist_c2="0.023" turning_speed_c1="3.763" turning_speed_c2="0.022" handling_mark="72.786"/>
+<VEHICLE database_id="222" braking_dist_c1="0.188" braking_dist_c2="0.026" turning_speed_c1="3.437" turning_speed_c2="0.021" handling_mark="52.033"/>
+<VEHICLE database_id="238" braking_dist_c1="0.222" braking_dist_c2="0.026" turning_speed_c1="4.064" turning_speed_c2="0.013" handling_mark="91.955"/>
+<VEHICLE database_id="239" braking_dist_c1="0.263" braking_dist_c2="0.024" turning_speed_c1="4.140" turning_speed_c2="-0.054" handling_mark="100.000"/>
+<VEHICLE database_id="203" braking_dist_c1="0.217" braking_dist_c2="0.026" turning_speed_c1="4.056" turning_speed_c2="0.013" handling_mark="71.308"/>
+<VEHICLE database_id="1506" braking_dist_c1="0.477" braking_dist_c2="0.013" turning_speed_c1="3.467" turning_speed_c2="-0.002" handling_mark="43.933"/>
+<VEHICLE database_id="2016" braking_dist_c1="0.561" braking_dist_c2="0.111" turning_speed_c1="1.606" turning_speed_c2="0.020" handling_mark="100.000"/>
+<VEHICLE database_id="2020" log_max_speed="24.7" braking_dist_c1="0.343" braking_dist_c2="0.081" turning_speed_c1="1.265" turning_speed_c2="0.000" handling_mark="100.000"/>
+<VEHICLE database_id="2026" log_max_speed="24.7" braking_dist_c1="0.244" braking_dist_c2="0.106" turning_speed_c1="1.276" turning_speed_c2="0.000" handling_mark="100.000"/>
+<VEHICLE database_id="2027" log_max_speed="24.7" braking_dist_c1="0.244" braking_dist_c2="0.106" turning_speed_c1="1.265" turning_speed_c2="0.000" handling_mark="100.000"/>
+<VEHICLE database_id="255" braking_dist_c1="0.157" braking_dist_c2="0.021" turning_speed_c1="3.957" turning_speed_c2="-0.057" handling_mark="100.000"/>
+<VEHICLE database_id="256" braking_dist_c1="0.153" braking_dist_c2="0.023" turning_speed_c1="3.965" turning_speed_c2="-0.061" handling_mark="100.000"/>
+<VEHICLE database_id="251" braking_dist_c1="0.259" braking_dist_c2="0.021" turning_speed_c1="3.817" turning_speed_c2="-0.015" handling_mark="100.000"/>
+<VEHICLE database_id="252" braking_dist_c1="0.289" braking_dist_c2="0.020" turning_speed_c1="4.581" turning_speed_c2="-0.073" handling_mark="100.000"/>
+<VEHICLE database_id="253" braking_dist_c1="0.365" braking_dist_c2="0.020" turning_speed_c1="4.004" turning_speed_c2="-0.031" handling_mark="100.000"/>
+<VEHICLE database_id="254" braking_dist_c1="0.170" braking_dist_c2="0.021" turning_speed_c1="3.779" turning_speed_c2="0.009" handling_mark="67.907"/>
+<VEHICLE database_id="263" braking_dist_c1="0.161" braking_dist_c2="0.030" turning_speed_c1="3.380" turning_speed_c2="0.028" handling_mark="40.314"/>
+<VEHICLE database_id="15" braking_dist_c1="0.179" braking_dist_c2="0.024" turning_speed_c1="4.092" turning_speed_c2="0.011" handling_mark="72.875"/>
+<VEHICLE database_id="1014" braking_dist_c1="0.160" braking_dist_c2="0.022" turning_speed_c1="4.040" turning_speed_c2="0.016" handling_mark="91.447"/>
+<VEHICLE database_id="262" braking_dist_c1="0.238" braking_dist_c2="0.024" turning_speed_c1="3.927" turning_speed_c2="0.022" handling_mark="85.670"/>
+<VEHICLE database_id="257" braking_dist_c1="0.246" braking_dist_c2="0.026" turning_speed_c1="4.087" turning_speed_c2="0.013" handling_mark="93.859"/>
+<VEHICLE database_id="1502" braking_dist_c1="0.486" braking_dist_c2="0.013" turning_speed_c1="3.498" turning_speed_c2="-0.004" handling_mark="44.915"/>
+<VEHICLE database_id="1500" braking_dist_c1="0.470" braking_dist_c2="0.014" turning_speed_c1="3.482" turning_speed_c2="-0.003" handling_mark="44.585"/>
+<VEHICLE database_id="2002" braking_dist_c1="0.234" braking_dist_c2="0.036" turning_speed_c1="3.522" turning_speed_c2="-0.037" handling_mark="100.000"/>
+<VEHICLE database_id="2010" braking_dist_c1="0.342" braking_dist_c2="0.038" turning_speed_c1="3.197" turning_speed_c2="0.024" handling_mark="100.000"/>
+<VEHICLE database_id="2014" braking_dist_c1="0.258" braking_dist_c2="0.040" turning_speed_c1="3.062" turning_speed_c2="0.042" handling_mark="100.000"/>
+<VEHICLE database_id="275" braking_dist_c1="0.217" braking_dist_c2="0.030" turning_speed_c1="3.743" turning_speed_c2="-0.080" handling_mark="100.000"/>
+<VEHICLE database_id="264" braking_dist_c1="0.209" braking_dist_c2="0.023" turning_speed_c1="3.860" turning_speed_c2="0.014" handling_mark="59.381"/>
+<VEHICLE database_id="113" braking_dist_c1="0.207" braking_dist_c2="0.022" turning_speed_c1="3.872" turning_speed_c2="0.016" handling_mark="78.161"/>
+<VEHICLE database_id="269" braking_dist_c1="0.241" braking_dist_c2="0.021" turning_speed_c1="3.999" turning_speed_c2="0.018" handling_mark="89.291"/>
+<VEHICLE database_id="233" braking_dist_c1="0.440" braking_dist_c2="0.020" turning_speed_c1="4.085" turning_speed_c2="0.012" handling_mark="93.429"/>
+<VEHICLE database_id="276" braking_dist_c1="0.301" braking_dist_c2="0.033" turning_speed_c1="3.948" turning_speed_c2="-0.065" handling_mark="100.000"/>
+<VEHICLE database_id="281" braking_dist_c1="0.207" braking_dist_c2="0.021" turning_speed_c1="3.997" turning_speed_c2="-0.041" handling_mark="100.000"/>
+<VEHICLE database_id="277" braking_dist_c1="0.175" braking_dist_c2="0.023" turning_speed_c1="4.022" turning_speed_c2="0.018" handling_mark="91.299"/>
+<VEHICLE database_id="266" braking_dist_c1="0.235" braking_dist_c2="0.026" turning_speed_c1="3.339" turning_speed_c2="0.020" handling_mark="46.435"/>
+<VEHICLE database_id="267" braking_dist_c1="0.175" braking_dist_c2="0.027" turning_speed_c1="3.472" turning_speed_c2="0.013" handling_mark="50.657"/>
+<VEHICLE database_id="278" braking_dist_c1="0.244" braking_dist_c2="0.019" turning_speed_c1="4.280" turning_speed_c2="-0.058" handling_mark="100.000"/>
+<VEHICLE database_id="274" braking_dist_c1="0.150" braking_dist_c2="0.024" turning_speed_c1="3.671" turning_speed_c2="0.015" handling_mark="63.492"/>
+<VEHICLE database_id="1036" braking_dist_c1="0.247" braking_dist_c2="0.021" turning_speed_c1="4.085" turning_speed_c2="0.022" handling_mark="98.920"/>
+<VEHICLE database_id="279" braking_dist_c1="0.393" braking_dist_c2="0.021" turning_speed_c1="3.990" turning_speed_c2="0.016" handling_mark="87.488"/>
+<VEHICLE database_id="1508" braking_dist_c1="0.453" braking_dist_c2="0.014" turning_speed_c1="3.422" turning_speed_c2="0.003" handling_mark="43.793"/>
+<VEHICLE database_id="273" braking_dist_c1="0.288" braking_dist_c2="0.020" turning_speed_c1="3.944" turning_speed_c2="-0.053" handling_mark="100.000"/>
+<VEHICLE database_id="280" braking_dist_c1="0.265" braking_dist_c2="0.022" turning_speed_c1="3.866" turning_speed_c2="0.018" handling_mark="78.627"/>
+<VEHICLE database_id="1505" braking_dist_c1="0.451" braking_dist_c2="0.013" turning_speed_c1="3.483" turning_speed_c2="-0.003" handling_mark="44.606"/>
+<VEHICLE database_id="268" braking_dist_c1="0.167" braking_dist_c2="0.027" turning_speed_c1="3.397" turning_speed_c2="0.015" handling_mark="47.362"/>
+<VEHICLE database_id="1504" braking_dist_c1="0.506" braking_dist_c2="0.011" turning_speed_c1="3.983" turning_speed_c2="-0.002" handling_mark="77.127"/>
+<VEHICLE database_id="1503" braking_dist_c1="0.412" braking_dist_c2="0.018" turning_speed_c1="3.472" turning_speed_c2="-0.001" handling_mark="44.740"/>
+<VEHICLE database_id="1000" braking_dist_c1="0.166" braking_dist_c2="0.025" turning_speed_c1="3.827" turning_speed_c2="0.011" handling_mark="56.293"/>
+<VEHICLE database_id="1010" braking_dist_c1="0.248" braking_dist_c2="0.027" turning_speed_c1="4.037" turning_speed_c2="0.019" handling_mark="72.663"/>
+<VEHICLE database_id="284" braking_dist_c1="0.173" braking_dist_c2="0.028" turning_speed_c1="3.486" turning_speed_c2="0.017" handling_mark="52.939"/>
+<VEHICLE database_id="287" braking_dist_c1="0.175" braking_dist_c2="0.028" turning_speed_c1="3.452" turning_speed_c2="0.018" handling_mark="51.388"/>
+<VEHICLE database_id="285" braking_dist_c1="0.188" braking_dist_c2="0.027" turning_speed_c1="3.666" turning_speed_c2="0.030" handling_mark="69.974"/>
+<VEHICLE database_id="288" braking_dist_c1="0.183" braking_dist_c2="0.027" turning_speed_c1="3.672" turning_speed_c2="0.025" handling_mark="68.330"/>
+<VEHICLE database_id="289" braking_dist_c1="0.187" braking_dist_c2="0.027" turning_speed_c1="3.689" turning_speed_c2="0.029" handling_mark="71.199"/>
+<VEHICLE database_id="286" braking_dist_c1="0.260" braking_dist_c2="0.026" turning_speed_c1="3.926" turning_speed_c2="0.024" handling_mark="86.722"/>
+<VEHICLE database_id="108" braking_dist_c1="0.235" braking_dist_c2="0.029" turning_speed_c1="3.642" turning_speed_c2="0.016" handling_mark="61.722"/>
+<VEHICLE database_id="1001" braking_dist_c1="0.128" braking_dist_c2="0.028" turning_speed_c1="3.564" turning_speed_c2="0.009" handling_mark="54.137"/>
+<VEHICLE database_id="200" braking_dist_c1="0.236" braking_dist_c2="0.024" turning_speed_c1="3.491" turning_speed_c2="0.019" handling_mark="54.027"/>
+<VEHICLE database_id="261" braking_dist_c1="0.207" braking_dist_c2="0.023" turning_speed_c1="3.930" turning_speed_c2="-0.044" handling_mark="100.000"/>
+<VEHICLE database_id="1031" braking_dist_c1="0.146" braking_dist_c2="0.034" turning_speed_c1="3.126" turning_speed_c2="0.027" handling_mark="38.700"/>
+<VEHICLE database_id="208" braking_dist_c1="0.252" braking_dist_c2="0.024" turning_speed_c1="3.917" turning_speed_c2="0.019" handling_mark="82.919"/>
+<VEHICLE database_id="207" braking_dist_c1="0.266" braking_dist_c2="0.024" turning_speed_c1="3.976" turning_speed_c2="0.020" handling_mark="88.507"/>
+<VEHICLE database_id="290" braking_dist_c1="0.217" braking_dist_c2="0.028" turning_speed_c1="3.477" turning_speed_c2="0.018" handling_mark="52.689"/>
+<VEHICLE database_id="292" braking_dist_c1="0.174" braking_dist_c2="0.025" turning_speed_c1="3.766" turning_speed_c2="-0.003" handling_mark="61.340"/>
+<VEHICLE database_id="294" braking_dist_c1="0.184" braking_dist_c2="0.026" turning_speed_c1="3.974" turning_speed_c2="-0.003" handling_mark="75.970"/>
+<VEHICLE database_id="295" braking_dist_c1="0.211" braking_dist_c2="0.025" turning_speed_c1="4.184" turning_speed_c2="-0.000" handling_mark="95.008"/>
+<VEHICLE database_id="291" braking_dist_c1="0.189" braking_dist_c2="0.023" turning_speed_c1="3.904" turning_speed_c2="0.016" handling_mark="80.613"/>
+<VEHICLE database_id="293" braking_dist_c1="0.271" braking_dist_c2="0.022" turning_speed_c1="4.097" turning_speed_c2="0.022" handling_mark="100.000"/>
+</VEHICLE_PHYSICS>
+<SPEED_DISTRIB>
+<POINT val="0.83" freq="0.31"/>
+<POINT val="0.93" freq="0.45"/>
+<POINT val="1.05" freq="0.98"/>
+<POINT val="1.16" freq="0.98"/>
+<POINT val="1.23" freq="0.58"/>
+<POINT val="1.38" freq="0.41"/>
+<POINT val="1.54" freq="0.33"/>
+<POINT val="1.66" freq="0.16"/>
+</SPEED_DISTRIB>
+<SECDIST_DISTRIB>
+<POINT val="0.00" freq="0.00"/>
+<POINT val="0.04" freq="0.97"/>
+<POINT val="0.13" freq="0.97"/>
+<POINT val="0.23" freq="0.97"/>
+<POINT val="0.40" freq="0.97"/>
+<POINT val="0.49" freq="0.25"/>
+<POINT val="0.72" freq="0.24"/>
+<POINT val="1.00" freq="0.00"/>
+</SECDIST_DISTRIB>
+<HARDCODED_ZONES/>
+<Pedestrians>
+<Max2Display>30</Max2Display>
+<CollideSphereRadius>0.250</CollideSphereRadius>
+<CollideSphereDetectionRadius>1.000</CollideSphereDetectionRadius>
+<MinSpeed>0.20</MinSpeed>
+<MaxSpeed>2.00</MaxSpeed>
+<MaxLength2Player>200.00</MaxLength2Player>
+</Pedestrians>
+<OppAndCop>
+<PathOptimizerParams>
+<PathOptFixedNormals>true</PathOptFixedNormals>
+<PathOptMinAngle>0.00000000</PathOptMinAngle>
+<PathOptTrackDistance>20.000</PathOptTrackDistance>
+<PathOptForceFactor>1.000</PathOptForceFactor>
+<PathOptDamping>1.000</PathOptDamping>
+<PathOptCoeffMaxValue>0.500</PathOptCoeffMaxValue>
+<PathOptNbPasses>50</PathOptNbPasses>
+<PathOptMethod>1</PathOptMethod>
+<PathOptMethodPower>2</PathOptMethodPower>
+<PathOptMinAmpFactor>1.000</PathOptMinAmpFactor>
+<PathOptMaxAmpFactor>191.000</PathOptMaxAmpFactor>
+<PathOptReduceFactor>0.000</PathOptReduceFactor>
+<PathOptUncurveToExtractCoeff>0.100</PathOptUncurveToExtractCoeff>
+<Speed1>25.000</Speed1>
+<Speed2>50.000</Speed2>
+<Speed3>75.000</Speed3>
+<Coeff1>1.000</Coeff1>
+<Coeff2>1.000</Coeff2>
+<Coeff3>1.000</Coeff3>
+<PathOptEnableAmp>true</PathOptEnableAmp>
+</PathOptimizerParams>
+<PoliceParams>
+<PoliceMaxCount>3</PoliceMaxCount>
+<PoliceDamMaxCount>3</PoliceDamMaxCount>
+<PoliceDeleteDistance>500.000</PoliceDeleteDistance>
+<PoliceSearchDistance>250.000</PoliceSearchDistance>
+<PoliceCaptureDistance>20.000</PoliceCaptureDistance>
+<PoliceCaptureSpeed>5.000</PoliceCaptureSpeed>
+<PoliceCaptureTime>1.000</PoliceCaptureTime>
+<PoliceForceChase>false</PoliceForceChase>
+<PoliceSpawnProba>0.043</PoliceSpawnProba>
+<PoliceSearchSpawnProba>0.300</PoliceSearchSpawnProba>
+<PoliceSearchMinTime>10.000</PoliceSearchMinTime>
+<PoliceSearchMinTimeStep>0.000</PoliceSearchMinTimeStep>
+<PoliceCanBackOnTrack>false</PoliceCanBackOnTrack>
+<PoliceForceDensity>false</PoliceForceDensity>
+<OutsideAllowed>true</OutsideAllowed>
+<CaptureByTime>true</CaptureByTime>
+<CaptureBySpeed>true</CaptureBySpeed>
+<NeedSpeedANDTime>true</NeedSpeedANDTime>
+<CanCollide>true</CanCollide>
+<CanCollideFromBehind>true</CanCollideFromBehind>
+<CanCollideFromAhead>true</CanCollideFromAhead>
+<CanChaseFromAhead>true</CanChaseFromAhead>
+</PoliceParams>
+<Infringement>
+<InfLimit>12.000</InfLimit>
+<InfACGraceDelay>5.000</InfACGraceDelay>
+<InfGracePeriod>2.000</InfGracePeriod>
+<InfLoweringFactor>1.000</InfLoweringFactor>
+<InfCollisionValue>6.000</InfCollisionValue>
+<InfSpeedLimitTolerance>1.100</InfSpeedLimitTolerance>
+<InfSpeedLimitFactor>1.000</InfSpeedLimitFactor>
+<InfOncomingLaneFactor>1.000</InfOncomingLaneFactor>
+<InfOncomingLaneValue>3.000</InfOncomingLaneValue>
+<InfRedLightValue>3.000</InfRedLightValue>
+<InfStopValue>3.000</InfStopValue>
+<InfYieldValue>3.000</InfYieldValue>
+<InfAllowedDistToStop>10.000</InfAllowedDistToStop>
+<InfAllowedSpeedToStop>1.000</InfAllowedSpeedToStop>
+<InfAllowedDurationOnControl>7.000</InfAllowedDurationOnControl>
+<InfYieldObsTimeToJunc>1.000</InfYieldObsTimeToJunc>
+<InfCopMalusFactor>2.000</InfCopMalusFactor>
+<InfPoliceDamLimit>36.000</InfPoliceDamLimit>
+<InfSecondCopLimit>24.000</InfSecondCopLimit>
+<InfThirdCopLimit>36.000</InfThirdCopLimit>
+<InfAggressiveLimit>36.000</InfAggressiveLimit>
+<WitnessedOffenceTime>0.100</WitnessedOffenceTime>
+<WitnessedOffenceValue>12.000</WitnessedOffenceValue>
+<InfAllButCollision>true</InfAllButCollision>
+<FineCarValue>1000</FineCarValue>
+<FineSetValue>250</FineSetValue>
+<RecidiveTime>180.00</RecidiveTime>
+<GInfMaxValue>100.000</GInfMaxValue>
+<GInfLoweringFactor>0.100</GInfLoweringFactor>
+<GInfDestroyCar>20.000</GInfDestroyCar>
+</Infringement>
+<Opponents>
+<OpponentDifficulty>1.000</OpponentDifficulty>
+<ForceNbOpponent>-1</ForceNbOpponent>
+<IAReplacePlayer>false</IAReplacePlayer>
+<SameCarThanPlayer>false</SameCarThanPlayer>
+<NavOppRespectLane>true</NavOppRespectLane>
+</Opponents>
+</OppAndCop>
+</AICONFIG>

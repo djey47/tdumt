@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Car colors index. For TDU Modding Tools usage - 2010 Djey
+Thanks to DJ Paragon and Reilsss for their awesome work. -->
+<colors>
+  <color code="B_01" label="Sky Blue" type="exterior" />
+  <color code="B_02" label="Turquise Blue" type="exterior" />
+  <color code="B_03" label="Royal Blue" type="exterior" />
+  <color code="B_04" label="Night Dark Blue" type="exterior" />
+  <color code="B_05" label="Dark Blue" type="exterior" />
+  <color code="B_06" label="Neon Turquise Blue (very shiny)" type="exterior" />
+  <color code="B_07" label="Blue (very shiny)" type="exterior" />
+  <color code="B_08" label="Ice Blue" type="exterior" />
+  <color code="B_09" label="Jeans Blue" type="exterior" />
+  <color code="B_10" label="Ice Color (very shiny)" type="exterior" />
+  <color code="B_F01" label="Ferrari Gentel Blue" type="exterior" />
+  <color code="B_F02" label="Ferrari Sky Blue Metallic" type="exterior" />
+  <color code="B_F03" label="Ferrari Dark Turquise Blue" type="exterior" />
+  <color code="B_F04" label="Ferrari Dark (Ink) Blue" type="exterior" />
+  <color code="BM_01" label="Blue Metallic" type="exterior" />
+  <color code="BM_02" label="Jeans Blue Metallic" type="exterior" />
+  <color code="BM_03" label="Sky Blue Metallic (B_01 Metallic)" type="exterior" />
+  <color code="BM_04" label="Steal Blue Metallic" type="exterior" />
+  <color code="BM_05" label="Turquise Blue Metallic" type="exterior" />
+  <color code="BM_06" label="Light Blue Metallic" type="exterior" />
+  <color code="BM_07" label="Royal Blue Metallic" type="exterior" />
+  <color code="BM_08" label="Ice Blue Metallic" type="exterior" />
+  <color code="BM_09" label="Smoke Blue Metallic" type="exterior" />
+  <color code="BM_10" label="Mild Ice Blue Mettalic (A bit darker as BM_08)" type="exterior" />
+  <color code="BM_11" label="Night Blue Metallic" type="exterior" />
+  <color code="BM_12" label="Dark Jeans Blue Metallic" type="exterior" />
+  <color code="BM_13" label="Mild Sky Blue Metallic" type="exterior" />
+  <color code="BM_14" label="Neon Turquise Blue Metallic (very shiny)" type="exterior" />
+  <color code="BM_15" label="Sea Blue Metallic" type="exterior" />
+  <color code="BM_16" label="Light Violet Blue Metallic" type="exterior" />
+  <color code="BM_17" label="Mild Blue Metallic" type="exterior" />
+  <color code="BM_18" label="Neon White Blue Metallic (very shiny)" type="exterior" />
+  <color code="BM_19" label="Violet Blue Metallic" type="exterior" />
+  <color code="BM_20" label="Black Ink Blue Metallic" type="exterior" />
+  <color code="BM_21" label="Turquise Sky Blue Metallic (shiny)" type="exterior" />
+  <color code="BM_22" label="Mild Blue Metallic" type="exterior" />
+  <color code="BM_23" label="Milk Blue Metallic" type="exterior" />
+  <color code="Brutale_01" label="Silver with Red stripes (shiny)" type="exterior" />
+  <color code="Brutale_02" label="Black with Black stripes" type="exterior" />
+  <color code="Brutale_03" label="Red with Red stripes" type="exterior" />
+  <color code="Brutale_04" label="Black with Red stripes" type="exterior" />
+  <color code="Brutale_05" label="Red with White stripes" type="exterior" />
+  <color code="Camaro_01" label="Camaro Yellow with Black stripes" type="exterior" />
+  <color code="Camaro_02" label="Camaro Cream Yellow with Black stripes" type="exterior" />
+  <color code="Camaro_03" label="Camaro Cream Yellow with Black stripes" type="exterior" />
+  <color code="Camaro_04" label="Camaro Red with Black stripes" type="exterior" />
+  <color code="Camaro_05" label="Camaro Dark Red with White stripes" type="exterior" />
+  <color code="Camaro_06" label="Camaro Black with White stripes" type="exterior" />
+  <color code="Camaro_07" label="Camaro White with Black stripes" type="exterior" />
+  <color code="Camaro_08" label="Camaro Unclean Blue with White stripes" type="exterior" />
+  <color code="Camaro_09" label="Camaro Dark Blue with White stripes" type="exterior" />
+  <color code="Camaro_10" label="Camaro Blue with White stripes" type="exterior" />
+  <color code="Camaro_11" label="Camaro Darkgold with Black stripes" type="exterior" />
+  <color code="Camaro_12" label="Camaro Softgreen with Black stripes" type="exterior" />
+  <color code="Camaro_13" label="Camaro Seagreen with Black stripes" type="exterior" />
+  <color code="Camaro_14" label="Camaro Seagreen with White stripes" type="exterior" />
+  <color code="Camaro_15" label="Camaro Purple with White stripes" type="exterior" />
+  <color code="Camaro_16" label="Camaro Brown with White stripes" type="exterior" />
+  <color code="Camaro_17" label="Camaro Red with White stripes" type="exterior" />
+  <color code="Camaro_18" label="Camaro Gold with Black stripes" type="exterior" />
+  <color code="Cobra_01" label="Silver White Stripes" type="exterior" />
+  <color code="EX_01" label="Chrome (Appears often dark colorish)" type="exterior" />
+  <color code="EX_02" label="Gold (very shiny)" type="exterior" />
+  <color code="F360_01" label="Ferrari Red with White stripes" type="exterior" />
+  <color code="F360_02" label="Ferrari Red with Ferrari Red stripes" type="exterior" />
+  <color code="F360_03" label="Ferrari Silver with White stripes" type="exterior" />
+  <color code="F360_04" label="Ferrari Silver with Silver stripes" type="exterior" />
+  <color code="F360_05" label="Ferrari Black with White stripes" type="exterior" />
+  <color code="F360_06" label="Ferrari Black with Black stripes" type="exterior" />
+  <color code="F360_07" label="Ferrari Yellow with White stripes" type="exterior" />
+  <color code="F360_08" label="Ferrari Yellow with Yellow stripes" type="exterior" />
+  <color code="F360_09" label="Ferrari Blue with White stripes" type="exterior" />
+  <color code="F360_10" label="Ferrari Blue with Blue stripes" type="exterior" />
+  <color code="FordGT_01" label="Ford GT Red with White stripes" type="exterior" />
+  <color code="FordGT_02" label="Ford GT Silver with Black stripes" type="exterior" />
+  <color code="FordGT_03" label="Ford GT Speed Yellow with Black stripes" type="exterior" />
+  <color code="FordGT_04" label="Ford GT Black with White stripes" type="exterior" />
+  <color code="FordGT_05" label="Ford GT Dark Blue with White stripes" type="exterior" />
+  <color code="FordGT_06" label="Ford GT White with Blue stripes" type="exterior" />
+  <color code="FordGT_07" label="Ford GT Red" type="exterior" />
+  <color code="FordGT_08" label="Ford GT Silver" type="exterior" />
+  <color code="FordGT_09" label="Ford GT Yellow" type="exterior" />
+  <color code="FordGT_10" label="Ford GT Black" type="exterior" />
+  <color code="FordGT_11" label="Ford GT Dark Blue" type="exterior" />
+  <color code="FordGT_12" label="Ford GT White" type="exterior" />
+  <color code="FordGT_01_N" label="Ford GT Red with White stripes" type="exterior" />
+  <color code="FordGT_02_N" label="Ford GT Silver" type="exterior" />
+  <color code="FordGT_03_N" label="Ford GT White with Yellow stripes" type="exterior" />
+  <color code="FordGT_04_N" label="Ford GT Yellow Vents" type="exterior" />
+  <color code="FordGT_05_N" label="Ford GT Dark Blue" type="exterior" />
+  <color code="FordGT_06_N" label="Ford GT White" type="exterior" />
+  <color code="FordGT_07_N" label="Ford GT Red" type="exterior" />
+  <color code="FordGT_08_N" label="Ford GT Silver" type="exterior" />
+  <color code="FordGT_09_N" label="Ford GT Yellow" type="exterior" />
+  <color code="FordGT_10_N" label="Ford GT Dark Blue" type="exterior" />
+  <color code="FordGT_11_N" label="Ford GT White" type="exterior" />
+  <color code="FordGT_12_N" label="Ford GT Black" type="exterior" />
+  <color code="FordGT_13_N" label="Ford GT White with no stripes color (stripes take color of pervose selected color)" type="exterior" />
+  <color code="FordGT_14_N" label="Ford GT Black" type="exterior" />
+  <color code="FordGT_15_N" label="Ford GT White" type="exterior" />
+  <color code="FordGT_16_N" label="Ford GT Blue" type="exterior" />
+  <color code="G_01" label="Light Grey" type="exterior" />
+  <color code="G_02" label="Silver (shiny)" type="exterior" />
+  <color code="GR1_01" label="Grey Metallic" type="exterior" />
+  <color code="GR1_02" label="Chrome (Same as EX_01)" type="exterior" />
+  <color code="GR1_03" label="Grey Metallic with White stripes (Same as GR1_01)" type="exterior" />
+  <color code="GM_01" label="Antrazith Metallic" type="exterior" />
+  <color code="GM_02" label="Dark Grey Metallic" type="exterior" />
+  <color code="GM_03" label="Grey Pearl" type="exterior" />
+  <color code="GM_04" label="Silver Metallic" type="exterior" />
+  <color code="GM_05" label="White Silver Metallic (very shiny)" type="exterior" />
+  <color code="GM_06" label="Silver" type="exterior" />
+  <color code="GM_07" label="Blue Silver Metallic" type="exterior" />
+  <color code="GM_08" label="Smoke Silver Metallic" type="exterior" />
+  <color code="GM_09" label="Grey Metallic" type="exterior" />
+  <color code="GM_10" label="Ice Turquise Pearl (very shiny)" type="exterior" />
+  <color code="GM_11" label="White Metallic (very shiny)" type="exterior" />
+  <color code="GM_12" label="Light Grey Pearl" type="exterior" />
+  <color code="GM_13" label="Milk Silver Metallic" type="exterior" />
+  <color code="GM_14" label="NO COLOR!!! (Copy color previously selected)" type="exterior" />
+  <color code="GM_15" label="White (very shiny)" type="exterior" />
+  <color code="GM_F01" label="Ferrari Smoke Wood Silver" type="exterior" />
+  <color code="GM_F02" label="Ferrari Light Smoke Silver Metallic" type="exterior" />
+  <color code="GM_F03" label="Ferrari Grey Silver Peral" type="exterior" />
+  <color code="GM_F04" label="Ferrari Antrazith Silver Peral" type="exterior" />
+  <color code="GM_F05" label="Ferrari Blue Grey Metallic" type="exterior" />
+  <color code="J_01" label="Neon Sun Yellow (very shiny)" type="exterior" />
+  <color code="J_02" label="Neon Lemon Yellow (very shiny)" type="exterior" />
+  <color code="J_03" label="Neon Gold Yellow (very shiny)" type="exterior" />
+  <color code="J_04" label="Neon Polished Sun Yellow (very shiny)" type="exterior" />
+  <color code="J_05" label="Lemon Cream Yellow (very shiny)" type="exterior" />
+  <color code="J_06" label="Polished Lemon Cream Yellow (very shiny)" type="exterior" />
+  <color code="J_F01" label="Ferrari Polished Yellow (very shiny)" type="exterior" />
+  <color code="JM_01" label="Yellow (shiny)" type="exterior" />
+  <color code="JM_02" label="24 Karat Gold Metallic" type="exterior" />
+  <color code="JM_03" label="Gold Yellow Metallic" type="exterior" />
+  <color code="JM_04" label="White Gold Metallic (very shiny)" type="exterior" />
+  <color code="JM_05" label="Beach Sand Gold Metallic" type="exterior" />
+  <color code="JM_06" label="White Yellow Peral (very shiny)" type="exterior" />
+  <color code="JM_07" label="Light Gold Metallic (s)" type="exterior" />
+  <color code="JM_08" label="Dawn Sun Yellow (shiny)" type="exterior" />
+  <color code="Kawa_01" label="Lime Green with Black stripes" type="exterior" />
+  <color code="Kawa_02" label="Lime Green with White stripes" type="exterior" />
+  <color code="Kawa_03" label="Black with White stripes" type="exterior" />
+  <color code="Kawa_04" label="Black with White stripes" type="exterior" />
+  <color code="Kawa_05" label="Silver with Black stripes" type="exterior" />
+  <color code="Kawa_06" label="Silver with White stripes" type="exterior" />
+  <color code="M_01" label="Caramel Orange" type="exterior" />
+  <color code="M_02" label="Brown" type="exterior" />
+  <color code="M_03" label="Redwood Brown" type="exterior" />
+  <color code="M_04" label="Ligth Cream Brown" type="exterior" />
+  <color code="MM_01" label="Dark Gold" type="exterior" />
+  <color code="MM_02" label="Brown Metallic" type="exterior" />
+  <color code="MM_03" label="Cream Gold Metallic (shiny)" type="exterior" />
+  <color code="MM_04" label="Silver Maroon Metallic" type="exterior" />
+  <color code="MM_05" label="Silver Redwood Metallic" type="exterior" />
+  <color code="MM_06" label="Dark Grey Brown Metallic" type="exterior" />
+  <color code="Monster_01" label="Red with Black stripes" type="exterior" />
+  <color code="Monster_02" label="Red with White stripes" type="exterior" />
+  <color code="MustangGTR_01" label="Orange Pearl" type="exterior" />
+  <color code="N_01" label="Black" type="exterior" />
+  <color code="N_02" label="Blue Black" type="exterior" />
+  <color code="N_03" label="Red Black" type="exterior" />
+  <color code="N_04" label="Green Black" type="exterior" />
+  <color code="N_05" label="Darker Black (bit darker as N_01)" type="exterior" />
+  <color code="N_06" label="Darker Blue Black" type="exterior" />
+  <color code="N_07" label="Darker Red Black" type="exterior" />
+  <color code="N_08" label="Darker Green Black" type="exterior" />
+  <color code="N_09" label="Black Mattcolor" type="exterior" />
+  <color code="N_F01" label="Ferrari Red Black" type="exterior" />
+  <color code="N_F02" label="Ferrari Antrazith Brown" type="exterior" />
+  <color code="O_01" label="Yellow (Normal compared to shiny J_ colors)" type="exterior" />
+  <color code="O_02" label="Cream Orange" type="exterior" />
+  <color code="O_03" label="Sun Yellow (Normal compared to shiny J_ colors)" type="exterior" />
+  <color code="OM_01" label="Orange Metallic" type="exterior" />
+  <color code="OM_02" label="Red Orange Metallic" type="exterior" />
+  <color code="OM_03" label="Gold Yellow Peral" type="exterior" />
+  <color code="OM_04" label="Honey Cream Metallic" type="exterior" />
+  <color code="OM_05" label="Rose Pink White Metallic" type="exterior" />
+  <color code="OM_06" label="Copper Orange Peral" type="exterior" />
+  <color code="OM_07" label="Red Wood Orange Metallic" type="exterior" />
+  <color code="P_01" label="Parme" type="exterior" />
+  <color code="P_02" label="Dark Blue Purple Metallic" type="exterior" />
+  <color code="P_05" label="Dark Purple Metallic" type="exterior" />
+  <color code="P_06" label="Pastel Ligth Purple" type="exterior" />
+  <color code="P_F01" label="Ferrari Dark Wine Red" type="exterior" />
+  <color code="R_01" label="Neon Red (very shiny)" type="exterior" />
+  <color code="R_02" label="Red Peral" type="exterior" />
+  <color code="R_03" label="Bright Red (shiny)" type="exterior" />
+  <color code="R_04" label="Bastel (Ferrari like) Red" type="exterior" />
+  <color code="R_05" label="Blood Red (shiny)" type="exterior" />
+  <color code="R_06" label="Dark Red" type="exterior" />
+  <color code="R_F01" label="Ferrari Red (Orange touch)" type="exterior" />
+  <color code="R_F02" label="Ferrari Strong Red Peral" type="exterior" />
+  <color code="R_F03" label="Ferrari Wine Red" type="exterior" />
+  <color code="RM_02" label="Rose Red Metallic" type="exterior" />
+  <color code="RM_03" label="Pink Red Metallic" type="exterior" />
+  <color code="RM_04" label="Purble Red Metallic" type="exterior" />
+  <color code="RM_05" label="Wine Red Metallic" type="exterior" />
+  <color code="RM_06" label="Dark Red Metallic" type="exterior" />
+  <color code="RM_07" label="Red Metallic" type="exterior" />
+  <color code="RM_08" label="Dark Metallic Red" type="exterior" />
+  <color code="RM_09" label="Cream Maroon Metallic" type="exterior" />
+  <color code="RM_10" label="Maroon Metallic" type="exterior" />
+  <color code="RM_12" label="Red Fire Red Peral" type="exterior" />
+  <color code="RM_13" label="Light Wine Red Metallic" type="exterior" />
+  <color code="RM_14" label="Dark Maroon Metallic" type="exterior" />
+  <color code="Shelby_01" label="White with Blue stripes" type="exterior" />
+  <color code="Shelby_02" label="Blue with White stripes" type="exterior" />
+  <color code="TR_01" label="Traffic White Pearl (shiny)" type="exterior" />
+  <color code="TR_02" label="Traffic Blue" type="exterior" />
+  <color code="TR_03" label="Traffic Blue Grey Metallic" type="exterior" />
+  <color code="TR_04" label="Traffic White Metallic (very shiny)" type="exterior" />
+  <color code="TR_05" label="Traffic Dark Red" type="exterior" />
+  <color code="TR_06" label="Traffic Teal Metallic" type="exterior" />
+  <color code="TR_07" label="Traffic Smoke Grey Pearl" type="exterior" />
+  <color code="TR_08" label="Traffic Strong Red (shiny)" type="exterior" />
+  <color code="TR_09" label="Traffic Grey Metallic" type="exterior" />
+  <color code="TR_10" label="Traffic Black White Peral" type="exterior" />
+  <color code="TR_11" label="Traffic Neon White (very shiny)" type="exterior" />
+  <color code="Trans_01" label="Trans.AM White" type="exterior" />
+  <color code="Trans_01_N" label="Trans.AM ??" type="exterior" />
+  <color code="Trans_02" label="Trans.AM Red" type="exterior" />
+  <color code="Trans_02_N" label="Trans.AM ??" type="exterior" />
+  <color code="Trans_03" label="Trans.AM Dark Green" type="exterior" />
+  <color code="Trans_03_N" label="Trans.AM ??" type="exterior" />
+  <color code="TVR_01" label="TVR Red Metallic" type="exterior" />
+  <color code="TVR_02" label="TVR Orange Purble Blue Pearl special" type="exterior" />
+  <color code="TVR_03" label="TVR Dark Blue Purble Pearl special" type="exterior" />
+  <color code="TVR_04" label="TVR Black Metallic Red Pearl special" type="exterior" />
+  <color code="TVR_05" label="TVR Blue White Pearl special" type="exterior" />
+  <color code="TVR_06" label="TVR Cream White Egg-Orange Pearl special" type="exterior" />
+  <color code="TVR_07" label="TVR White Blue Pearl special" type="exterior" />
+  <color code="V_01" label="Bastel Light Green" type="exterior" />
+  <color code="V_02" label="Green" type="exterior" />
+  <color code="V_03" label="British Racing Green" type="exterior" />
+  <color code="V_04" label="Very Ligth Teal Green (shiny)" type="exterior" />
+  <color code="V_05" label="Dark Green" type="exterior" />
+  <color code="V_06" label="Neon Lemon Yellow (very shiny)" type="exterior" />
+  <color code="V_07" label="Bright cream Green" type="exterior" />
+  <color code="V_08" label="Neon Ligth Teal (very shiny)" type="exterior" />
+  <color code="V_09" label="Lemon Green (shiny)" type="exterior" />
+  <color code="Viper_01" label="Viper Dark Blue with White stripes" type="exterior" />
+  <color code="Viper_02" label="Viper Red with White stripes" type="exterior" />
+  <color code="Viper_03" label="Viper White with Black stripes" type="exterior" />
+  <color code="Viper_04" label="Viper Silver with Blue stripes" type="exterior" />
+  <color code="Viper_05" label="Viper Red with White stripes" type="exterior" />
+  <color code="Viper_06" label="Viper Black with Silver stripes" type="exterior" />
+  <color code="Viper_07" label="Viper Silver" type="exterior" />
+  <color code="Viper_08" label="Viper Fire Red with Black stripes" type="exterior" />
+  <color code="Viper_09" label="Viper Yellow with White stripes" type="exterior" />
+  <color code="VM_01" label="Neon Green Metallic (very shiny)" type="exterior" />
+  <color code="VM_02" label="Brigth Green Metallic (shiny)" type="exterior" />
+  <color code="VM_03" label="Dark Teal Metallic" type="exterior" />
+  <color code="VM_04" label="Teal Metallic" type="exterior" />
+  <color code="VM_05" label="Cream Lime Green Metallic (shiny)" type="exterior" />
+  <color code="VM_06" label="Aqua Blue Peral" type="exterior" />
+  <color code="VM_07" label="Dark Green Metallic" type="exterior" />
+  <color code="VM_08" label="British Racing Green Metallic" type="exterior" />
+  <color code="VM_09" label="Teal White Metallic (very shiny)" type="exterior" />
+  <color code="VM_10" label="Green Metallic" type="exterior" />
+  <color code="VM_11" label="Smoke Green Metallic" type="exterior" />
+  <color code="VM_12" label="Teal Green Metallic" type="exterior" />
+  <color code="VM_13" label="Grey Green Metallic" type="exterior" />
+  <color code="VM_14" label="Light Sea Green Metallic (very shiny)" type="exterior" />
+  <color code="VM_15" label="Silver (Green touch) Metallic" type="exterior" />
+  <color code="VM_17" label="Dark Forrest Green Peral" type="exterior" />
+  <color code="VM_18" label="Cream Green Metallic" type="exterior" />
+  <color code="VM_20" label="Brigth Green Metallic" type="exterior" />
+  <color code="VM_21" label="Dark Aqua Blue Metallic" type="exterior" />
+  <color code="W_01" label="Neon White (extrem shiny)" type="exterior" />
+  <color code="W_02" label="Snow White (extrem shiny)" type="exterior" />
+  <color code="W_03" label="White (shiny)" type="exterior" />
+  <color code="W_F01" label="Ferrari White (extrem shiny)" type="exterior" />
+
+  <color code="NoColor" label="" type="interior" />
+  <color code="C_B_01" label="Dark Blue 1" type="interior" />
+  <color code="C_B_02" label="Blue" type="interior" />
+  <color code="C_B_03" label="Dark Blue 2" type="interior" />
+  <color code="C_B_04" label="Soft Light Blue" type="interior" />
+  <color code="C_B_05" label="Blue" type="interior" />
+  <color code="C_G_01" label="Light Grey" type="interior" />
+  <color code="C_G_02" label="Grey" type="interior" />
+  <color code="C_G_03" label="Dark Grey" type="interior" />
+  <color code="C_G_04" label="Snow White Chrysler Me 4 12 Buttons 1" type="interior" />
+  <color code="C_G_05" label="Snow White Chrysler Me 4 12 Buttons 2" type="interior" />
+  <color code="C_G_06" label="Snow White" type="interior" />
+  <color code="C_J_01" label="Strong Yellow 1" type="interior" />
+  <color code="C_J_02" label="Orange Yellow" type="interior" />
+  <color code="C_J_03" label="Strong Yellow 2" type="interior" />
+  <color code="C_J_04" label="Yellow" type="interior" />
+  <color code="C_J_05" label="Very Strong Yellow" type="interior" />
+  <color code="C_M_01" label="Wood Brown" type="interior" />
+  <color code="C_M_02" label="Dark Wood Brown" type="interior" />
+  <color code="C_M_03" label="Sand" type="interior" />
+  <color code="C_M_04" label="Chocolate" type="interior" />
+  <color code="C_M_05" label="Mild Brown" type="interior" />
+  <color code="C_M_07" label="85% Black 1" type="interior" />
+  <color code="C_N_01" label="85% Black 2" type="interior" />
+  <color code="C_N_02" label="85% Black 3" type="interior" />
+  <color code="C_N_03" label="85% Black 4" type="interior" />
+  <color code="C_O_01" label="Light Brown Orange" type="interior" />
+  <color code="C_O_02" label="Bege Soft Sand" type="interior" />
+  <color code="C_O_03" label="Orange" type="interior" />
+  <color code="C_R_01" label="Dark Red" type="interior" />
+  <color code="C_R_02" label="Bright Wine Red" type="interior" />
+  <color code="C_R_03" label="Dark Wine Red" type="interior" />
+  <color code="C_R_04" label="Darker Wine Red" type="interior" />
+  <color code="C_R_05" label="Dark Red" type="interior" />
+  <color code="C_R_06" label="Bright Red" type="interior" />
+  <color code="C_V_01" label="White Green" type="interior" />
+  <color code="C_V_02" label="Ice Green" type="interior" />
+  <color code="C_V_03" label="Teal Green" type="interior" />
+  <color code="C_V_04" label="Bright Green" type="interior" />
+  <color code="C_W_01" label="Full White" type="interior" />
+  <color code="C_W_02" label="Sand Cream White" type="interior" />
+  <color code="M_B_01" label="Blue" type="interior" />
+  <color code="M_B_02" label="Blue" type="interior" />
+  <color code="M_B_04" label="Blue" type="interior" />
+  <color code="M_B_05" label="Blue" type="interior" />
+  <color code="M_G_01" label="Grey" type="interior" />
+  <color code="M_G_02" label="Grey" type="interior" />
+  <color code="M_G_03" label="Grey" type="interior" />
+  <color code="M_G_04" label="Grey" type="interior" />
+  <color code="M_G_05" label="Grey" type="interior" />
+  <color code="M_G_06" label="Grey" type="interior" />
+  <color code="M_G_07" label="Grey" type="interior" />
+  <color code="M_G_09" label="Grey" type="interior" />
+  <color code="M_G_12" label="Grey" type="interior" />
+  <color code="M_J_01" label="Yellow" type="interior" />
+  <color code="M_J_02" label="Yellow" type="interior" />
+  <color code="M_J_03" label="Yellow" type="interior" />
+  <color code="M_N_01" label="Black" type="interior" />
+  <color code="M_N_03" label="Black" type="interior" />
+  <color code="M_N_04" label="Black" type="interior" />
+  <color code="M_N_05" label="Black" type="interior" />
+  <color code="M_O_01" label="Orange" type="interior" />
+  <color code="M_R_01" label="Red" type="interior" />
+  <color code="M_R_02" label="Red" type="interior" />
+  <color code="M_R_05" label="Red" type="interior" />
+  <color code="M_R_06" label="Red" type="interior" />
+  <color code="M_R_07" label="Red" type="interior" />
+  <color code="M_R_08" label="Red" type="interior" />
+  <color code="M_R_10" label="Red" type="interior" />
+  <color code="M_W_02" label="White" type="interior" />
+  <color code="M_W_03" label="White" type="interior" />
+  <color code="M_W_04" label="White" type="interior" />
+  <color code="Mat_01" label="?" type="interior" />
+  <color code="P_R_01" label="Red" type="interior" />
+  <color code="P_W_01" label="White" type="interior" />
+
+  <color code="Cal_A_B" label="Blue 1" type="calipers" />
+  <color code="Cal_B_R" label="Red 1" type="calipers" />
+  <color code="Cal_B_W" label="White 1" type="calipers" />
+  <color code="Cal_B_Y" label="Yellow" type="calipers" />
+  <color code="Cal_G_R" label="Red 2" type="calipers" />
+  <color code="Cal_O_R" label="Red 3" type="calipers" />
+  <color code="Cal_R_B" label="Blue 2" type="calipers" />
+  <color code="Cal_R_W" label="White 2" type="calipers" />
+
+  <color code="M_B_02" label="Blue" type="material" />
+  <color code="M_B_03" label="Blue" type="material" />
+  <color code="M_B_04" label="Blue" type="material" />
+  <color code="M_B_06" label="Blue" type="material" />
+  <color code="M_B_07" label="Blue" type="material" />
+  <color code="M_G_01" label="Gray 1" type="material" />
+  <color code="M_G_03" label="Gray 2" type="material" />
+  <color code="M_G_10" label="Gray 3" type="material" />
+  <color code="M_G_11" label="Gray 4" type="material" />
+  <color code="M_M_01" label="Brown" type="material" />
+  <color code="M_M_02" label="Brown" type="material" />
+  <color code="M_M_03" label="Brown" type="material" />
+  <color code="M_M_04" label="Brown" type="material" />
+  <color code="M_M_05" label="Brown" type="material" />
+  <color code="M_N_01" label="Black" type="material" />
+  <color code="M_N_02" label="Black" type="material" />
+  <color code="M_N_04" label="Black" type="material" />
+  <color code="M_O_02" label="Orange" type="material" />
+  <color code="M_O_03" label="Orange" type="material" />
+  <color code="M_O_05" label="Orange" type="material" />
+  <color code="M_R_02" label="Red" type="material" />
+  <color code="M_R_04" label="Red" type="material" />
+  <color code="M_R_09" label="Red" type="material" />
+  <color code="M_R_10" label="Red" type="material" />
+  <color code="M_V_01" label="Green" type="material" />
+  <color code="Mat_01" label="?" type="material" />
+  <color code="Mat_01_N" label="?" type="material" />
+  <color code="Mat_02" label="?" type="material" />
+  <color code="Mat_03" label="?" type="material" />
+  <color code="Mat_04" label="Carbon?" type="material" />
+  <color code="Mat_05" label="?" type="material" />
+  <color code="Mat_06" label="?" type="material" />
+  <color code="Mat_07" label="?" type="material" />
+  <color code="Mat_08" label="?" type="material" />
+  <color code="Mat_09" label="?" type="material" />
+  <color code="P_B_01" label="Blue" type="material" />
+  <color code="P_N_01" label="Black" type="material" />
+  <color code="P_O_01" label="Orange" type="material" />
+  <color code="P_R_01" label="Red" type="material" />
+  <color code="P_S_01" label="Silver" type="material" />
+  <color code="P_V_01" label="Green" type="material" />
+</colors>

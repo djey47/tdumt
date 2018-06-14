@@ -1,0 +1,11 @@
+﻿... because TDU Mod And Play!.exe does not work as standalone.
+
+You have to create a patch (pch) file and generate it before using TDU Mod And Play!.exe
+Go to Patch Editor to do this.
+
+I think you're just looking for TDU Modding Tools, so please leave that folder!
+
+Greetings
+
+
+Djey.

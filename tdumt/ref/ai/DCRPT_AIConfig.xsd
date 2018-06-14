@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AICONFIG">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VEHICLE_REPARTITION">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ZONE">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="VEHICLE">
+                      <xs:complexType>
+                        <xs:attribute name="database_id" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="frequency" type="xs:decimal" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="nb_traffic_per_lane_kilometer" type="xs:decimal" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="nb_zones" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="VEHICLE_PHYSICS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="VEHICLE">
+                <xs:complexType>
+                  <xs:attribute name="database_id" type="xs:unsignedShort" use="required" />
+                  <xs:attribute name="braking_dist_c1" type="xs:decimal" use="required" />
+                  <xs:attribute name="braking_dist_c2" type="xs:decimal" use="required" />
+                  <xs:attribute name="turning_speed_c1" type="xs:decimal" use="required" />
+                  <xs:attribute name="turning_speed_c2" type="xs:decimal" use="required" />
+                  <xs:attribute name="handling_mark" type="xs:decimal" use="required" />
+                  <xs:attribute name="log_max_speed" type="xs:decimal" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SPEED_DISTRIB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="POINT">
+                <xs:complexType>
+                  <xs:attribute name="val" type="xs:decimal" use="required" />
+                  <xs:attribute name="freq" type="xs:decimal" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SECDIST_DISTRIB">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="POINT">
+                <xs:complexType>
+                  <xs:attribute name="val" type="xs:decimal" use="required" />
+                  <xs:attribute name="freq" type="xs:decimal" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="HARDCODED_ZONES" />
+        <xs:element name="Pedestrians">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Max2Display" type="xs:unsignedByte" />
+              <xs:element name="CollideSphereRadius" type="xs:decimal" />
+              <xs:element name="CollideSphereDetectionRadius" type="xs:decimal" />
+              <xs:element name="MinSpeed" type="xs:decimal" />
+              <xs:element name="MaxSpeed" type="xs:decimal" />
+              <xs:element name="MaxLength2Player" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OppAndCop">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PathOptimizerParams">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PathOptFixedNormals" type="xs:boolean" />
+                    <xs:element name="PathOptMinAngle" type="xs:decimal" />
+                    <xs:element name="PathOptTrackDistance" type="xs:decimal" />
+                    <xs:element name="PathOptForceFactor" type="xs:decimal" />
+                    <xs:element name="PathOptDamping" type="xs:decimal" />
+                    <xs:element name="PathOptCoeffMaxValue" type="xs:decimal" />
+                    <xs:element name="PathOptNbPasses" type="xs:unsignedByte" />
+                    <xs:element name="PathOptMethod" type="xs:unsignedByte" />
+                    <xs:element name="PathOptMethodPower" type="xs:unsignedByte" />
+                    <xs:element name="PathOptMinAmpFactor" type="xs:decimal" />
+                    <xs:element name="PathOptMaxAmpFactor" type="xs:decimal" />
+                    <xs:element name="PathOptReduceFactor" type="xs:decimal" />
+                    <xs:element name="PathOptUncurveToExtractCoeff" type="xs:decimal" />
+                    <xs:element name="Speed1" type="xs:decimal" />
+                    <xs:element name="Speed2" type="xs:decimal" />
+                    <xs:element name="Speed3" type="xs:decimal" />
+                    <xs:element name="Coeff1" type="xs:decimal" />
+                    <xs:element name="Coeff2" type="xs:decimal" />
+                    <xs:element name="Coeff3" type="xs:decimal" />
+                    <xs:element name="PathOptEnableAmp" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PoliceParams">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PoliceMaxCount" type="xs:unsignedByte" />
+                    <xs:element name="PoliceDamMaxCount" type="xs:unsignedByte" />
+                    <xs:element name="PoliceDeleteDistance" type="xs:decimal" />
+                    <xs:element name="PoliceSearchDistance" type="xs:decimal" />
+                    <xs:element name="PoliceCaptureDistance" type="xs:decimal" />
+                    <xs:element name="PoliceCaptureSpeed" type="xs:decimal" />
+                    <xs:element name="PoliceCaptureTime" type="xs:decimal" />
+                    <xs:element name="PoliceForceChase" type="xs:boolean" />
+                    <xs:element name="PoliceSpawnProba" type="xs:decimal" />
+                    <xs:element name="PoliceSearchSpawnProba" type="xs:decimal" />
+                    <xs:element name="PoliceSearchMinTime" type="xs:decimal" />
+                    <xs:element name="PoliceSearchMinTimeStep" type="xs:decimal" />
+                    <xs:element name="PoliceCanBackOnTrack" type="xs:boolean" />
+                    <xs:element name="PoliceForceDensity" type="xs:boolean" />
+                    <xs:element name="OutsideAllowed" type="xs:boolean" />
+                    <xs:element name="CaptureByTime" type="xs:boolean" />
+                    <xs:element name="CaptureBySpeed" type="xs:boolean" />
+                    <xs:element name="NeedSpeedANDTime" type="xs:boolean" />
+                    <xs:element name="CanCollide" type="xs:boolean" />
+                    <xs:element name="CanCollideFromBehind" type="xs:boolean" />
+                    <xs:element name="CanCollideFromAhead" type="xs:boolean" />
+                    <xs:element name="CanChaseFromAhead" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Infringement">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InfLimit" type="xs:decimal" />
+                    <xs:element name="InfACGraceDelay" type="xs:decimal" />
+                    <xs:element name="InfGracePeriod" type="xs:decimal" />
+                    <xs:element name="InfLoweringFactor" type="xs:decimal" />
+                    <xs:element name="InfCollisionValue" type="xs:decimal" />
+                    <xs:element name="InfSpeedLimitTolerance" type="xs:decimal" />
+                    <xs:element name="InfSpeedLimitFactor" type="xs:decimal" />
+                    <xs:element name="InfOncomingLaneFactor" type="xs:decimal" />
+                    <xs:element name="InfOncomingLaneValue" type="xs:decimal" />
+                    <xs:element name="InfRedLightValue" type="xs:decimal" />
+                    <xs:element name="InfStopValue" type="xs:decimal" />
+                    <xs:element name="InfYieldValue" type="xs:decimal" />
+                    <xs:element name="InfAllowedDistToStop" type="xs:decimal" />
+                    <xs:element name="InfAllowedSpeedToStop" type="xs:decimal" />
+                    <xs:element name="InfAllowedDurationOnControl" type="xs:decimal" />
+                    <xs:element name="InfYieldObsTimeToJunc" type="xs:decimal" />
+                    <xs:element name="InfCopMalusFactor" type="xs:decimal" />
+                    <xs:element name="InfPoliceDamLimit" type="xs:decimal" />
+                    <xs:element name="InfSecondCopLimit" type="xs:decimal" />
+                    <xs:element name="InfThirdCopLimit" type="xs:decimal" />
+                    <xs:element name="InfAggressiveLimit" type="xs:decimal" />
+                    <xs:element name="WitnessedOffenceTime" type="xs:decimal" />
+                    <xs:element name="WitnessedOffenceValue" type="xs:decimal" />
+                    <xs:element name="InfAllButCollision" type="xs:boolean" />
+                    <xs:element name="FineCarValue" type="xs:unsignedShort" />
+                    <xs:element name="FineSetValue" type="xs:unsignedByte" />
+                    <xs:element name="RecidiveTime" type="xs:decimal" />
+                    <xs:element name="GInfMaxValue" type="xs:decimal" />
+                    <xs:element name="GInfLoweringFactor" type="xs:decimal" />
+                    <xs:element name="GInfDestroyCar" type="xs:decimal" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Opponents">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OpponentDifficulty" type="xs:decimal" />
+                    <xs:element name="ForceNbOpponent" type="xs:byte" />
+                    <xs:element name="IAReplacePlayer" type="xs:boolean" />
+                    <xs:element name="SameCarThanPlayer" type="xs:boolean" />
+                    <xs:element name="NavOppRespectLane" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:unsignedByte" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

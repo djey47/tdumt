@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TDUModdingLibrary.converters.GraphicsConverters" Collapsed="true">
+    <Position X="45.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAiAAAAAAAAAAAA=</HashCode>
+      <FileName>converters\GraphicsConverters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.converters.SoundConverters" Collapsed="true">
+    <Position X="49" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAA=</HashCode>
+      <FileName>converters\SoundConverters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats._2DB" Collapsed="true">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCBAAIAoAgAAAAAAAEAAAIgAAAAAAEEAgQAAAAAAAIE=</HashCode>
+      <FileName>fileformats\_2DB.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.BIN_Cameras" Collapsed="true">
+    <Position X="7.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAIAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAk=</HashCode>
+      <FileName>fileformats\BIN_Cameras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.BNK" Collapsed="true">
+    <Position X="11.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAIACDCAAAQEIgAAQBQgAAgACAAIAgAAUgIIRAAk=</HashCode>
+      <FileName>fileformats\BNK.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.BTRQ" Collapsed="true">
+    <Position X="14" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>fileformats\BTRQ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.DDS" Collapsed="true">
+    <Position X="16.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAIAoAgAAAAAAAAAAIIgABAAAAEEAAQAAAAAAAAE=</HashCode>
+      <FileName>fileformats\DDS.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.MAP" Collapsed="true">
+    <Position X="18.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIIAMEAIgFAgAAABAIAlIBgEBACgAAAABACQIAAE=</HashCode>
+      <FileName>fileformats\MAP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.TduFile" Collapsed="true">
+    <Position X="11.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAAAggBIQYAAAAAgAAAAAAASkABAEAAlCIAE=</HashCode>
+      <FileName>fileformats\TduFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.XMB" Collapsed="true">
+    <Position X="20.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>fileformats\XMB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.XMB_WAV" Collapsed="true">
+    <Position X="20.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>fileformats\XMB_WAV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.CarColors" Collapsed="true">
+    <Position X="9.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAIAAAAAAgAAAAQAAAAgAAAAgAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>fileformats\database\CarColors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.DB" Collapsed="true">
+    <Position X="5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIBAKCQAAIABTAEBAAFAAhAQAAAIAAAQQEAAAIAgEE=</HashCode>
+      <FileName>fileformats\database\DB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.DBResource" Collapsed="true">
+    <Position X="9.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAAIIBAYEAAIRCEWAAgIBkAAAAQAABQUAAAQAAAAIE=</HashCode>
+      <FileName>fileformats\database\DBResource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.util.DatabaseHelper" Collapsed="true">
+    <Position X="42" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAEAQAQAAAAAAIAAASAAEAAAAAIAABAgA=</HashCode>
+      <FileName>fileformats\database\util\DatabaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.util.Identifier" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAAABAAAgAAAAAAAAAAAAIAAAAAAAAAEABA=</HashCode>
+      <FileName>fileformats\database\util\Identifier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.util.NamingReferenceHelper" Collapsed="true">
+    <Position X="49" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEIEABEAECAAAAAAJQAgAQIBAwAIAAAgIpRwAAgig=</HashCode>
+      <FileName>fileformats\database\util\NamingReferenceHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.database.util.VehicleSlotsHelper" Collapsed="true">
+    <Position X="45.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEhEAEAEAEAAgAAAAgIAFAAMBEBGAAAAABBCAAABgA=</HashCode>
+      <FileName>fileformats\database\util\VehicleSlotsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.specific.PCH" Collapsed="true">
+    <Position X="23" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAACBMAAECEgAQoAwEAAMTwACQABCMABBASgEGAhAic=</HashCode>
+      <FileName>fileformats\specific\PCH.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.fileformats.specific.Regular" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>fileformats\specific\Regular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.LibraryProperties" Collapsed="true">
+    <Position X="42" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibraryProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.editing.EditHelper" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAARCEQAAAQCGABAAgEAgiAADAIgAAQQQAIAAAAIAA=</HashCode>
+      <FileName>support\editing\EditHelper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.encryption.XTEAEncryption" Collapsed="true">
+    <Position X="47.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAgAQAAAAAAAgAAAAAAAAAEAAAAAAABA=</HashCode>
+      <FileName>support\encryption\XTEAEncryption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.conditions.AlwaysFalseC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>support\patcher\conditions\AlwaysFalseC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.conditions.AlwaysTrueC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>support\patcher\conditions\AlwaysTrueC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.conditions.MagicMapC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>support\patcher\conditions\MagicMapC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.conditions.MegapackTduC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>support\patcher\conditions\MegapackTduC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.conditions.PatchedTduC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>support\patcher\conditions\PatchedTduC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.exceptions.MissingParameterException" Collapsed="true">
+    <Position X="47.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAAAA=</HashCode>
+      <FileName>support\patcher\exceptions\MissingParameterException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.BackupFileI" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\BackupFileI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.ChangeBrandNameI" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\ChangeBrandNameI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.ChangeCameraSetI" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\ChangeCameraSetI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.ChangeIKSetI" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\ChangeIKSetI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.ChangeRimNameI" Collapsed="true">
+    <Position X="16.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\ChangeRimNameI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.ChangeVehicleNameI" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\ChangeVehicleNameI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.CopyFileI" Collapsed="true">
+    <Position X="21" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\CopyFileI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.DeleteRadialI" Collapsed="true">
+    <Position X="23.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\DeleteRadialI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.MagicMapI" Collapsed="true">
+    <Position X="25.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\MagicMapI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.PatchBytesI" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\PatchBytesI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.PatchInstruction" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEmAwAAABCggAIQQQAEAFQyCAAADACAAAoAIIAAEIAI=</HashCode>
+      <FileName>support\patcher\instructions\PatchInstruction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.ReplaceFileInBNKI" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\ReplaceFileInBNKI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.instructions.RestoreFileI" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAEABAQAAAACAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\instructions\RestoreFileI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.BnkFileIP" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\BnkFileIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.BrandFullNameIP" Collapsed="true">
+    <Position X="21.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\BrandFullNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.BrandNameIP" Collapsed="true">
+    <Position X="23.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\BrandNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.CameraIKIdentifierIP" Collapsed="true">
+    <Position X="28.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\CameraIKIdentifierIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.CreateFolderIP" Collapsed="true">
+    <Position X="32.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\CreateFolderIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.DatabaseResourceIdIP" Collapsed="true">
+    <Position X="37.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\DatabaseResourceIdIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.DestinationIP" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\DestinationIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.FileNameIP" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\FileNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.MakeBackupIP" Collapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\MakeBackupIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.ModelNameIP" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\ModelNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.NewFileIP" Collapsed="true">
+    <Position X="19.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\NewFileIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.PatchInstructionParameter" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgABgAAAAAAAQAAAAAAAIQACAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\PatchInstructionParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.RimNameIP" Collapsed="true">
+    <Position X="26" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\RimNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.SlotFullNameIP" Collapsed="true">
+    <Position X="30.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\SlotFullNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.SubModelNameIP" Collapsed="true">
+    <Position X="35" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\SubModelNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.ValueAddressIP" Collapsed="true">
+    <Position X="39.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\ValueAddressIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.ValueIP" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\ValueIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.ValueLengthIP" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\ValueLengthIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.VehicleFullNameIP" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\VehicleFullNameIP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.providers.BooleanValuesProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\BooleanValuesProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.providers.BrandNamesValuesProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\BrandNamesValuesProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.providers.CameraIKValuesProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="49" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\CameraIKValuesProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.providers.LengthValuesProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="49" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\LengthValuesProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.providers.SlotNamesValuesProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\SlotNamesValuesProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.providers.VehicleNamesValuesProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\VehicleNamesValuesProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.parameters.util.ParameterInfo" Collapsed="true">
+    <Position X="42" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAEAAAAAAAAAIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\util\ParameterInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.PatchHelper" Collapsed="true">
+    <Position X="45.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoCAAAAEIAgAUQAIAUASABACAABECAAAQIEEgAAAAIA=</HashCode>
+      <FileName>support\patcher\PatchHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.BnkGaugesHighPathV" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\BnkGaugesHighPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.BnkGaugesLowPathV" Collapsed="true">
+    <Position X="7.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\BnkGaugesLowPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.BnkPathV" Collapsed="true">
+    <Position X="11.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\BnkPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.BnkSoundVehiclePathV" Collapsed="true">
+    <Position X="14" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\BnkSoundVehiclePathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.BnkVehiclePathV" Collapsed="true">
+    <Position X="16.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\BnkVehiclePathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.BnkVehicleRimPathV" Collapsed="true">
+    <Position X="18.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\BnkVehicleRimPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.DbPathV" Collapsed="true">
+    <Position X="20.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\DbPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.DesktopPathV" Collapsed="true">
+    <Position X="23" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\DesktopPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.PatchPathV" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\PatchPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.PatchVariable" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIQAgAAAAAhAgAAQAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\PatchVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.TduPathV" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\TduPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.patcher.vars.TempPathV" Collapsed="true">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>support\patcher\vars\TempPathV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingLibrary.support.Tools" Collapsed="true">
+    <Position X="42" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAkKgQAAgAM4AATKgJCRBIA6BDCAYAQGwIggYDiI=</HashCode>
+      <FileName>support\Tools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TDUModdingLibrary.fileformats.interfaces.ITextureFile" Collapsed="true">
+    <Position X="43.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>fileformats\interfaces\ITextureFile.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TDUModdingLibrary.support.patcher.conditions.IPatchCondition" Collapsed="true">
+    <Position X="42" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>support\patcher\conditions\IPatchCondition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TDUModdingLibrary.support.patcher.parameters.providers.IValuesProvider" Collapsed="true">
+    <Position X="45.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>support\patcher\parameters\providers\IValuesProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

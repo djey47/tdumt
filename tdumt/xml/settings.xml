@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<customSettings>
+  <parameter name="TduMainFolder" value="" />
+  <parameter name="BnkFileEditorFileName" value="BNKFileEditor.exe" />
+  <parameter name="EditReplaceMaintainEnabled" value="true" />
+  <parameter name="StartupModule" value="" />
+  <parameter name="FileBrowserViewMode" value="LargeIcon" />
+  <parameter name="TduLaunchConfigurations" value="Default|True|False|False|False||¤" />
+  <parameter name="TduLanguage" value="US - English" />
+</customSettings>

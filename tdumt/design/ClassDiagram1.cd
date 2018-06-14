@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TDUModdingTools.common.AppConstants" Collapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAQAQCAAAAYAAEAAAAAAAAAAAQAAI=</HashCode>
+      <FileName>common\AppConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.GuiConstants" Collapsed="true">
+    <Position X="40" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAgCAMBIAAAEAAAAEgAAAAABEAgAAAAABAAQgAEhA=</HashCode>
+      <FileName>common\GuiConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers._2DBHandler" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\_2DBHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.BNKHandler" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\BNKHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.DDSHandler" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\DDSHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.FileHandler" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAAAAAAABAgAAAACAAAAAAAAAAAAAACCAACAABCAAA=</HashCode>
+      <FileName>common\handlers\FileHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.MAPHandler" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\MAPHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.XMB_WAVHandler" Collapsed="true">
+    <Position X="24.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\XMB_WAVHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.XMBHandler" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\XMBHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.database.BrandsHandler" Collapsed="true">
+    <Position X="13.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\database\BrandsHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.database.CarColorsHandler" Collapsed="true">
+    <Position X="15.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\database\CarColorsHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.database.CarPhysicsHandler" Collapsed="true">
+    <Position X="18" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\database\CarPhysicsHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.database.DBHandler" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\database\DBHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.database.DBResourceHandler" Collapsed="true">
+    <Position X="15.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\database\DBResourceHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.specific.PCHHandler" Collapsed="true">
+    <Position X="22.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAACAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\specific\PCHHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.handlers.specific.RegularHandler" Collapsed="true">
+    <Position X="27" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>common\handlers\specific\RegularHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.settings.LaunchConfiguration" Collapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAgQCAAAAAEAAAFAAIKQAgAAAAAABAAAEAAAABAA=</HashCode>
+      <FileName>common\settings\LaunchConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.settings.LaunchConfigurationConverter" Collapsed="true">
+    <Position X="33" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgEAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>common\settings\LaunchConfigurationConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.common.settings.TduModdingToolsSettings" Collapsed="true">
+    <Position X="36.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAAAAQAAGAEAEAABAgACAQAAABCAAAABAgACAA=</HashCode>
+      <FileName>common\settings\TduModdingToolsSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.converters._2d._2DBToDDSForm" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BYnoISAAAaAQABIAgEDAwB4CkAACIA6YICCJAAAFCFE=</HashCode>
+      <FileName>gui\converters\_2d\_2DBToDDSForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.converters._2d.DDSTo2DBForm" Collapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQkoAyACEKAAABGACADAYBgCAAIAAg4AMCIAAAAEiCE=</HashCode>
+      <FileName>gui\converters\_2d\DDSTo2DBForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.dbeditor.DBEditorForm" Collapsed="true">
+    <Position X="40" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AcgBRGcgACKACBgAgF6A5MICSMBNAIwJAOBQQQCeGCE=</HashCode>
+      <FileName>gui\dbeditor\DBEditorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.filebrowser.EditTasksForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAFIAKASCABAAQiCACACoICQNAAAAAFACAAEACIEAA=</HashCode>
+      <FileName>gui\filebrowser\EditTasksForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingTools.gui.filebrowser.FileBrowserContextMenuFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAAABABAABAAAAgAAAAAAogIAAABEAAAAAAAKAA=</HashCode>
+      <FileName>gui\filebrowser\FileBrowserContextMenuFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingTools.gui.filebrowser.FileBrowserForm" Collapsed="true">
+    <Position X="36.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kQfTbf0n+fUscFxYKSCv0bJD/pthg6GeapoyldIl8TA=</HashCode>
+      <FileName>gui\filebrowser\FileBrowserForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.filebrowser.PropertiesDialog" Collapsed="true">
+    <Position X="38.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAACAAAAAAAACAAAASAAAAAAQAIAAABQCEQiA=</HashCode>
+      <FileName>gui\filebrowser\PropertiesDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.launcher.LaunchContextMenuFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gui\launcher\LaunchContextMenuFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingTools.gui.MainForm" Collapsed="true">
+    <Position X="36.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIiQBI1BASMCAB4EuASWcymDDHgYCBERQkhBA4NAANA=</HashCode>
+      <FileName>gui\MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.maptool.FileListingForm" Collapsed="true">
+    <Position X="38.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>REUAIAIAACAAABBAAALgACATAABQhAiCgKCCAACAAAU=</HashCode>
+      <FileName>gui\maptool\FileListingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.maptool.MAPToolForm" Collapsed="true">
+    <Position X="38.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NIAAQQYIADAIgFiAgAaQQEQDIkBJgIpAACAAAQSAFSU=</HashCode>
+      <FileName>gui\maptool\MAPToolForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.maptool.SizeModifierForm" Collapsed="true">
+    <Position X="33" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACQAABAAgACABUACAAIIAAAAACAAQAAAAAA=</HashCode>
+      <FileName>gui\maptool\SizeModifierForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.settings.SettingsForm" Collapsed="true">
+    <Position X="29.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>lRCSgAB0CCwoIDAoAAKAwJECESdI8gpEESQBBgggAJo=</HashCode>
+      <FileName>gui\settings\SettingsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.sound.XMBEditorForm" Collapsed="true">
+    <Position X="31.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAAAAAAgCAQAACCAAAAAgAAgAAAQAAACE=</HashCode>
+      <FileName>gui\sound\XMBEditorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.camerasfix.CamerasFixForm" Collapsed="true">
+    <Position X="33" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBAEACEAIDAIEBDAggCOAACKggIIBAEESCUQxQIBCTE=</HashCode>
+      <FileName>gui\wizards\camerasfix\CamerasFixForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.carcolorseditor.CarColorsEditorForm" Collapsed="true">
+    <Position X="34.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAKAAYIEACAAABAAANCAQQACMMBIoAAzEyQBQwAAQCg=</HashCode>
+      <FileName>gui\wizards\carcolorseditor\CarColorsEditorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.customnames.CustomNamesForm" Collapsed="true">
+    <Position X="36.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>1DEEJAkHgKII1XQCBSCESQAyFFYQQIJCADcQwQBiRGE=</HashCode>
+      <FileName>gui\wizards\customnames\CustomNamesForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.patcheditor.parametervalue.ParameterKnownValuesDialog" Collapsed="true">
+    <Position X="40" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAAABACAACAAAACAAEAAAIAAAAABAAAAAA=</HashCode>
+      <FileName>gui\wizards\patcheditor\parametervalue\ParameterKnownValuesDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.patcheditor.parametervalue.ParameterValueDialog" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACIAQAAAABAAAAAAAIIAQ=</HashCode>
+      <FileName>gui\wizards\patcheditor\parametervalue\ParameterValueDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.patcheditor.PatchEditorForm" Collapsed="true">
+    <Position X="31.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DwIEq/+mgmiDIDybInOFxaVjZRqpHScMAyNUTNGABzI=</HashCode>
+      <FileName>gui\wizards\patcheditor\PatchEditorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.patcheditor.PatchPropertiesDialog" Collapsed="true">
+    <Position X="33" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAgAECQAABAAAACAAAACAAAAEABAACAQBCRAAAA=</HashCode>
+      <FileName>gui\wizards\patcheditor\PatchPropertiesDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.patcheditor.VariableContextMenuFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gui\wizards\patcheditor\VariableContextMenuFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.DatasheetTasksSupport" Collapsed="true">
+    <Position X="38.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAgAAAAIAAAAAAAAAAAiAgAAAAAAA=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\DatasheetTasksSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.DealerTasksSupport" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAQAAAAAIAAAAgAAAAQAAAAAAAAAgQ=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\DealerTasksSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.InstallTasksSupport" Collapsed="true">
+    <Position X="29.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAJAAACB6IAAEAAAAAQQAAAAABEQQAI=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\InstallTasksSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.PhysicsTasksSupport" Collapsed="true">
+    <Position X="34.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\PhysicsTasksSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.SharedConstants" Collapsed="true">
+    <Position X="31.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAEAAIDABAhEQQkApCKIADAQACAEIAAIATEABAAEA=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\SharedConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.TableBrowsingDialog" Collapsed="true">
+    <Position X="34.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgoAAECADAAABAACECAAAACgBAAAAAIAIQUBAAAAQI=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\TableBrowsingDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.utils.TunerTasksSupport" Collapsed="true">
+    <Position X="38.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgABAAAAAAAAAAAAAAAIAAAAAAAAAQAAIgAAAAAAA=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\utils\TunerTasksSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.gui.wizards.vehiclemanager.VehicleManagerForm" Collapsed="true">
+    <Position X="29.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/ylIJn2ydnGoVx86AjjG+mgDwo29id1UUSZxRxP/rX0=</HashCode>
+      <FileName>gui\wizards\vehiclemanager\VehicleManagerForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.Program" Collapsed="true">
+    <Position X="36.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAQAAAAAAEBIAAAAAAAAAAAAJAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TDUModdingTools.Properties.Resources" Collapsed="true">
+    <Position X="40" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARBQQFAIMAgAIAAAICABEBBQAQAPAAAACAEAAIAAAIo=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
