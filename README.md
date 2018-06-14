@@ -18,9 +18,9 @@ Base release on this repository depends on module. Previous history is not inclu
 
 4 projects hosted here:
 
-- **tdumodlib**: TDU Modding Library as .net 2.0 assembly (DLL)
+- **tdumt-lib**: TDU Modding Library as .net 2.0 assembly (DLL)
 
-- **tdumt**: TDU Modding Tools Graphical User Interface as .net 2.0 assembly (EXE)
+- **tdumt-gui**: TDU Modding Tools Graphical User Interface as .net 2.0 assembly (EXE)
 
 - **tdumt-cli**: TDU Modding Tools Command Line Interface as .net 2.0 assembly (EXE)
   - Base release: 0.4.2

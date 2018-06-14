@@ -13,6 +13,7 @@ obj/
 
 # Win Garbage
 thumbs.db
+Thumbs.db
 
 # Game contents
 data_dfe_*
