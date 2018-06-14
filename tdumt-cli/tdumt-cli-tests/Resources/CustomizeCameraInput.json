@@ -1,0 +1,24 @@
+﻿{
+	"views": [
+		{
+			"type": "Hood",
+			"cameraId": 2014,
+			"viewId": 44
+		},
+		{
+			"type": "Hood_Back",
+			"cameraId": 2013,
+			"viewId": 24
+		},
+		{
+			"type": "Cockpit",
+			"cameraId": 2012,
+			"viewId": 45
+		},
+		{
+			"type": "Cockpit_Back",
+			"cameraId": 2011,
+			"viewId": 25
+		}
+	]
+}

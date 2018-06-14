@@ -1,7 +1,15 @@
 # IDE-specific
+.idea*/
 *.userprefs
 *.csproj.user
+*.DotSettings.user
+*.sln.iml
 tests.log
+*.suo
+
+#.Net compiler
+bin/
+obj/
 
 # Win Garbage
 thumbs.db

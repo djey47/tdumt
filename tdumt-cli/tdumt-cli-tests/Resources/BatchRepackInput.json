@@ -1,0 +1,12 @@
+﻿{
+    "items": [
+		{
+			"iPath": "\\PATH1",
+			"eFile": "d:\\file1"
+		},
+		{
+			"iPath": "\\PATH2",
+			"eFile": "d:\\file2"
+		}
+	]
+}

@@ -12,15 +12,18 @@ I created this repository to share all work done with the community.
 
 ## Versioning
 
-Base release on this repository is **1.16.3**. Previous history is not included.
+Base release on this repository depends on module. Previous history is not included.
 
 ## Hierarchy
 
-3 projects hosted here:
+4 projects hosted here:
 
 - **tdumodlib**: TDU Modding Library as .net 2.0 assembly (DLL)
 
 - **tdumt**: TDU Modding Tools Graphical User Interface as .net 2.0 assembly (EXE)
+
+- **tdumt-cli**: TDU Modding Tools Command Line Interface as .net 2.0 assembly (EXE)
+  - Base release: 0.4.2
 
 - **tdumt-patcher**: TDU Modding Tools Installer GUI as .net 2.0 assembly (EXE)
 

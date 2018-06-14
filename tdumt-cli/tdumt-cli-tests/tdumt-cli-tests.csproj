@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11E27B8B-1A9E-4CF6-ACC4-F90CD7E8F52B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Djey.TduModdingTools.CLI</RootNamespace>
+    <AssemblyName>tdumt-cli-tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>0.4</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="TDUModdingLibrary">
+      <HintPath>..\assemblies\TDUModdingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\ModuleDispatcherTest.cs" />
+    <Compile Include="ProgramTest.cs" />
+    <Compile Include="Modules\Banks\Dto\MappingTest.cs" />
+    <Compile Include="Modules\Banks\BanksModuleTest.cs" />
+    <Compile Include="Modules\Cameras\Dto\MappingTest.cs" />
+    <Compile Include="Modules\Cameras\CamerasModuleTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\Banks\" />
+    <Folder Include="Modules\Banks\Dto\" />
+    <Folder Include="Resources\binaries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tdumt-cli.csproj">
+      <Project>{9E55BD9A-711A-4935-8212-FA8A6CBE408D}</Project>
+      <Name>tdumt-cli</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\BatchRepackInput.json" />
+    <EmbeddedResource Include="Resources\BatchUnpackInput-NoTarget.json" />
+    <EmbeddedResource Include="Resources\CustomizeCameraInput.json" />
+    <EmbeddedResource Include="Resources\CustomizeCameraOutput.json" />
+    <EmbeddedResource Include="Resources\ListCameraOutput-Default.json" />
+    <EmbeddedResource Include="Resources\binaries\cameras.bin" />
+  </ItemGroup>
+</Project>
