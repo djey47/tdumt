@@ -203,9 +203,27 @@
     <Compile Include="support\patcher\vars\TduPathV.cs" />
     <Compile Include="support\patcher\vars\TempPathV.cs" />
     <Compile Include="support\Tools.cs" />
+    <Compile Include="labs\WorldEditor\2DM\_2DM_Common.cs" />
+    <Compile Include="labs\WorldEditor\2DM\_2DM_Reader.cs" />
+    <Compile Include="labs\WorldEditor\2DM\_2DM_TerrainWriter.cs" />
+    <Compile Include="labs\WorldEditor\2DM\_2DM_Writer.cs" />
+    <Compile Include="labs\WorldEditor\2DM\MaterialPieces.cs" />
+    <Compile Include="labs\WorldEditor\2DM\TerrainPieces.cs" />
+    <Compile Include="labs\WorldEditor\SHK\HavokPieces.cs" />
+    <Compile Include="labs\WorldEditor\SHK\HavokReader.cs" />
+    <Compile Include="labs\WorldEditor\SHK\HavokWriter.cs" />
+    <Compile Include="labs\WorldEditor\DAE\DAE_Reader.cs" />
+    <Compile Include="labs\WorldEditor\DAE\DAE_Writer.cs" />
+    <Compile Include="labs\WorldEditor\GeometryPieces.cs" />
+    <Compile Include="labs\WorldEditor\Utilitaires.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="installer\common\" />
+    <Folder Include="labs\" />
+    <Folder Include="labs\WorldEditor\" />
+    <Folder Include="labs\WorldEditor\2DM\" />
+    <Folder Include="labs\WorldEditor\SHK\" />
+    <Folder Include="labs\WorldEditor\DAE\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
