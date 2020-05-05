@@ -1,0 +1,53 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdumt-cli", "tdumt-cli\tdumt-cli.csproj", "{9E55BD9A-711A-4935-8212-FA8A6CBE408D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDUModdingTools", "tdumt-gui\TDUModdingTools.csproj", "{AA74E383-9973-4825-8C18-15C2EB656F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDUModdingLibrary", "tdumt-lib\TDUModdingLibrary.csproj", "{EC3A4A4F-1648-4FE9-9404-68DDA741813F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDUModAndPlay", "tdumt-patcher\TDUModAndPlay.csproj", "{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Debug|x86.Build.0 = Debug|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Release|x86.ActiveCfg = Release|Any CPU
+		{9E55BD9A-711A-4935-8212-FA8A6CBE408D}.Release|x86.Build.0 = Release|Any CPU
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Debug|x86.ActiveCfg = Debug|x86
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Debug|x86.Build.0 = Debug|x86
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Release|x86.ActiveCfg = Release|x86
+		{AA74E383-9973-4825-8C18-15C2EB656F87}.Release|x86.Build.0 = Release|x86
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Debug|x86.ActiveCfg = Debug|x86
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Debug|x86.Build.0 = Debug|x86
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Release|x86.ActiveCfg = Release|x86
+		{EC3A4A4F-1648-4FE9-9404-68DDA741813F}.Release|x86.Build.0 = Release|x86
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Debug|x86.ActiveCfg = Debug|x86
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Debug|x86.Build.0 = Debug|x86
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Release|x86.ActiveCfg = Release|x86
+		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
