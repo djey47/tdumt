@@ -5,6 +5,7 @@
 *.sln.iml
 tests.log
 *.suo
+.vs/
 
 #.Net compiler
 bin/
