@@ -45,4 +45,6 @@ Base release on this repository depends on module. Previous history is not inclu
 
 ## Credits
 
-Thanks to all kind people involved along the project : list would be too huge, you can find most of them @ [turboDuck](https://www.turboduck.net/) website.
+- Labs sources are derivative work from following applications: TDU World Editor (by Speeder)
+
+- Thanks to all kind people involved along the project : list would be too huge, you can find most of them @ [turboDuck](https://www.turboduck.net/) website.
