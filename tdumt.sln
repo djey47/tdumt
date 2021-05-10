@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDUModdingLibrary", "tdumt-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDUModAndPlay", "tdumt-patcher\TDUModAndPlay.csproj", "{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tdumt-lib-tests", "tdumt-lib-tests\tdumt-lib-tests.csproj", "{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,5 +51,13 @@ Global
 		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Debug|x86.Build.0 = Debug|x86
 		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Release|x86.ActiveCfg = Release|x86
 		{67E8C6E1-6C55-4908-9A58-9D3784B5C7D5}.Release|x86.Build.0 = Release|x86
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Debug|x86.Build.0 = Debug|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Release|x86.ActiveCfg = Release|Any CPU
+		{1FD0A0E2-1B4C-4CF5-8702-BEF51C9B3737}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

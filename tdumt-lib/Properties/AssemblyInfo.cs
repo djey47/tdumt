@@ -33,5 +33,5 @@ using System.Runtime.InteropServices;
 // en utilisant '*', comme indiqué ci-dessous :
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.1")]
-[assembly: InternalsVisibleTo("TDUModdingLibraryTests")]
+[assembly: InternalsVisibleTo("tdumt-lib-tests")]
 [assembly: AssemblyFileVersionAttribute("2.0.1")]

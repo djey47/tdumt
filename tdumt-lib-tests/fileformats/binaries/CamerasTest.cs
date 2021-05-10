@@ -2,9 +2,9 @@
 using System.IO;
 using NUnit.Framework;
 using TDUModdingLibrary.fileformats.binaries;
-using TDUModdingLibraryTests.Common;
+using tdumtlibtests.Common;
 
-namespace TDUModdingLibraryTests.fileformats.binaries
+namespace tdumtlibtests.fileformats.binaries
 {
     [TestFixture]
     public class CamerasTest
@@ -32,7 +32,7 @@ namespace TDUModdingLibraryTests.fileformats.binaries
         {
             // GIVEN
             var camFile =
-                FileTesting.CreateFileFromResource("TDUModdingLibraryTests.Resources.cameras." +
+                FileTesting.CreateFileFromResource("tdumtlibtests.Resources.cameras." +
                                                    GenuineCamerasResourceFile, Path.Combine(_tempPath, GenuineCamerasResourceFile));
 
             // WHEN
@@ -49,7 +49,7 @@ namespace TDUModdingLibraryTests.fileformats.binaries
         {
             // GIVEN
             var camFile =
-                FileTesting.CreateFileFromResource("TDUModdingLibraryTests.Resources.cameras." +
+                FileTesting.CreateFileFromResource("tdumtlibtests.Resources.cameras." +
                                                    ExtendedCamerasResourceFile, Path.Combine(_tempPath, ExtendedCamerasResourceFile));
 
             // WHEN
@@ -66,7 +66,7 @@ namespace TDUModdingLibraryTests.fileformats.binaries
         {
             // GIVEN
             var camFile =
-                FileTesting.CreateFileFromResource("TDUModdingLibraryTests.Resources.cameras." +
+                FileTesting.CreateFileFromResource("tdumtlibtests.Resources.cameras." +
                                                    ExtendedCamerasResourceFile, Path.Combine(_tempPath, ExtendedCamerasResourceFile));
             var initialCameras = new Cameras(camFile);
 
@@ -85,7 +85,7 @@ namespace TDUModdingLibraryTests.fileformats.binaries
         {
             // GIVEN
             var camFile =
-                FileTesting.CreateFileFromResource("TDUModdingLibraryTests.Resources.cameras." +
+                FileTesting.CreateFileFromResource("tdumtlibtests.Resources.cameras." +
                                                    ExtendedCamerasResourceFile, Path.Combine(_tempPath, ExtendedCamerasResourceFile));
             var cameras = new Cameras(camFile);
             Cameras.CamEntry modifiedEntry = cameras.GetEntryByCameraId("101");
@@ -102,7 +102,7 @@ namespace TDUModdingLibraryTests.fileformats.binaries
         {
             // GIVEN
             var camFile =
-                FileTesting.CreateFileFromResource("TDUModdingLibraryTests.Resources.cameras." +
+                FileTesting.CreateFileFromResource("tdumtlibtests.Resources.cameras." +
                                                    ExtendedCamerasResourceFile, Path.Combine(_tempPath, ExtendedCamerasResourceFile));
             var cameras = new Cameras(camFile);
             var baseEntry = cameras.GetEntryByCameraId("101");

@@ -2,9 +2,9 @@
 using NUnit.Framework;
 using TDUModdingLibrary.fileformats;
 using TDUModdingLibrary.fileformats.banks;
-using TDUModdingLibraryTests.Common;
+using tdumtlibtests.Common;
 
-namespace TDUModdingLibraryTests.fileformats.banks
+namespace tdumtlibtests.fileformats.banks
 {
     [TestFixture]
     [Ignore("Unsupported feature")]

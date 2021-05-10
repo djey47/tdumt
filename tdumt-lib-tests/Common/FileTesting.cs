@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Reflection;
 
-namespace TDUModdingLibraryTests.Common
+namespace tdumtlibtests.Common
 {
     public class FileTesting
     {

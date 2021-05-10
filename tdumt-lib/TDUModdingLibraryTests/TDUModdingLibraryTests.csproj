@@ -68,28 +68,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\FileTesting.cs" />
-    <Compile Include="fileformats\banks\BNKTest.cs" />
-    <Compile Include="fileformats\banks\BnkFocusOnXenonTest.cs" />
-    <Compile Include="fileformats\binaries\CamerasTest.cs" />
-    <Compile Include="fileformats\database\DBResourceTest.cs" />
-    <Compile Include="fileformats\database\DBTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ToolsTest.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
-    <EmbeddedResource Include="Resources\banks\pc\CLK_55.bnk" />
-    <EmbeddedResource Include="Resources\banks\xenon\246_GT.bnk" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TDUModdingLibrary.csproj">
       <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
       <Name>TDUModdingLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Shadow Include="Références de test\TDUModdingLibrary.accessor" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
@@ -115,15 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common" />
-    <Folder Include="fileformats\binaries" />
-    <Folder Include="Resources\" />
     <Folder Include="Resources\cameras" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\TDU_Achievements.db" />
-    <EmbeddedResource Include="Resources\TDU_Achievements.fr" />
-    <EmbeddedResource Include="Resources\cameras\Cameras-1.66A-MP.bin" />
-    <EmbeddedResource Include="Resources\cameras\Cameras-2.00A.bin" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
