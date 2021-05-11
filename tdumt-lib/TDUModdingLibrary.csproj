@@ -60,11 +60,12 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <PropertyGroup>
-	<DefaultItemExcludes>labs/**;$(DefaultItemExcludes)</DefaultItemExcludes>
+    <DefaultItemExcludes>labs/**;$(DefaultItemExcludes)</DefaultItemExcludes>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DjeFramework1, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>assemblies\DjeFramework1.dll</HintPath>
+    <Reference Include="DjeFramework1, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\assemblies\DjeFramework1.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -225,13 +226,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="support\" />
-    <Folder Include="converters\" />
-    <Folder Include="fileformats\" />
-    <Folder Include="installer\" />
-    <Folder Include="Properties\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

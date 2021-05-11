@@ -33,16 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DjeFramework1">
-      <HintPath>assemblies\DjeFramework1.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TDUModdingLibrary">
-      <HintPath>assemblies/TDUModdingLibrary.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>packages\Newtonsoft.Json.8.0.3\lib\net20\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -67,10 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assemblies\" />
-    <Folder Include="scripts\" />
-    <Folder Include="Modules\Cameras\" />
-    <Folder Include="Modules\Cameras\Dto\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -85,5 +74,11 @@
   -->
   <ItemGroup>
     <EmbeddedResource Include="Resources\cameras.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tdumt-lib\TDUModdingLibrary.csproj">
+      <Project>{ec3a4a4f-1648-4fe9-9404-68dda741813f}</Project>
+      <Name>TDUModdingLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

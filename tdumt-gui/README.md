@@ -18,13 +18,14 @@ Install following packets:
 
 * Clone this repository
 * Import in Visual Studio or Mono Develop or JetBrains Rider
-* Run tests
+* Copy **ALL** challenges (copyrighted files from game install): *data_dfe_\** to *xml/default/challenges* directory
+* Build and run tests
 * Enjoy!
 
 ### Dependencies
 
-* DjeFramework1
-* tdumt-lib
+* DjeFramework1 (provided in root *assemblies* folder)
+* tdumt-lib project
 * Testing: nunit Framework 3
 
 ### Are there docs anywhere?
