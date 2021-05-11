@@ -5,7 +5,7 @@ using NUnit.Framework;
 using TDUModdingLibrary.fileformats.database;
 using tdumtlibtests.Common;
 
-namespace TDUModdingLibraryTests.fileformats.database
+namespace tdumtlibtests.fileformats.database
 {
     [TestFixture]
     public class DbTest

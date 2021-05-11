@@ -4,7 +4,7 @@ using System.IO;
 using NUnit.Framework;
 using tdumtlibtests.Common;
 
-namespace TDUModdingLibraryTests.fileformats.banks
+namespace tdumtlibtests.fileformats.banks
 {
     [TestFixture]
     public class BNKTest

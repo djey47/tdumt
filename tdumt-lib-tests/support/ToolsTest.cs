@@ -3,7 +3,7 @@ using DjeFramework1.Util.BasicStructures;
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace TDUModdingLibraryTests
+namespace tdumtlibtests.support
 {
     [TestFixture]
     public class ToolsTest

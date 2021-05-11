@@ -4,7 +4,7 @@ using System.IO;
 using NUnit.Framework;
 using tdumtlibtests.Common;
 
-namespace TDUModdingLibraryTests.fileformats.database
+namespace tdumtlibtests.fileformats.database
 {
     [TestFixture]
     public class DBResourceTest
