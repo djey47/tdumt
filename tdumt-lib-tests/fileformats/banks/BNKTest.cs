@@ -22,7 +22,7 @@ namespace tdumtlibtests.fileformats.banks
         [OneTimeTearDown]
         public static void MyClassCleanup()
         {
-            File.Delete(Path.Combine(_tempPath, ResourceFile));
+            Directory.Delete(_tempPath, true);
         }
 
         [Test]

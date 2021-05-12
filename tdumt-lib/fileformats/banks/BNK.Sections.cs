@@ -263,8 +263,9 @@ namespace TDUModdingLibrary.fileformats.banks
                             else
                             {
                                 // It's pure padding info
+                                // https://github.com/djey47/tdumt/issues/1: size should be 0
                                 aFile.fileName = _PADDING_FILE_NAME + fileCounter;
-                                aFile.fileSize = _FileSize - aFile.startAddress;
+                                aFile.fileSize = 0;
                             }
                             // TODO 2x4 octets à décrypter....
                             aFile.unknown1 = dataReader.ReadUInt32();
