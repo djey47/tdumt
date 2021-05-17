@@ -62,6 +62,7 @@
     <EmbeddedResource Include="Resources\TDU_Achievements.fr" />
     <EmbeddedResource Include="Resources\banks\pc\hud.bnk" />
     <EmbeddedResource Include="Resources\banks\pc\icd_12a2.bnk" />
+    <EmbeddedResource Include="Resources\banks\pc\icd_12e2.bnk" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\tdumt-lib\TDUModdingLibrary.csproj">

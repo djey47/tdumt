@@ -153,15 +153,27 @@ namespace TDUModdingLibrary.fileformats.banks
         /// <returns></returns>
         private static uint _GetPaddingLength(uint sampleLength, uint blockSize)
         {
-            uint returnedLength = 0;
-            uint diff = sampleLength % blockSize;
+            uint returnedLength = sampleLength % 16;
 
-            if ((sampleLength + diff) % blockSize == 0)
-                returnedLength += diff;
-            else
-                returnedLength += (blockSize - diff);
+            if (returnedLength == 4)
+                return 12;
 
             return returnedLength;
+
+            //uint returnedLength = 0;
+            //uint diff = sampleLength % blockSize;
+
+            //if ((sampleLength + diff) % blockSize == 0)
+            //    returnedLength += diff;
+            //else
+            //    returnedLength += (blockSize - diff);
+
+            //return returnedLength;
+        }
+
+        private static uint _GetSectionPaddingLength(uint sampleLength, uint blockSize)
+        {
+            return sampleLength % 16;
         }
 
         /// <summary>
@@ -392,7 +404,7 @@ namespace TDUModdingLibrary.fileformats.banks
 
             // Calcul du bourrage
             sectionToWrite.paddingSize =
-                _GetPaddingLength(_PREDATA_LENGTH + (uint) sectionToWrite.data.Length, _MainBlockSize);
+                _GetSectionPaddingLength(_PREDATA_LENGTH + (uint) sectionToWrite.data.Length, _MainBlockSize);
 
             // New size and checksum
             byte[] preData = new byte[_PREDATA_LENGTH];
@@ -603,7 +615,7 @@ namespace TDUModdingLibrary.fileformats.banks
             // Header section : since this section has not been written yet, padding size must be calculated here
             Section headerSection = _GetSection(SectionType.Header);
 
-            headerSection.paddingSize = _GetPaddingLength(_PREDATA_LENGTH + (uint)headerSection.data.Length, _MainBlockSize);
+            headerSection.paddingSize = _GetSectionPaddingLength(_PREDATA_LENGTH + (uint)headerSection.data.Length, _MainBlockSize);
 
             // File size section
             Section fileSizeSection = _GetSection(SectionType.FileSize);
