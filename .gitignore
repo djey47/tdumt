@@ -15,5 +15,8 @@ obj/
 thumbs.db
 Thumbs.db
 
+#Nuget packages cache
+packages/
+
 # Game contents
 data_dfe_*

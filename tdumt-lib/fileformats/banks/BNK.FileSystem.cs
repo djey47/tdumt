@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Text;
+using DjeFramework1.Common.Support.Traces;
 using DjeFramework1.Common.Types;
 
 namespace TDUModdingLibrary.fileformats.banks
@@ -148,7 +149,7 @@ namespace TDUModdingLibrary.fileformats.banks
         /// <summary>
         /// Décrit un fichier empaqueté
         /// </summary>
-        private class PackedFile : ICloneable
+        internal class PackedFile : ICloneable
         {
             #region Properties
             /// <summary>
@@ -242,7 +243,7 @@ namespace TDUModdingLibrary.fileformats.banks
         /// <summary>
         /// List of packed files, in read order (cache)
         /// </summary>
-        private Collection<PackedFile> _FileList
+        internal Collection<PackedFile> _FileList
         {
             get
             {
@@ -301,7 +302,7 @@ namespace TDUModdingLibrary.fileformats.banks
         /// <summary>
         /// Liste de fichiers empaquetés, dans l'ordre de lecture. When not loading use property to access it !
         /// </summary>
-        private readonly Collection<PackedFile> __FileList = new Collection<PackedFile>();
+        internal readonly Collection<PackedFile> __FileList = new Collection<PackedFile>();
         #endregion
 
         #region Private methods
@@ -341,9 +342,13 @@ namespace TDUModdingLibrary.fileformats.banks
                     byte testNext = memReader.ReadByte();
                     uint childrenCountFinal = childrenCount;
 
+                    // BUGFIX https://github.com/djey47/tdumt/issues/1
+                    // Some files get an additional byte here, we ignore it
                     if (testNext > _LIST_MIN_USABLE_CHAR)
                         // Standard case
                         memReader.BaseStream.Seek(-1, SeekOrigin.Current);
+                    else
+                        Log.Warning($"Weird byte spotted in file tree {testNext} at id={returnedNode.id} - children count: {childrenCountFinal}");
 
                     // Name
                     uint nameLength = _LIST_FOLDER_NODE_FLAG - currentChar;
@@ -408,9 +413,18 @@ namespace TDUModdingLibrary.fileformats.banks
                     case FileInfoNodeType.Folder:
                     case FileInfoNodeType.ExtensionGroup:
                         byte nodeFlag = (byte)(_LIST_FOLDER_NODE_FLAG - nodeToWrite.name.Length);
+                        int packedFilesCount = nodeToWrite.childNodes.Count;
 
                         bnkWriter.Write(nodeFlag);
-                        bnkWriter.Write((byte)nodeToWrite.childNodes.Count);
+                        bnkWriter.Write((byte) packedFilesCount);
+
+                        // BUGFIX https://github.com/djey47/tdumt/issues/1
+                        // FIXME Find better solution... might break other files!
+                        if (packedFilesCount >= 176)
+                        {
+                            bnkWriter.Write((byte) 1);
+                        }
+
                         break;
                 }
 
@@ -498,8 +512,9 @@ namespace TDUModdingLibrary.fileformats.banks
                         // Data
                         writer.Write(anotherFileData);
 
-                        // Padding...
-                        if (index < _FileList.Count)
+                        // BUGFIX https://github.com/djey47/tdumt/issues/1
+                        // Padding... no padding for the last real file
+                        if (index < _FileList.Count - 1)
                         {
                             uint paddingLength = _GetPaddingLength((uint) anotherFileData.Length, _SecondaryBlockSize);
                             byte[] padding = new byte[paddingLength];
@@ -508,6 +523,8 @@ namespace TDUModdingLibrary.fileformats.banks
                             Array.Copy(paddingString, padding, paddingLength);
                             writer.Write(padding);
                         }
+
+                        // TODO Padding block ignored at writing => to be tested
                     }
 
                     realDataSize = writer.BaseStream.Position;

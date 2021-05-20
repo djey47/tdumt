@@ -13,7 +13,7 @@ using TDUModdingLibrary.support.constants;
 using TDUModdingTools.common;
 using TDUModdingTools.gui.common;
 using System.Drawing;
-//using TDUModdingTools.Properties;
+using TDUModdingTools.Properties;
 
 namespace TDUModdingTools.gui.wizards.patcheditor
 {

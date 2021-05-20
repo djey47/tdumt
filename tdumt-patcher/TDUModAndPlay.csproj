@@ -64,6 +64,9 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DjeFramework1">
+      <HintPath>..\assemblies\DjeFramework1.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -109,16 +112,6 @@
     <None Include="Resources\Dialog_Box_Side04.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\framework\djeframework1\trunk\DjeFramework1.csproj">
-      <Project>{19F933FC-8314-4FB6-82B5-6B557A45D74E}</Project>
-      <Name>DjeFramework1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\tdumodlib\trunk\TDUModdingLibrary.csproj">
-      <Project>{EC3A4A4F-1648-4FE9-9404-68DDA741813F}</Project>
-      <Name>TDUModdingLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="Resources\Dialog_Box_Side05.png" />
   </ItemGroup>
@@ -158,6 +151,12 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tdumt-lib\TDUModdingLibrary.csproj">
+      <Project>{ec3a4a4f-1648-4fe9-9404-68dda741813f}</Project>
+      <Name>TDUModdingLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

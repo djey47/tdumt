@@ -153,15 +153,9 @@ namespace TDUModdingLibrary.fileformats.banks
         /// <returns></returns>
         private static uint _GetPaddingLength(uint sampleLength, uint blockSize)
         {
-            uint returnedLength = 0;
-            uint diff = sampleLength % blockSize;
-
-            if ((sampleLength + diff) % blockSize == 0)
-                returnedLength += diff;
-            else
-                returnedLength += (blockSize - diff);
-
-            return returnedLength;
+            // BUGFIX https://github.com/djey47/tdumt/issues/1
+            // 
+            return (blockSize - sampleLength % blockSize) % blockSize;
         }
 
         /// <summary>
@@ -263,8 +257,9 @@ namespace TDUModdingLibrary.fileformats.banks
                             else
                             {
                                 // It's pure padding info
+                                // https://github.com/djey47/tdumt/issues/1: size should be 0
                                 aFile.fileName = _PADDING_FILE_NAME + fileCounter;
-                                aFile.fileSize = _FileSize - aFile.startAddress;
+                                aFile.fileSize = 0;
                             }
                             // TODO 2x4 octets à décrypter....
                             aFile.unknown1 = dataReader.ReadUInt32();
@@ -452,11 +447,11 @@ namespace TDUModdingLibrary.fileformats.banks
                 
                 // BNK file size
                 dataWriter.Write(_GetTotalSize());
-                
-                // Packed content size (% 0x10)
+
+                // Packed content size
                 dataWriter.Write(PackedContentSize);
                 
-                // TODO 2x4 octets ....
+                // Block sizes for padding calculation (sections, packed files)
                 dataWriter.Write(_MainBlockSize);
                 dataWriter.Write(_SecondaryBlockSize);
 

@@ -58,11 +58,9 @@ namespace TDUModdingLibrary.fileformats.banks
                 // Browsing all packed files
                 foreach (PackedFile anotherFile in _FileList)
                 {
-                    returnedSize += anotherFile.fileSize;
-
-                    // BUG: if one packed file, do not take padding file size into account
-                    /*if (_FileList.Count == 2)
-                        break;*/
+                    // BUGFIX https://github.com/djey47/tdumt/issues/1
+                    // Include padding in packed contents size calculation
+                    returnedSize += (anotherFile.fileSize + _GetPaddingLength(anotherFile.fileSize, _SecondaryBlockSize));
                 }
 
                 return returnedSize;
