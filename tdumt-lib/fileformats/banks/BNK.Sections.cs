@@ -153,27 +153,9 @@ namespace TDUModdingLibrary.fileformats.banks
         /// <returns></returns>
         private static uint _GetPaddingLength(uint sampleLength, uint blockSize)
         {
-            uint returnedLength = sampleLength % 16;
-
-            if (returnedLength == 4)
-                return 12;
-
-            return returnedLength;
-
-            //uint returnedLength = 0;
-            //uint diff = sampleLength % blockSize;
-
-            //if ((sampleLength + diff) % blockSize == 0)
-            //    returnedLength += diff;
-            //else
-            //    returnedLength += (blockSize - diff);
-
-            //return returnedLength;
-        }
-
-        private static uint _GetSectionPaddingLength(uint sampleLength, uint blockSize)
-        {
-            return sampleLength % 16;
+            // BUGFIX https://github.com/djey47/tdumt/issues/1
+            // 
+            return (blockSize - sampleLength % blockSize) % blockSize;
         }
 
         /// <summary>
@@ -404,7 +386,7 @@ namespace TDUModdingLibrary.fileformats.banks
 
             // Calcul du bourrage
             sectionToWrite.paddingSize =
-                _GetSectionPaddingLength(_PREDATA_LENGTH + (uint) sectionToWrite.data.Length, _MainBlockSize);
+                _GetPaddingLength(_PREDATA_LENGTH + (uint) sectionToWrite.data.Length, _MainBlockSize);
 
             // New size and checksum
             byte[] preData = new byte[_PREDATA_LENGTH];
@@ -465,11 +447,11 @@ namespace TDUModdingLibrary.fileformats.banks
                 
                 // BNK file size
                 dataWriter.Write(_GetTotalSize());
-                
-                // Packed content size (% 0x10)
+
+                // Packed content size
                 dataWriter.Write(PackedContentSize);
                 
-                // TODO 2x4 octets ....
+                // Block sizes for padding calculation (sections, packed files)
                 dataWriter.Write(_MainBlockSize);
                 dataWriter.Write(_SecondaryBlockSize);
 
@@ -615,7 +597,7 @@ namespace TDUModdingLibrary.fileformats.banks
             // Header section : since this section has not been written yet, padding size must be calculated here
             Section headerSection = _GetSection(SectionType.Header);
 
-            headerSection.paddingSize = _GetSectionPaddingLength(_PREDATA_LENGTH + (uint)headerSection.data.Length, _MainBlockSize);
+            headerSection.paddingSize = _GetPaddingLength(_PREDATA_LENGTH + (uint)headerSection.data.Length, _MainBlockSize);
 
             // File size section
             Section fileSizeSection = _GetSection(SectionType.FileSize);

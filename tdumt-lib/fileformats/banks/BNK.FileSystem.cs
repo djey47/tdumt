@@ -342,13 +342,13 @@ namespace TDUModdingLibrary.fileformats.banks
                     byte testNext = memReader.ReadByte();
                     uint childrenCountFinal = childrenCount;
 
-                    // https://github.com/djey47/tdumt/issues/1
+                    // BUGFIX https://github.com/djey47/tdumt/issues/1
                     // Some files get an additional byte here, we ignore it
                     if (testNext > _LIST_MIN_USABLE_CHAR)
                         // Standard case
                         memReader.BaseStream.Seek(-1, SeekOrigin.Current);
                     else
-                        Log.Info("Weird byte spotted in file tree: " + testNext + " at id=" + returnedNode.id + " - children count: " + childrenCountFinal);
+                        Log.Warning($"Weird byte spotted in file tree {testNext} at id={returnedNode.id} - children count: {childrenCountFinal}");
 
                     // Name
                     uint nameLength = _LIST_FOLDER_NODE_FLAG - currentChar;
@@ -418,7 +418,7 @@ namespace TDUModdingLibrary.fileformats.banks
                         bnkWriter.Write(nodeFlag);
                         bnkWriter.Write((byte) packedFilesCount);
 
-                        // Fix for magic value: https://github.com/djey47/tdumt/issues/1
+                        // BUGFIX https://github.com/djey47/tdumt/issues/1
                         // FIXME Find better solution... might break other files!
                         if (packedFilesCount >= 176)
                         {
@@ -512,8 +512,8 @@ namespace TDUModdingLibrary.fileformats.banks
                         // Data
                         writer.Write(anotherFileData);
 
+                        // BUGFIX https://github.com/djey47/tdumt/issues/1
                         // Padding... no padding for the last real file
-                        // https://github.com/djey47/tdumt/issues/1
                         if (index < _FileList.Count - 1)
                         {
                             uint paddingLength = _GetPaddingLength((uint) anotherFileData.Length, _SecondaryBlockSize);
@@ -524,7 +524,7 @@ namespace TDUModdingLibrary.fileformats.banks
                             writer.Write(padding);
                         }
 
-                        // Padding block ignored at writing => to be tested
+                        // TODO Padding block ignored at writing => to be tested
                     }
 
                     realDataSize = writer.BaseStream.Position;
